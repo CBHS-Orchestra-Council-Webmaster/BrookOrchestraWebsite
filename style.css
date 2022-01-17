@@ -1,0 +1,46 @@
+body{
+    background-color: lightcyan;
+}
+
+.about{
+    position: absolute;
+    left: 10%;
+    top: 10%;
+ 
+  }
+
+.parents{
+    position: absolute;
+    left: 25%;
+    top: 10%;
+}
+
+.students{
+    position: absolute;
+    left: 40%;
+    top: 10%;
+}
+
+.resources{
+    position: absolute;
+    left: 55%;
+    top: 10%;
+}
+
+.news{
+    position: absolute;
+    left: 70%;
+    top: 10%;
+}
+
+.gallery{
+    position: absolute;
+    left: 85%;
+    top: 10%;
+}
+
+.support{
+    position: absolute;
+    left: 50%;
+    bottom: 10%;
+}
