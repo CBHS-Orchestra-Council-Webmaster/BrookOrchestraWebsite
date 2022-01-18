@@ -1,46 +1,98 @@
 body{
-    background-color: lightcyan;
+    background-color: rgb(251, 154, 115);
+}
+
+.title{
+    font-size: 50px;
+}
+
+/* .menu{
+height: 5%;
+width: 80%;
+left: 10%;
+right: 15%;
+background-color: black;
+position: absolute;
+top:15%;
+
+} */
+
+/* removing default link text apparance */
+a:visited { 
+    color: white; 
+    text-decoration: none; 
+   }
+
+
+.btn{
+    padding: 10px 30px;
+    border:10px solid black;
+    margin: 0 10px 10px 0;
+    border-radius: 10%;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: white;
+    text-align: center;
+    background-color: black;
+}
+
+a:hover{
+    background-color: white;
+    color: black;
+  }
+
+.btn:hover{
+    background-color: white;
 }
 
 .about{
     position: absolute;
-    left: 10%;
-    top: 10%;
- 
+    left: 15%;  
+    top: 15%;
+    
+    
   }
 
-.parents{
+.calendar{
     position: absolute;
     left: 25%;
-    top: 10%;
+    top: 15%;
+    
+    
 }
 
-.students{
+.contact{
     position: absolute;
-    left: 40%;
-    top: 10%;
+    left: 35%;
+    top: 15%;
+    
 }
 
 .resources{
     position: absolute;
-    left: 55%;
-    top: 10%;
+    left: 45%;
+    top: 15%;
+    
 }
 
 .news{
     position: absolute;
-    left: 70%;
-    top: 10%;
+    left: 56%;
+    top: 15%;
+    
 }
 
 .gallery{
     position: absolute;
-    left: 85%;
-    top: 10%;
+    left: 65%;
+    top: 15%;
+
 }
 
 .support{
     position: absolute;
-    left: 50%;
-    bottom: 10%;
+    left: 74%;
+    top: 15%;
+ 
 }
