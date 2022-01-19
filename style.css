@@ -1,21 +1,31 @@
 body{
-    background-color: rgb(251, 154, 115);
+    background-color: rgb(255, 91, 86);
+}
+.top{
+    height: 25%;
+    width: 100%;
+    background-color: white;
+    position: absolute;
+    bottom: 75%;
+    z-index: -1;
+    left: 0%;
+    
 }
 
 .title{
     font-size: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-/* .menu{
-height: 5%;
-width: 80%;
-left: 10%;
-right: 15%;
-background-color: black;
-position: absolute;
-top:15%;
+.logo{
+    height: 10%;
+    width: 10%;
+    position: absolute;
+    top: 5%;
+    right: 5%;
 
-} */
+}
+
 
 /* removing default link text apparance */
 a:visited { 
@@ -25,8 +35,8 @@ a:visited {
 
 
 .btn{
-    padding: 10px 30px;
-    border:10px solid black;
+    padding: 5px 20px;
+    border:5px solid black;
     margin: 0 10px 10px 0;
     border-radius: 10%;
     text-decoration: none;
@@ -38,12 +48,13 @@ a:visited {
 }
 
 a:hover{
-    background-color: white;
+   
     color: black;
   }
 
 .btn:hover{
     background-color: white;
+    
 }
 
 .about{
@@ -91,8 +102,33 @@ a:hover{
 }
 
 .support{
-    position: absolute;
+    position: absolute; 
     left: 74%;
     top: 15%;
  
+}
+
+#short.about{
+    font-family:'Times New Roman', Times, serif;
+    position:absolute;
+    top:200px;
+    left: 10px;
+}
+
+#small.gallery{
+    height: 50%;
+    width: 40%;
+    position: absolute;
+    top: 40%;
+    left: 30%;
+}
+
+.bg{
+    height: 50%;
+    width: 100%;
+    background-color: black;
+    position: absolute;
+    top: 40%;
+    left:0%;
+    z-index: -1;
 }
