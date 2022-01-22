@@ -2,30 +2,28 @@ body{
     background-color: rgb(255, 91, 86);
 }
 .top{
-    height: 25%;
-    width: 100%;
-    background-color: white;
-    position: absolute;
-    bottom: 75%;
+    background-color: white; 
     z-index: -1;
-    left: 0%;
+    display: flex;
+    flex-direction: column;
     
 }
 
 .title{
-    font-size: 50px;
+    font-size: 30px;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    justify-content: center;
+   
+    
 }
 
 .logo{
-    height: 10%;
+    height: 5%;
     width: 10%;
-    position: absolute;
-    top: 5%;
-    right: 5%;
+ 
 
 }
-
 
 /* removing default link text apparance */
 a:visited { 
@@ -33,12 +31,19 @@ a:visited {
     text-decoration: none; 
    }
 
+.buttons{
+    display: flex;
+    /* for horizontal axis */
+    justify-content: center;
+    /* vertical axis is align-items */
+    flex-wrap: wrap;
+}
+
 
 .btn{
     padding: 5px 20px;
     border:5px solid black;
     margin: 0 10px 10px 0;
-    border-radius: 10%;
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
@@ -57,62 +62,10 @@ a:hover{
     
 }
 
-.about{
-    position: absolute;
-    left: 15%;  
-    top: 15%;
-    
-    
-  }
-
-.calendar{
-    position: absolute;
-    left: 25%;
-    top: 15%;
-    
-    
-}
-
-.contact{
-    position: absolute;
-    left: 35%;
-    top: 15%;
-    
-}
-
-.resources{
-    position: absolute;
-    left: 45%;
-    top: 15%;
-    
-}
-
-.news{
-    position: absolute;
-    left: 56%;
-    top: 15%;
-    
-}
-
-.gallery{
-    position: absolute;
-    left: 65%;
-    top: 15%;
-
-}
-
-.support{
-    position: absolute; 
-    left: 74%;
-    top: 15%;
- 
-}
 
 #short.about{
     font-family:'Times New Roman', Times, serif;
-    position:absolute;
-    top:25%;
-    left: 1%;
+    display: flex;
 }
 
 #small.gallery{
@@ -121,6 +74,7 @@ a:hover{
     position: absolute;
     top: 45%;
     left: 30%;
+    color: white;
 }
 
 .bg{
