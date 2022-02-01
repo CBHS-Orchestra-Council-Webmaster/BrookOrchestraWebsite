@@ -1,23 +1,13 @@
 body{
     background-color: rgb(250, 76, 76);
 }
-.tab{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
 
 .logo{
-    height: 8%;
-    width: 12%;
+    height: 5%;
+    width: 10%;
     padding: 3px;
    
 }
-
-.title{
-    font-size: 45px;
-    text-align: center;
-    padding: 10px 15px;
-}
-
 
 .buttons{
     display: flex;
@@ -49,10 +39,3 @@ a:visited {
     text-decoration: none; 
    }
 
-.smallGallery{
-    height: 300px;
-    width: 100%;
-    background-color: black;
-    color: white;
-    z-index: -1;
-}

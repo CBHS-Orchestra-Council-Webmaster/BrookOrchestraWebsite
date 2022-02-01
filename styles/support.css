@@ -6,8 +6,8 @@ body{
 }
 
 .logo{
-    height: 8%;
-    width: 12%;
+    height: 5%;
+    width: 10%;
     padding: 3px;
    
 }
@@ -49,10 +49,3 @@ a:visited {
     text-decoration: none; 
    }
 
-.smallGallery{
-    height: 300px;
-    width: 100%;
-    background-color: black;
-    color: white;
-    z-index: -1;
-}
