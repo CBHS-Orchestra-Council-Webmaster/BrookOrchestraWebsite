@@ -6,8 +6,8 @@ body{
 }
 
 .logo{
-    height: 5%;
-    width: 10%;
+    height: 8%;
+    width: 12%;
     padding: 3px;
    
 }
@@ -19,15 +19,15 @@ body{
 }
 
 
-.buttons{
+.btn{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-
-
 }
 
-.btn{
+
+.button{
+  
     padding: 5px 15px;
     border:5px solid black;
     margin: 0 10px 10px 0;
@@ -39,7 +39,7 @@ body{
     background-color: black;
 }
 
-.btn:hover{
+.button:hover{
     background-color: rgb(219, 219, 219);
     border-radius: 5px 5px 0px 0px;
 }
@@ -48,4 +48,3 @@ a:visited {
     color: white; 
     text-decoration: none; 
    }
-
