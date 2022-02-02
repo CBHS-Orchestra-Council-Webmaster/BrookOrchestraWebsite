@@ -77,7 +77,7 @@ a:visited {
 }
 
 .slides input{
-    /* display: none */
+    display: none
 }
 
 .slide{
@@ -92,11 +92,12 @@ a:visited {
 
 /* manual-nav */
 .manual-nav{
-position: absolute;
-width: 800px;
-margin-top: -80px;
-display: flex;
-justify-content: center;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    width: 400px;
+    margin-top: -40px;
+
 }
 
 .manual-btn{
@@ -108,7 +109,7 @@ justify-content: center;
 }
 
 .manual-btn:not(:last-child){
-    margin-right: 40px;
+    margin-right: 10px;
 }
 
 .manual-btn:hover{
