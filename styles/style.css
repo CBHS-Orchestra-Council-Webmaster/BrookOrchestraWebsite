@@ -2,7 +2,7 @@ body{
     background-color: rgb(250, 76, 76);
 }
 .tab{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family:Georgia, 'Times New Roman', Times, serif;
 }
 
 .logo{
@@ -50,7 +50,8 @@ a:visited {
    }
 
 #short.about{
-    padding: 20px 5px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 30px 5px;
 }
 .smallGallery{
     margin: 0;
