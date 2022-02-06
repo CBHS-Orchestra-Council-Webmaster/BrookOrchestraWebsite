@@ -42,6 +42,7 @@ body{
 .button:hover{
     background-color: rgb(219, 219, 219);
     border-radius: 5px 5px 0px 0px;
+    color:black;
 }
 
 a:visited { 
@@ -94,7 +95,6 @@ a:visited {
 .manual-nav{
     display: flex;
     flex-direction: row;
-    align-items: baseline;
     width: 400px;
     margin-top: -40px;
 
