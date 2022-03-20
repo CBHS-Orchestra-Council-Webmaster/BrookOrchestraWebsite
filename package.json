@@ -1,0 +1,15 @@
+{
+  "name": "BrookOrchestraWebsite",
+  "version": "1.0.0",
+  "description": "Trying to make a basic website for my school's orchestra.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "tailwindcss": "^3.0.23"
+  }
+}
