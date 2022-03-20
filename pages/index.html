@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel = "stylesheet" href = "../styles/style.css">
     <link rel="stylesheet" href="../styles/navBar.css">
+    <script src = "../scripts/navBar.js"></script>
     <title>CBHS Orchestra</title>
 </head>
 <body>
@@ -37,9 +38,31 @@
     </div> -->
 
     <div class = "tab">
-            <h1 class = "title">Clear Brook High School Orchestra</h1>
-            <img src="../images/share_preclick.png" class = "icons share" >
-            <img src="../images/menu.png" class = "icons menu" >
+        <h1 class = "title">Clear Brook High School Orchestra</h1>
+        <span class = "icons">
+            <img src="../images/share_preclick.png" class = "share" >
+            <div class == "dropdown">
+                <img onclick="myFunction()" src="../images/menu.png" class = "menu dropbtn" >
+
+                <div id = "myDropdown" class = "dropdown-content"></div>
+                
+                <a href="../pages/about.html" class="button">About Us</a>
+
+                <a href="../pages/calendar.html" class="button">Calendar</a>
+
+                <a href="../pages/contact.html" class="button">Contact</a>
+
+                <a href="../pages/resources.html" class="button">Resources</a>
+
+                <a href="../pages/news.html" class="button">News</a>
+
+                <a href="../pages/gallery.html" class="button">Gallery</a>
+
+                <a href="../pages/support.html" class="button">Support Us</a>
+            </div>
+            
+        </span>
+        
        
     </div>
 
