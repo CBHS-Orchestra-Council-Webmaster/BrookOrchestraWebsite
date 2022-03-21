@@ -5,10 +5,23 @@ body{
 }
 
 .front_pic{
-    display: flex;
-    justify-content: center;
-    
-   
+    position: relative;
+    top: 0px;
+    left: -10px;
+    width: 100%
+}
+
+.logo{
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    top: -670px;
+    z-index: 1;
+    width: 45%
+}
+.img{
+    opacity: 80%;
 }
 /* .tab{
     font-family:Georgia, 'Times New Roman', Times, serif;
@@ -35,7 +48,7 @@ body{
 } */
 
 
-.button{
+/* .button{
   
     padding: 5px 15px;
     border:5px solid black;
@@ -57,7 +70,7 @@ body{
 a:visited { 
     color: white; 
     text-decoration: none; 
-   }
+   } */
 
 #short.about{
     font-family: Georgia, 'Times New Roman', Times, serif;
