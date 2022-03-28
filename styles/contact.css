@@ -1,0 +1,29 @@
+body{
+    background-color: rgb(250, 76, 76);
+    z-index: 0;
+}
+
+.contact-a{
+    position: relative;
+    top: 200px;
+    padding: 25px;
+    color: white;
+    text-decoration: none;
+    background-color: black
+   
+}
+
+.contact-b{
+    position: relative;
+    padding: 25px;
+    top: 200px;
+    color: white;
+    text-decoration: none;
+    background-color: black
+   
+}
+
+.contact{
+    display: flex;
+    justify-content: space-around;
+}

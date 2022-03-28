@@ -2,84 +2,38 @@
 
 body{
     background-color: rgb(250, 76, 76);
+    z-index: 0;
 }
 
 .front_pic{
     position: relative;
-    top: 0px;
-    left: -10px;
-    width: 100%
+    width: 100%;
+    left: 0;
 }
 
 .logo{
-    position: relative;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    top: -670px;
-    z-index: 1;
+    position: absolute;
+    border: 0;
+    top: 10%;
     width: 45%
 }
 .img{
-    opacity: 80%;
-}
-/* .tab{
-    font-family:Georgia, 'Times New Roman', Times, serif;
-}
-
-.logo{
-    height: 8%;
-    width: 12%;
-    padding: 3px;
-   
-}
-
-.title{
-    font-size: 45px;
-    text-align: center;
-    padding: 10px 15px;
-}
-
-
-.btn{
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
-} */
-
-
-/* .button{
-  
-    padding: 5px 15px;
-    border:5px solid black;
-    margin: 0 10px 10px 0;
-    text-decoration: none;
-    font-family:'Courier New', Courier, monospace;
-    font-weight: 400;
-    color: white;
-    text-align: center;
-    background-color: black;
+    opacity: 80%;
 }
-
-.button:hover{
-    background-color: rgb(219, 219, 219);
-    border-radius: 5px 5px 0px 0px;
-    color:black;
-}
-
-a:visited { 
-    color: white; 
-    text-decoration: none; 
-   } */
 
 #short.about{
+    display: flex;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    padding: 30px 5px;
+    padding: 30px;
+    background-color:white;
+    border-radius: 15px;
 }
 .smallGallery{
     margin: 0;
     padding: 0;
-    height: 450px;
+    height: 510px;
     display: flex;
     background: black;
    justify-content: center;
@@ -105,7 +59,7 @@ a:visited {
 
 .slide{
     width: 25%;
-    transition: 2s;
+    transition: 1s;
 }
 
 .slide img{
@@ -114,21 +68,21 @@ a:visited {
 }
 
 /* manual-nav */
-.manual-nav{
-    display: flex;
-    flex-direction: row;
-    width: 400px;
+.navigation-manual{
+    position: absolute;
+    width: 800px;
     margin-top: -40px;
-
-}
+    display: flex;
+    justify-content: center;
+  }
 
 .manual-btn{
-    border: 2px solid rgb(66, 241, 247);
+    border: 2px solid #40D3DC;
     padding: 5px;
     border-radius: 10px;
     cursor: pointer;
-    transition: 1s;
-}
+    transition: 2s;
+  }
 
 .manual-btn:not(:last-child){
     margin-right: 10px;
@@ -143,15 +97,15 @@ a:visited {
 }
 
 #radio2:checked ~ .first{
-    margin-left: -25%;
+    margin-left: -20%;
 }
 
 #radio3:checked ~ .first{
-    margin-left: -50%;
+    margin-left: -40%;
 }
 
 #radio4:checked ~ .first{
-    margin-left: -75%;
+    margin-left: -60%;
 }
 
 #radio5:checked ~ .first{
@@ -164,4 +118,8 @@ a:visited {
 
 #radio7:checked ~ .first{
     margin-left: -150%;
+}
+
+#radio8:checked ~ .first{
+    margin-left: -175%;
 }

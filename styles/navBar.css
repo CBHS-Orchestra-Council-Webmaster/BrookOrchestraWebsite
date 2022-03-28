@@ -37,8 +37,9 @@
     right:0;
 }
 .share{
-    width: 25px;
-    height: 23px;
+    width: 20px;
+    height: 20px;
+    padding: 4px 10px;
 }
 
 .tab{
@@ -47,10 +48,11 @@
 /* Dropdown Button */
 .menu{
   width: 28px;
+  padding-right: 10px;
 }
 
   /* Dropdown button on hover & focus */
-  .dropbtn:hover, .dropbtn:focus {
+  .dropbtn:hover, .dropbtn:focus, .share:hover, .share:focus{
     background-color: none; opacity: 0.5;
   }
   
@@ -80,31 +82,8 @@
   }
   
   /* Change color of dropdown links on hover */
-  .dropdown-content a:hover {background-color: #ddd}
+  .dropdown-content a:hover {background-color: rgb(211, 204, 204)}
   
   /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
   .show {display:block;}
 
-/* .button{
-  
-    padding: 5px 15px;
-    border:5px solid black;
-    margin: 0 10px 10px 0;
-    text-decoration: none;
-    font-family:'Courier New', Courier, monospace;
-    font-weight: 400;
-    color: white;
-    text-align: center;
-    background-color: black;
-}
-
-.button:hover{
-    background-color: rgb(219, 219, 219);
-    border-radius: 5px 5px 0px 0px;
-    color:black;
-}
-
-a:visited { 
-    color: white; 
-    text-decoration: none; 
-   } */
