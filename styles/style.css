@@ -7,8 +7,10 @@ body{
 
 .front_pic{
     position: relative;
-    width: 100%;
+    width: 102%;
     left: 0;
+    margin-left: -10px;
+
 }
 
 .logo{
