@@ -3,9 +3,22 @@ body{
     z-index: 0;
 }
 
+h1{
+    margin-left: 18%;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding-top: 30px;
+    
+}
 .cal{
     position: relative;
-    top: 40px;
-    left: 15%;
-    
+    margin-left: 18%;
+
+}
+
+footer{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: -10px;
+    width: 102%;
+    bottom: 0px;
+    padding: 15px;
 }

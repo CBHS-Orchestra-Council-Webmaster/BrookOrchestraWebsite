@@ -1,29 +1,61 @@
 body{
     background-color: rgb(250, 76, 76);
     z-index: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-.contact-a{
-    position: relative;
-    top: 200px;
-    padding: 25px;
-    color: white;
-    text-decoration: none;
-    background-color: black
-   
-}
+h1{
+   padding: 25px;
 
-.contact-b{
-    position: relative;
-    padding: 25px;
-    top: 200px;
-    color: white;
-    text-decoration: none;
-    background-color: black
-   
 }
 
 .contact{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 100px;
+}
+.contact-a{
+    position: relative;
+   
+    padding: 25px;
+    color: black;
+    text-decoration: none;
+    background-color:antiquewhite;
+    
+}   
+
+.contact-b{
+    position: relative;
+    padding: 25px;
+
+    color: black;
+    text-decoration: none;
+    background-color: antiquewhite;
+    
+}
+
+.message{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+    padding: 30px;
+    margin-top: 70px;
+    width: min-content;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+h2{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: -10px;
+    width: 102%;
+    bottom: 0px;
+    padding: 15px;
 }

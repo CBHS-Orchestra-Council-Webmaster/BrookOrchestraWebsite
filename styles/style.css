@@ -9,7 +9,7 @@ body{
     position: relative;
     width: 102%;
     left: 0;
-    margin-left: -10px;
+    margin-left: -19px;
 
 }
 
@@ -26,14 +26,15 @@ body{
 }
 
 #short.about{
-    display: flex;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     padding: 30px;
     background-color:white;
     border-radius: 15px;
 }
 .smallGallery{
     margin: 0;
+    margin-left: -10px;
+    width: 102%;
     padding: 0;
     height: 510px;
     display: flex;
@@ -124,4 +125,20 @@ body{
 
 #radio8:checked ~ .first{
     margin-left: -175%;
+}
+
+footer{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: -10px;
+    width: 102%;
+    bottom: 0px;
+    padding: 15px;
+}
+
+footer{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: -10px;
+    width: 102%;
+    bottom: 0px;
+    padding: 15px;
 }
