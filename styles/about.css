@@ -1,93 +1,102 @@
-body{
+body {
     background-color: rgb(250, 76, 76);
     z-index: 0;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 
 }
-.container{
+
+.container {
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
     padding: 50px 100px;
-    
+
 
 }
 
-h1{
-    font-size:xx-large;
+h1 {
+    font-size: xx-large;
 }
 
-h2{
+h2 {
 
     text-align: center;
     padding: 30px;
     background-color: black;
-    color:white;
-    border-radius: 15px;;
+    color: white;
+    border-radius: 15px;
+    ;
 }
-h3{
+
+h3 {
     text-align: center;
     padding: 10px;
     flex: 20%;
 }
-.abt{
+
+.abt {
     border: 5px #000 solid;
     padding: 10px;
     text-align: center;
-    background-color:rgb(245, 211, 205);
+    background-color: rgb(245, 211, 205);
 }
 
-.director{
+.director {
     border: 5px #000 solid;
     padding: 10px;
     display: flex;
-    background-color:rgb(245, 211, 205);
+    background-color: rgb(245, 211, 205);
 }
 
-.meyerbio{
+.meyerbio {
     padding: 30px;
 }
 
 
-.orchestras{
+.orchestras1 {
     border: 5px #000 solid;
     background-color: rgb(245, 211, 205);
-    display: flex; 
+    display: flex;
     flex-direction: column;
     padding: 10px;
-   
+
 }
 
-.phil{
+.phil {
     display: flex;
     padding-right: 100px;
+    border: 5px #000 solid;
 }
-.symph{
+
+.symph {
     display: flex;
     flex-direction: row-reverse;
     text-align: right;
     padding-left: 100px;
+    border: 5px #000 solid;
 }
 
-.chmb2{
-  display: flex;
-  padding-right: 120px;
+.chmb2 {
+    display: flex;
+    padding-right: 120px;
+    border: 5px #000 solid;
 }
 
-.chmb1{
-  display: flex;
+.chmb1 {
+    display: flex;
     flex-direction: row-reverse;
     text-align: right;
     padding-left: 100px;
+    border: 5px #000 solid;
 }
 
-.officers{
+.officers {
     border: 5px #000 solid;
     padding: 10px;
-    background-color:rgb(245, 211, 205);
+    background-color: rgb(245, 211, 205);
 }
 
-footer{
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+footer {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin: -10px;
     width: 102%;
     bottom: 0px;
