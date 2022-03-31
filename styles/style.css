@@ -1,11 +1,9 @@
-
-
-body{
+body {
     background-color: rgb(250, 76, 76);
     z-index: 0;
 }
 
-.front_pic{
+.front_pic {
     position: relative;
     width: 105%;
     left: 0;
@@ -13,25 +11,30 @@ body{
 
 }
 
-.logo{
+.logo {
     position: absolute;
     border: 0;
     top: 10%;
     width: 45%
 }
-.img{
+
+.img {
     display: flex;
     justify-content: center;
     opacity: 80%;
 }
 
-#short.about{
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+#short.about {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     padding: 30px;
-    background-color:white;
+    background-color: white;
     border-radius: 15px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
 }
-.smallGallery{
+
+.smallGallery {
     margin: 0;
     margin-left: -10px;
     width: 105%;
@@ -39,104 +42,104 @@ body{
     height: 510px;
     display: flex;
     background: black;
-   justify-content: center;
-   align-items: center;
+    justify-content: center;
+    align-items: center;
 }
 
-.slider{
+.slider {
     width: 800px;
     height: 450px;
     border-radius: 10px;
     overflow: hidden;
 }
 
-.slides{
+.slides {
     width: 500%;
     height: 500px;
     display: flex;
 }
 
-.slides input{
+.slides input {
     display: none
 }
 
-.slide{
+.slide {
     width: 25%;
     transition: 1s;
 }
 
-.slide img{
+.slide img {
     width: 800px;
     height: 450px;
 }
 
 /* manual-nav */
-.navigation-manual{
+.navigation-manual {
     position: absolute;
     width: 800px;
     margin-top: -40px;
     display: flex;
     justify-content: center;
-  }
+}
 
-.manual-btn{
+.manual-btn {
     border: 2px solid #40D3DC;
     padding: 5px;
     border-radius: 10px;
     cursor: pointer;
     transition: 2s;
-  }
+}
 
-.manual-btn:not(:last-child){
+.manual-btn:not(:last-child) {
     margin-right: 10px;
 }
 
-.manual-btn:hover{
+.manual-btn:hover {
     background: rgb(235, 255, 52);
 }
 
-#radio1:checked ~ .first{
+#radio1:checked~.first {
     margin-left: 0;
 }
 
-#radio2:checked ~ .first{
+#radio2:checked~.first {
     margin-left: -20%;
 }
 
-#radio3:checked ~ .first{
+#radio3:checked~.first {
     margin-left: -40%;
 }
 
-#radio4:checked ~ .first{
+#radio4:checked~.first {
     margin-left: -60%;
 }
 
-#radio5:checked ~ .first{
+#radio5:checked~.first {
     margin-left: -100%;
 }
 
-#radio6:checked ~ .first{
+#radio6:checked~.first {
     margin-left: -125%;
 }
 
-#radio7:checked ~ .first{
+#radio7:checked~.first {
     margin-left: -150%;
 }
 
-#radio8:checked ~ .first{
+#radio8:checked~.first {
     margin-left: -175%;
 }
 
-footer{
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+footer {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin: -10px;
     width: 102%;
     bottom: 0px;
     padding: 15px;
 }
 
-footer{
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+footer {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin: -10px;
     width: 102%;
     bottom: 0px;
