@@ -1,12 +1,15 @@
 body{
     background-color: rgb(250, 76, 76);
     z-index: 0;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
 }
 .container{
     display: flex;
     flex-direction:column;
-    padding: 20px 100px;
+    padding: 50px 100px;
     
+
 }
 
 h1{
@@ -14,7 +17,7 @@ h1{
 }
 
 h2{
-    font-family: Georgia, 'Times New Roman', Times, serif;
+
     text-align: center;
     padding: 30px;
     background-color: black;
@@ -81,4 +84,12 @@ h3{
     border: 5px #000 solid;
     padding: 10px;
     background-color:rgb(245, 211, 205);
+}
+
+footer{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: -10px;
+    width: 102%;
+    bottom: 0px;
+    padding: 15px;
 }
