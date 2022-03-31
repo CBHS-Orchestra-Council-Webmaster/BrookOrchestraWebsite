@@ -7,9 +7,9 @@ body{
 
 .front_pic{
     position: relative;
-    width: 102%;
+    width: 105%;
     left: 0;
-    margin-left: -19px;
+    margin-left: -10px;
 
 }
 
@@ -34,7 +34,7 @@ body{
 .smallGallery{
     margin: 0;
     margin-left: -10px;
-    width: 102%;
+    width: 105%;
     padding: 0;
     height: 510px;
     display: flex;
