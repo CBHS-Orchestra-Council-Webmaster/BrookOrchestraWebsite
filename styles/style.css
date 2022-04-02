@@ -1,14 +1,18 @@
 body {
-    background-color: rgb(250, 76, 76);
+    background-color: black;
+    /* rgb(202, 7, 7); */
     z-index: 0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
 }
 
 .front_pic {
     position: relative;
-    width: 105%;
-    left: 0;
-    margin-left: -10px;
-
+    width: 100%;
+    margin-left: 0;
+    border: 0;
+    padding: 0
 }
 
 .logo {
@@ -32,12 +36,13 @@ body {
     width: 80%;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .smallGallery {
     margin: 0;
-    margin-left: -10px;
-    width: 105%;
+    width: 100%;
     padding: 0;
     height: 510px;
     display: flex;
@@ -130,18 +135,13 @@ body {
     margin-left: -175%;
 }
 
-footer {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    margin: -10px;
-    width: 102%;
-    bottom: 0px;
-    padding: 15px;
-}
+
 
 footer {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    margin: -10px;
-    width: 102%;
+    margin: 0;
+    width: 100%;
     bottom: 0px;
     padding: 15px;
+    color: red;
 }

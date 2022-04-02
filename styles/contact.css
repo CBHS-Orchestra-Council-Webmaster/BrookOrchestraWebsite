@@ -1,40 +1,41 @@
-body{
-    background-color: rgb(250, 76, 76);
+body {
+    background-color: rgb(202, 7, 7);
     z-index: 0;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-h1{
-   padding: 25px;
+h1 {
+    padding: 25px;
 
 }
 
-.contact{
+.contact {
     display: flex;
     justify-content: center;
     gap: 100px;
 }
-.contact-a{
+
+.contact-a {
     position: relative;
-   
+
     padding: 25px;
     color: black;
     text-decoration: none;
-    background-color:antiquewhite;
-    
-}   
+    background-color: antiquewhite;
 
-.contact-b{
+}
+
+.contact-b {
     position: relative;
     padding: 25px;
 
     color: black;
     text-decoration: none;
     background-color: antiquewhite;
-    
+
 }
 
-.message{
+.message {
     display: flex;
     flex-direction: column;
     background-color: black;
@@ -47,13 +48,13 @@ h1{
 
 }
 
-h2{
+h2 {
     margin-left: auto;
     margin-right: auto;
 }
 
-footer{
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+footer {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin: -10px;
     width: 102%;
     bottom: 0px;
