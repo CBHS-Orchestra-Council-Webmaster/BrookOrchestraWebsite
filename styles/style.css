@@ -52,8 +52,8 @@ body {
 }
 
 .slider {
-    width: 800px;
-    height: 450px;
+    width: 700px;
+    height: 500px;
     border-radius: 10px;
     overflow: hidden;
 }
@@ -74,21 +74,20 @@ body {
 }
 
 .slide img {
-    width: 800px;
+    width: 700px;
     height: 450px;
 }
 
 /* manual-nav */
 .navigation-manual {
-    position: absolute;
-    width: 800px;
+    position: relative;
     margin-top: -40px;
     display: flex;
     justify-content: center;
 }
 
 .manual-btn {
-    border: 2px solid #40D3DC;
+    border: 2px solid #ffffff;
     padding: 5px;
     border-radius: 10px;
     cursor: pointer;
@@ -100,7 +99,7 @@ body {
 }
 
 .manual-btn:hover {
-    background: rgb(235, 255, 52);
+    background: rgb(255, 0, 0);
 }
 
 #radio1:checked~.first {

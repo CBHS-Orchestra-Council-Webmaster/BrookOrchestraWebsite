@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(202, 7, 7);
+    background-color: white;
     z-index: 0;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
@@ -38,8 +38,7 @@ h1 {
 .message {
     display: flex;
     flex-direction: column;
-    background-color: black;
-    color: white;
+    background-color: white;
     padding: 30px;
     margin-top: 70px;
     width: min-content;
@@ -55,8 +54,8 @@ h2 {
 
 footer {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    margin: -10px;
-    width: 102%;
+    margin: 0;
+    width: 100%;
     bottom: 0px;
     padding: 15px;
 }
