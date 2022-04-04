@@ -1,8 +1,18 @@
 body {
-    background-color: black;
+    background: linear-gradient(to bottom,
+            white 30px,
+            white 0%,
+            black 0%,
+            black 100%);
     z-index: 0;
 }
 
+h1 {
+    color: white;
+    padding-top: 35px;
+    font-size: xxx-large;
+    text-align: center;
+}
 
 #gallery {
     padding-top: 100px;
@@ -17,6 +27,7 @@ body {
     column-gap: 5px;
     margin-left: auto;
     margin-right: auto;
+
 }
 
 
