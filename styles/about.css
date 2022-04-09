@@ -109,7 +109,7 @@ h3 {
 
 }
 
-.phil:hover::after {
+/* .phil:hover::after {
     content: url(../images/Orchestras/phil.png);
     position: absolute;
     top: 20px;
@@ -117,6 +117,10 @@ h3 {
     box-shadow: 20px -20px red;
 
 
+} */
+
+#philPic {
+    display: none;
 }
 
 .symph {
@@ -225,8 +229,6 @@ th {
 
 footer {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    margin: 0px;
-    width: 100%;
     bottom: 0px;
     padding: 15px;
 }

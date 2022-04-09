@@ -1,16 +1,14 @@
-body{
+body {
     background-color: rgb(250, 76, 76);
     z-index: 0;
 }
 
-h1{
+h1 {
     padding: 100px;
 }
 
-footer{
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    margin: -10px;
-    width: 102%;
+footer {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     bottom: 0px;
     padding: 15px;
 }
