@@ -1,8 +1,8 @@
 body {
-    /* background: linear-gradient(to bottom,
+    background: linear-gradient(to bottom,
             white 5%,
-
-            black 95%); */
+            black 5%,
+            black 95%);
     z-index: 0;
     margin: 0;
     font-family: 'Montserrat', sans-serif;
