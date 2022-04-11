@@ -2,7 +2,8 @@ body {
     background-color: white;
     /*rgb(202, 7, 7);  */
     z-index: 0;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
     margin: 0;
     padding: 0;
     width: 100%;
@@ -37,6 +38,7 @@ h1 {
 } */
 
 h2 {
+
     text-align: center;
     padding: 25px;
     background-color: rgb(202, 7, 7);
@@ -50,10 +52,8 @@ h2 {
 
 
 .abt {
-    /* border: 8px rgb(128, 114, 114) outset; */
     padding: 0px 10px;
     text-align: center;
-    /* background-color: rgb(245, 211, 205); */
     background-color: black;
     color: white;
 }
@@ -93,6 +93,7 @@ h3 {
     display: flex;
     justify-content: center;
     padding-top: 50px;
+    flex-wrap: wrap;
 }
 
 .phil {
@@ -109,18 +110,18 @@ h3 {
 
 }
 
-/* .phil:hover::after {
-    content: url(../images/Orchestras/phil.png);
-    position: absolute;
-    top: 20px;
-    left: 580px;
-    box-shadow: 20px -20px red;
 
-
-} */
 
 #philPic {
     display: none;
+    box-shadow: 20px -20px red, -20px 20px white;
+    position: relative;
+
+
+}
+
+.empty {
+    display: block;
 }
 
 .symph {
@@ -139,19 +140,21 @@ h3 {
 
 }
 
-.symph:hover::after {
-    content: url(../images/Orchestras/symph.png);
-    position: absolute;
-    top: 20px;
-    right: 580px;
-    box-shadow: -20px -20px red;
+#symphPic {
+    display: none;
+    box-shadow: 20px -20px white, -20px 20px red;
+    position: relative;
+
 
 
 }
 
+
+
 .orchestras2 {
     gap: 50px;
     display: flex;
+    flex-wrap: wrap;
     margin-top: 0px;
     justify-content: center;
     padding: 50px 0px;
@@ -174,12 +177,10 @@ h3 {
 
 }
 
-.chmb2:hover::after {
-    content: url(../images/Orchestras/chmb2.png);
-    position: absolute;
-    top: 40px;
-    left: 580px;
-    box-shadow: 20px 20px red;
+#ch2Pic {
+    display: none;
+    box-shadow: 20px -20px red, -20px 20px white;
+    position: relative;
 
 
 }
@@ -199,12 +200,10 @@ h3 {
 
 }
 
-.chmb1:hover::after {
-    content: url(../images/Orchestras/chmb1.png);
-    position: absolute;
-    top: 40px;
-    right: 580px;
-    box-shadow: -20px 20px red;
+#ch1Pic {
+    display: none;
+    box-shadow: 20px -20px white, -20px 20px red;
+    position: relative;
 
 
 }

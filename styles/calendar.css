@@ -7,19 +7,23 @@ body {
     width: 100%;
 }
 
-h1 {
+.container {
+    padding: 0px 10px;
     text-align: center;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    padding-top: 30px;
-    color: black;
-    font-size: xxx-large;
+    background-color: black;
+    color: white;
+}
 
+h1 {
+    padding: 50px;
+    font-size: xxx-large;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .cal {
     display: flex;
     justify-content: center;
-    padding: 15px;
+
 
 
 }

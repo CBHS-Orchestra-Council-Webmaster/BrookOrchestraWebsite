@@ -1,10 +1,25 @@
 body {
     background-color: rgb(250, 76, 76);
     z-index: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    padding: 0px 10px;
+    text-align: center;
+    background-color: black;
+    color: white;
 }
 
 h1 {
-    padding: 100px;
+    padding: 50px;
+    font-size: xxx-large;
+
+}
+
+h2 {
+    padding: 15px;
 }
 
 footer {
