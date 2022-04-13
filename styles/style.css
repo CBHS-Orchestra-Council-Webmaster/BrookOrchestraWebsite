@@ -1,14 +1,28 @@
 body {
     background: linear-gradient(to bottom,
             white 0%,
-            white 25%,
-            black 25%,
+            white 45%,
+            black 45%,
             black 100%);
     /* rgb(202, 7, 7); */
     z-index: 0;
     margin: 0;
     padding: 0;
     width: 100%;
+
+    animation: fadeInAnimation ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 .front_pic {

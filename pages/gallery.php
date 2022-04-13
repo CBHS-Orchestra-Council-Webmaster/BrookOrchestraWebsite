@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../styles/gallery.css">
     <link rel="stylesheet" href="../styles/navBar.css">
     <script src="../scripts/navBar.js"></script>
-    <!-- <script src="gallery.js"></script> -->
+    <script src="../scripts/gallery.js"></script>
     <title>Gallery</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -75,11 +75,12 @@
 
     <div class="gallery"><?php
                             // (B) GET LIST OF IMAGE FILES FROM GALLERY FOLDER
-                            $images = glob("../images/gallery/*.{jpg,jpeg,gif,png,bmp,webp}", GLOB_BRACE);
+                            $images = glob("../images/WebsiteGallery/*.{jpeg,JPEG,jpg,gif,png,bmp,webp}", GLOB_BRACE);
+                            // print_r($images);
 
                             // (C) OUTPUT IMAGES 
                             foreach ($images as $i) {
-                                printf("<img src='../images/gallery/%s'/>", basename($i));
+                                printf("<img src='../images/WebsiteGallery/%s'/>", basename($i));
                             };
 
                             ?></div>

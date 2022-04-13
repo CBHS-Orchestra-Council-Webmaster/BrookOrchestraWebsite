@@ -1,4 +1,5 @@
 window.addEventListener("DOMContentLoaded", () => {
+
     // (A) GET ALL IMAGES
     var all = document.querySelectorAll(".gallery img");
 
@@ -17,6 +18,7 @@ window.addEventListener("DOMContentLoaded", () => {
                     if (img.requestFullscreen) { img.requestFullscreen(); }
                     else if (img.webkitRequestFullscreen) { img.webkitRequestFullscreen(); }
                 }
-            });
-    }}
-  });
+            };
+        }
+    }
+});

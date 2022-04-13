@@ -6,6 +6,20 @@ body {
     z-index: 0;
     margin: 0;
     font-family: 'Montserrat', sans-serif;
+
+    animation: fadeInAnimation ease 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 .container {
@@ -55,6 +69,7 @@ h1 {
     grid-gap: 10px;
     max-width: 1200px;
     margin: 0 auto;
+    color: white;
     /* HORIZONTAL CENTER */
 }
 
@@ -82,5 +97,6 @@ h1 {
 footer {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     bottom: 0px;
+    color: red;
     padding: 15px;
 }
