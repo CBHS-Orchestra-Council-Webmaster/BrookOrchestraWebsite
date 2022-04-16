@@ -33,6 +33,10 @@
   padding: 4px 10px;
 }
 
+a {
+  text-decoration: none;
+}
+
 .tab {
   z-index: 5;
 }

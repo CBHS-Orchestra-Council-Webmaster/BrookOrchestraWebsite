@@ -23,8 +23,9 @@
     <div class="tab">
         <a class="title" href="../pages/index.html">Clear Brook High School Orchestra</a>
         <span class="icons">
-            <img src="../images/share_preclick.png" class="share">
-            <span class=="dropdown">
+            <a href="https://www.instagram.com/clearbrookorchestra/">
+                <img src="../images/share_preclick.png" class="share">
+            </a> <span class=="dropdown">
                 <img onclick="myFunction()" src="../images/menu.png" class="menu dropbtn">
 
                 <div id="myDropdown" class="dropdown-content">
