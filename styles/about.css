@@ -27,6 +27,14 @@ body {
     }
 }
 
+@media screen and (max-width: 820) {
+
+    .abt.text {
+        padding: 0px 50px;
+        padding-bottom: 50px;
+    }
+}
+
 .container {
     display: flex;
     flex-direction: column;
@@ -243,6 +251,32 @@ th {
     margin-right: auto;
 }
 
+.cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+}
+
+.item {
+    width: min-content;
+    border: solid thin black;
+    padding: 20px;
+    margin: 10px;
+}
+
+.appear {
+    transition: all 0.8s;
+    opacity: 0;
+    transform: translateY(40px);
+}
+
+.appear.inview {
+    opacity: 1;
+    transform: none;
+    transition-delay: 0.3s;
+}
 
 
 footer {

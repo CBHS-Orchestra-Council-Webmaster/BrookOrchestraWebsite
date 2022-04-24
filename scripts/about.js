@@ -25,6 +25,7 @@ function sshow() {
         sclicked = false;
         document.getElementById("philPic").style.display = 'block';
         pclicked = false;
+        window.scrollTo(0, 1400);
     }
     else {
         document.getElementById("symphPic").style.display = 'none';
@@ -61,6 +62,7 @@ function c1show() {
         c1clicked = false;
         document.getElementById("ch2Pic").style.display = 'block';
         c2clicked = false;
+        window.scrollTo(0, 2000);
     }
     else {
         document.getElementById("ch1Pic").style.display = 'none';
@@ -74,7 +76,29 @@ function c1show() {
 
 
 
+const appear = document.querySelector('.appear');
+const cb = function (entries) {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('inview');
+        } else {
+            entry.target.classList.remove('inview');
+        }
+    });
+}
+const io = new IntersectionObserver(cb);
+io.observe(appear);
 
 
-
-
+// const observer = new IntersectionObserver(entries => {
+//     entries.forEach(entry => {
+//         if (entry.isIntersecting) {
+//             document.querySelectorAll(".item")[0].classList.add("inview");
+//             document.querySelectorAll(".item")[1].classList.add("inview");
+//             document.querySelectorAll(".item")[2].classList.add("inview");
+//             document.querySelectorAll(".item")[3].classList.add("inview");
+//             document.querySelectorAll(".item")[4].classList.add("inview");
+//         }
+//     })
+// })
+// observer.observe(document.querySelector(".cont"));

@@ -1,8 +1,8 @@
 body {
     background: linear-gradient(to bottom,
             white 0%,
-            white 45%,
-            black 45%,
+            white 70%,
+            black 70%,
             black 100%);
     /* rgb(202, 7, 7); */
     z-index: 0;
@@ -13,6 +13,24 @@ body {
     animation: fadeInAnimation ease 2s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
+}
+
+/* ON SMALL SCREENS */
+@media screen and (max-width: 1000px) {
+    body {
+        background: linear-gradient(to bottom,
+                white 0%,
+                white 70%,
+                black 70%,
+                black 100%);
+    }
+
+    #short.about {
+        font-size: small;
+    }
+
+
+
 }
 
 @keyframes fadeInAnimation {
@@ -50,22 +68,37 @@ body {
 }
 
 
-#short.about {
+#short {
     font-family: 'Montserrat', sans-serif;
-    padding: 30px;
-    background-color: white;
-    border-radius: 15px;
+    line-height: 20px;
+
+}
+
+.about {
     width: 80%;
+    margin-top: 100px;
+    margin-bottom: 100px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 50px;
-    margin-bottom: 50px;
+
+}
+
+.appear {
+    transition: all 0.5s;
+    opacity: 1;
+    transform: translateY(250px);
+}
+
+.appear.inview {
+    opacity: 1;
+    transform: none;
+    transition-delay: 0.2s;
 }
 
 .smallGallery {
     margin: 0;
     width: 100%;
-    padding: 0;
+    padding: 50px 0px;
     height: 510px;
     display: flex;
     background: black;
@@ -86,17 +119,21 @@ body {
 }
 
 .slides input {
-    display: none
+    display: none;
+
+
 }
 
 .slide {
     width: 25%;
     transition: 1s;
+
 }
 
 .slide img {
     width: 700px;
     height: 450px;
+    filter: brightness(100%);
 }
 
 /* manual-nav */
