@@ -27,13 +27,7 @@ body {
     }
 }
 
-@media screen and (max-width: 820) {
 
-    .abt.text {
-        padding: 0px 50px;
-        padding-bottom: 50px;
-    }
-}
 
 .container {
     display: flex;
@@ -52,6 +46,8 @@ h1 {
     padding: 0px 150px;
     padding-bottom: 50px;
 }
+
+
 
 /* h2 {
 
@@ -98,6 +94,7 @@ h2 {
     padding: 0px 30px;
 }
 
+
 .meyer {
     width: min-content;
     height: min-content;
@@ -128,11 +125,12 @@ h3 {
     text-align: justify;
     padding: 20px;
     width: 500px;
+    transition: all .4s ease-in-out;
 }
 
 
 .phil:hover {
-    transform: scale(1.1);
+    transform: scale(1.075);
 
 }
 
@@ -146,9 +144,6 @@ h3 {
 
 }
 
-.empty {
-    display: block;
-}
 
 .symph {
     margin-top: 50px;
@@ -157,21 +152,22 @@ h3 {
     text-align: justify;
     padding: 20px;
     width: 500px;
-
+    transition: all .4s ease-in-out;
+    order: 2;
 
 }
 
 .symph:hover {
-    transform: scale(1.1);
+    transform: scale(1.075);
 
 }
 
 #symphPic {
     display: none;
     box-shadow: 20px -20px white, -20px 20px red;
-    position: relative;
+    position: inherit;
     height: min-content;
-
+    order: 1;
 
 }
 
@@ -195,12 +191,12 @@ h3 {
     padding: 20px;
     width: 500px;
     margin-bottom: 50px;
-
+    transition: all .4s ease-in-out;
 
 }
 
 .chmb2:hover {
-    transform: scale(1.1);
+    transform: scale(1.075);
 
 }
 
@@ -220,10 +216,12 @@ h3 {
     padding: 20px;
     width: 500px;
     margin-bottom: 50px;
+    transition: all .4s ease-in-out;
+    order: 2;
 }
 
 .chmb1:hover {
-    transform: scale(1.1);
+    transform: scale(1.075);
 
 }
 
@@ -232,6 +230,7 @@ h3 {
     box-shadow: 20px -20px white, -20px 20px red;
     position: relative;
     height: min-content;
+    order: 1;
 
 }
 
@@ -278,6 +277,97 @@ th {
     transition-delay: 0.3s;
 }
 
+
+@media only screen and (max-width: 1150px) {
+
+    .symph {
+        order: 1;
+
+    }
+
+    #symphPic {
+        order: 2;
+    }
+
+
+    .chmb1 {
+        order: 1;
+
+    }
+
+    #ch1Pic {
+        order: 1;
+    }
+
+}
+
+
+@media only screen and (max-width: 800px) {
+    .abt.text {
+        padding: 0px 10px;
+        padding-bottom: 50px;
+    }
+
+    .meyer {
+        margin-left: auto;
+        margin-right: auto;
+        padding: 30px;
+    }
+
+    .director {
+        flex-wrap: wrap;
+        padding: 10px;
+    }
+
+    .meyerbio {
+        padding: 0px 10px;
+
+    }
+
+    .orchestras2 {
+        gap: 10px;
+    }
+
+    .orchestras1 {
+        gap: 10px;
+    }
+
+    .phil {
+        width: 350px;
+        text-align: left;
+    }
+
+    .symph {
+        width: 350px;
+        text-align: left;
+        order: 1;
+
+    }
+
+    #symphPic {
+        order: 2;
+    }
+
+    .chmb2 {
+        width: 350px;
+        text-align: left;
+
+
+    }
+
+    .chmb1 {
+        width: 350px;
+        text-align: left;
+        order: 1;
+
+    }
+
+    #ch1Pic {
+        order: 1;
+    }
+
+
+}
 
 footer {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
