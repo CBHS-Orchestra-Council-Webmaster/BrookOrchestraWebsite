@@ -12,6 +12,8 @@ function pshow() {
     else {
         document.getElementById("philPic").style.display = 'none';
         pclicked = true;
+        document.getElementById("symphPic").style.display = 'none';
+        sclicked = true;
     }
 
 
@@ -25,7 +27,11 @@ function sshow() {
         sclicked = false;
         document.getElementById("philPic").style.display = 'block';
         pclicked = false;
-        window.scrollTo(0, 1400);
+        var scrollDiv = document.getElementById("symphPic").offsetTop;
+        window.scrollTo({
+            top: scrollDiv,
+            behavior: 'smooth'
+        });
     }
     else {
         document.getElementById("symphPic").style.display = 'none';
@@ -50,6 +56,8 @@ function c2show() {
     else {
         document.getElementById("ch2Pic").style.display = 'none';
         c2clicked = true;
+        document.getElementById("ch1Pic").style.display = 'none';
+        c1clicked = true;
     }
 
 
@@ -62,7 +70,11 @@ function c1show() {
         c1clicked = false;
         document.getElementById("ch2Pic").style.display = 'block';
         c2clicked = false;
-        window.scrollTo(0, 2000);
+        var scrollDiv = document.getElementById("ch1Pic").offsetTop;
+        window.scrollTo({
+            top: scrollDiv,
+            behavior: 'smooth'
+        });
     }
     else {
         document.getElementById("ch1Pic").style.display = 'none';
