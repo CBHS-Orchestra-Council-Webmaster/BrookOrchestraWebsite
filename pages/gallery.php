@@ -21,7 +21,7 @@
 
 <body>
     <div class="tab">
-        <a class="title" href="../pages/index.html">Clear Brook High School Orchestra</a>
+        <a class="title" href="../index.html">Clear Brook High School Orchestra</a>
         <span class="icons">
             <a href="https://www.instagram.com/clearbrookorchestra/">
                 <img src="../images/instaPic.png" class="share">
