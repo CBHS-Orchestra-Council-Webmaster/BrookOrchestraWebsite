@@ -16,6 +16,7 @@ body {
 }
 
 
+
 @keyframes fadeInAnimation {
     0% {
         opacity: 0;
@@ -40,15 +41,27 @@ body {
 .logo {
     position: absolute;
     border: 0;
-    top: 10%;
-    width: 45%
+    top: 15%;
+    width: 45%;
+
 }
 
-.img {
+.box {
     display: flex;
     justify-content: center;
-    opacity: 80%;
+    /* opacity: 80%; */
 }
+
+.appear2 {
+    transition: all 1.5s;
+    transform: scale(1.2);
+}
+
+.appear2.inview {
+    transform: none;
+    transition-delay: 0.01s;
+}
+
 
 
 #short {
@@ -89,12 +102,27 @@ body {
     align-items: center;
 }
 
+figure {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+figcaption {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+
+
+}
+
 #border {
     display: flex;
     justify-content: center;
+    margin-top: 50px;
     width: 800px;
     height: auto;
     padding: 20px;
+    padding-bottom: 5px;
     border: solid 3px red;
     transition: border-width 0.4s linear;
 }
@@ -105,7 +133,7 @@ body {
 
 .slider {
     width: 700px;
-    height: 500px;
+    height: 540px;
     overflow: hidden;
 }
 
@@ -131,12 +159,13 @@ body {
     width: 700px;
     height: auto;
     filter: brightness(100%);
+
 }
 
 /* manual-nav */
 .navigation-manual {
     position: relative;
-    margin-top: -15px;
+    margin-top: 15px;
     display: flex;
     justify-content: center;
 }
@@ -147,6 +176,7 @@ body {
     border-radius: 10px;
     cursor: pointer;
     transition: 2s;
+
 }
 
 .manual-btn:not(:last-child) {
@@ -199,8 +229,22 @@ body {
                 black 100%);
     }
 
-    #short.about {
+    .logo {
+        position: absolute;
+        border: 0;
+        top: 8%;
+        width: 50%;
+    }
+
+
+    .about {
         font-size: small;
+        width: 80%;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        margin-left: auto;
+        margin-right: auto;
+
     }
 
     #border {
