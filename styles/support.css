@@ -1,6 +1,9 @@
 body {
     z-index: 0;
-    background: linear-gradient(.25turn, white, red);
+    background: linear-gradient(to bottom,
+            white 5%,
+            white 25%,
+            rgb(202, 7, 7) 95%);
     font-family: 'Montserrat', sans-serif;
     margin: 0;
 
@@ -34,6 +37,10 @@ h1 {
 
 h2 {
     padding: 50px;
+}
+
+.main {
+    height: 800px;
 }
 
 footer {

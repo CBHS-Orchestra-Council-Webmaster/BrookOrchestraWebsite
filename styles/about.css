@@ -40,6 +40,7 @@ body {
 h1 {
     padding-top: 20px;
     font-size: xxx-large;
+    font-weight: bold;
 }
 
 .abt.text {
@@ -69,6 +70,7 @@ h2 {
     margin-top: 0;
     font-size: xx-large;
     margin-bottom: 0;
+
 }
 
 
@@ -78,6 +80,7 @@ h2 {
     text-align: center;
     background-color: black;
     color: white;
+
 }
 
 
@@ -103,6 +106,7 @@ h2 {
 h3 {
     text-align: center;
     padding: 10px;
+    font-weight: bolder;
 
 }
 
@@ -245,7 +249,9 @@ th {
 
 
     padding: 5px;
-    background-color: rgb(247, 236, 236);
+    background-color: white;
+    border: 2px red solid;
+    max-width: 200px;
 }
 
 .officers {
@@ -254,6 +260,9 @@ th {
     width: 75%;
     margin-left: auto;
     margin-right: auto;
+    color: black;
+    font-weight: 600;
+
 }
 
 .cont {
@@ -264,24 +273,7 @@ th {
 
 }
 
-.item {
-    width: min-content;
-    border: solid thin black;
-    padding: 20px;
-    margin: 10px;
-}
 
-.appear {
-    transition: all 0.8s;
-    opacity: 0;
-    transform: translateY(40px);
-}
-
-.appear.inview {
-    opacity: 1;
-    transform: none;
-    transition-delay: 0.3s;
-}
 
 
 @media only screen and (max-width: 1150px) {
@@ -309,6 +301,11 @@ th {
 
 
 @media only screen and (max-width: 800px) {
+
+    p {
+        font-size: small;
+    }
+
     .abt.text {
         padding: 0px 10px;
         padding-bottom: 50px;

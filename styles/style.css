@@ -15,23 +15,6 @@ body {
     animation-fill-mode: forwards;
 }
 
-/* ON SMALL SCREENS */
-@media screen and (max-width: 1000px) {
-    body {
-        background: linear-gradient(to bottom,
-                white 0%,
-                white 70%,
-                black 70%,
-                black 100%);
-    }
-
-    #short.about {
-        font-size: small;
-    }
-
-
-
-}
 
 @keyframes fadeInAnimation {
     0% {
@@ -84,7 +67,7 @@ body {
 }
 
 .appear {
-    transition: all 1s;
+    transition: all 1.5s;
     opacity: 1;
     transform: translateY(250px);
 }
@@ -92,7 +75,7 @@ body {
 .appear.inview {
     opacity: 1;
     transform: none;
-    transition-delay: 0.1s;
+    transition-delay: 0.0025s;
 }
 
 .smallGallery {
@@ -113,7 +96,7 @@ body {
     height: auto;
     padding: 20px;
     border: solid 3px red;
-    transition: border-width 0.6s linear;
+    transition: border-width 0.4s linear;
 }
 
 #border:hover {
@@ -146,14 +129,14 @@ body {
 
 .slide img {
     width: 700px;
-    height: 450px;
+    height: auto;
     filter: brightness(100%);
 }
 
 /* manual-nav */
 .navigation-manual {
     position: relative;
-    margin-top: -40px;
+    margin-top: -15px;
     display: flex;
     justify-content: center;
 }
@@ -204,6 +187,92 @@ body {
 
 #radio8:checked~.first {
     margin-left: -175%;
+}
+
+/* ON SMALL SCREENS */
+@media screen and (max-width: 1000px) {
+    body {
+        background: linear-gradient(to bottom,
+                white 0%,
+                white 70%,
+                black 70%,
+                black 100%);
+    }
+
+    #short.about {
+        font-size: small;
+    }
+
+    #border {
+        display: flex;
+        justify-content: center;
+        width: auto;
+        height: auto;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-right: 5px;
+        padding-left: 5px;
+
+        border: solid 4px red;
+    }
+
+    #border:hover {
+        border-width: 4px;
+    }
+
+
+    .slider {
+        width: 450px;
+        height: auto;
+        overflow: hidden;
+    }
+
+    .slides {
+        width: 700%;
+        height: auto;
+        display: flex;
+    }
+
+    .slide {
+        width: 15%;
+        transition: 1s;
+
+    }
+
+    .slide img {
+        width: 450px;
+        height: auto;
+        filter: brightness(100%);
+    }
+
+    #radio2:checked~.first {
+        margin-left: -14.25%;
+    }
+
+    #radio3:checked~.first {
+        margin-left: -30%;
+    }
+
+    #radio4:checked~.first {
+        margin-left: -45%;
+    }
+
+    #radio5:checked~.first {
+        margin-left: -60%;
+    }
+
+    #radio6:checked~.first {
+        margin-left: -75%;
+    }
+
+    #radio7:checked~.first {
+        margin-left: -90%;
+    }
+
+    #radio8:checked~.first {
+        margin-left: -105%;
+    }
+
 }
 
 

@@ -3,7 +3,11 @@ body {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
 
-    background: linear-gradient(.25turn, white, red);
+    background: linear-gradient(to bottom,
+            white 5%,
+            white 25%,
+            rgb(202, 7, 7) 95%);
+
 
     animation: fadeInAnimation ease 1s;
     animation-iteration-count: 1;
@@ -36,6 +40,10 @@ h1 {
 
 h2 {
     padding: 15px;
+}
+
+.main {
+    height: 700px;
 }
 
 footer {
