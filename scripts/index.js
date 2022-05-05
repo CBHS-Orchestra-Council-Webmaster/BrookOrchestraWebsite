@@ -7,7 +7,7 @@ $(window).scroll(function () {
     $('.logo').css({
         opacity: function () {
             var elementHeight = $(this).height(),
-                opacity = ((elementHeight - scrollTop) / (elementHeight + 10));
+                opacity = ((elementHeight - scrollTop) / (elementHeight + 50));
             return opacity;
         }
     });
