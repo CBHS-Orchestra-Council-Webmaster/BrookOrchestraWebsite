@@ -72,6 +72,7 @@ body {
 #short {
     font-family: 'Montserrat', sans-serif;
     line-height: 20px;
+    z-index: 0;
 
 }
 
@@ -81,7 +82,7 @@ body {
     margin-bottom: 100px;
     margin-left: auto;
     margin-right: auto;
-
+    z-index: 1;
 }
 
 .appear {
@@ -105,6 +106,7 @@ body {
     background: black;
     justify-content: center;
     align-items: center;
+    z-index: 2;
 }
 
 figure {
