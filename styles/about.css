@@ -244,24 +244,33 @@ h3 {
 
 }
 
+.council {
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+    font-size: large;
+    text-align: justify;
+}
+
 td,
 th {
 
 
     padding: 5px;
     background-color: white;
-    border: 2px red solid;
+    border-bottom: 2px red solid;
     max-width: 200px;
 }
 
 .officers {
-    margin-top: 75px;
+    margin-top: 50px;
     margin-bottom: 75px;
     width: 75%;
     margin-left: auto;
     margin-right: auto;
     color: black;
     font-weight: 600;
+    font-size: medium;
 
 }
 
@@ -387,6 +396,19 @@ th {
     #ch1Pic {
         order: 1;
         height: 300px;
+
+    }
+
+    .council {
+        margin-top: 50px;
+        margin-left: 25px;
+        margin-right: 25px;
+        font-size: large;
+        text-align: justify;
+    }
+
+    .officers {
+        font-size: small;
 
     }
 

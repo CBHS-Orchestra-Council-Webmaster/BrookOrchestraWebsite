@@ -38,7 +38,7 @@
 
                     <a href="../pages/news.html" class="button">News</a>
 
-                    <a href="../pages/gallery.php" class="button">Gallery</a>
+                    <a href="../pages/mainGallery.html" class="button">Gallery</a>
 
                     <a href="../pages/support.html" class="button">Support Us</a>
 
@@ -92,5 +92,3 @@
 </footer>
 
 </html>
-
-<!-- (A) CSS & JS -->
