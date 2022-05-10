@@ -36,6 +36,26 @@ h1 {
 
 }
 
+a {
+    color: white;
+
+
+}
+
+.btn {
+    width: fit-content;
+    padding: 15px;
+    border: 3px double red;
+
+    transition: all 0.4s ease-in-out;
+}
+
+.btn:hover {
+    background-color: white;
+    color: black;
+
+}
+
 #gallery {
     padding-top: 50px;
     line-height: 0;
