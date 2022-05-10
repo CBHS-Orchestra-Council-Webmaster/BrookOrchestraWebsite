@@ -292,6 +292,7 @@ th {
 
     }
 
+
     #symphPic {
         order: 2;
     }
@@ -350,8 +351,16 @@ th {
         margin-bottom: 40px;
     }
 
+    .phil:hover {
+        transform: none;
+
+    }
+
+
     #philPic {
-        height: 300px;
+        height: 250px;
+        display: block;
+        box-shadow: 10px -10px red, -10px 10px white;
 
     }
 
@@ -364,9 +373,16 @@ th {
 
     }
 
+    .symph:hover {
+        transform: none;
+
+    }
+
     #symphPic {
         order: 2;
-        height: 300px;
+        height: 250px;
+        display: block;
+        box-shadow: 10px -10px red, -10px 10px white;
 
     }
 
@@ -377,9 +393,16 @@ th {
 
     }
 
+    .chmb2:hover {
+        transform: none;
+
+    }
+
     #ch2Pic {
-        height: 300px;
         margin-bottom: 40px;
+        height: 275px;
+        display: block;
+        box-shadow: 10px -10px red, -10px 10px white;
 
 
     }
@@ -393,9 +416,16 @@ th {
 
     }
 
+    .chmb1:hover {
+        transform: none;
+
+    }
+
     #ch1Pic {
         order: 1;
-        height: 300px;
+        height: 275px;
+        display: block;
+        box-shadow: 10px -10px red, -10px 10px white;
 
     }
 

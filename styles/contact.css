@@ -76,6 +76,29 @@ h1 {
     margin-left: auto;
     margin-right: auto;
 
+
+}
+
+input {
+    height: 25px;
+}
+
+.name {
+    padding-bottom: 5px;
+}
+
+.email {
+    padding-bottom: 5px;
+}
+
+.message {
+    padding-bottom: 5px;
+
+}
+
+.subject {
+    padding-bottom: 5px;
+
 }
 
 input[type="text"],
