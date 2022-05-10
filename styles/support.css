@@ -36,13 +36,23 @@ h1 {
 
 }
 
+.cont {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.ex1 {
+    width: 60%;
+    height: auto;
+    padding: 20px;
+
+}
+
 h2 {
     padding: 50px;
 }
 
-.main {
-    height: 800px;
-}
 
 footer {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;

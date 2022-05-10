@@ -38,12 +38,46 @@ h1 {
 
 }
 
+.ex1 {
+    width: 40%;
+    height: auto;
+    padding: 20px;
+
+}
+
+.ex2 {
+    width: 50%;
+    height: auto;
+    padding: 20px;
+
+}
+
+.pamphlets {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
 h2 {
     padding: 15px;
 }
 
-.main {
-    height: 800px;
+@media screen and (max-width: 1000px) {
+    .ex1 {
+        width: 80%;
+        height: auto;
+        padding: 20px;
+
+    }
+
+    .ex2 {
+        width: 80%;
+        height: auto;
+        padding: 20px;
+
+    }
+
 }
 
 footer {
