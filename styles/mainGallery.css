@@ -173,7 +173,7 @@ a {
 
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 800px) {
     .slider {
         width: 400px;
         height: 350px;
