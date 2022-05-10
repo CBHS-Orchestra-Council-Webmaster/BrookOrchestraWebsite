@@ -51,7 +51,7 @@ h1 {
 .slides {
     width: 400%;
     height: 400px;
-    margin-left: -100%;
+    margin-left: -40%;
     display: flex;
 }
 
@@ -111,18 +111,18 @@ h1 {
 
 
 #radio1:checked~.first {
-    margin-left: 30%;
+    margin-left: 15%;
 
 }
 
 #radio2:checked~.first {
-    margin-left: 15%;
+    margin-left: 0%;
 }
 
 
 
 #radio3:checked~.first {
-    margin-left: 0%;
+    margin-left: -15%;
 }
 
 
