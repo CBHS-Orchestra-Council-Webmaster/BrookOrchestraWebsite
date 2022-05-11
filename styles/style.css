@@ -345,9 +345,19 @@ figcaption {
         margin-left: -105%;
     }
 
+
 }
 
+@media screen and (min-width: 1500px) {
 
+    .about {
+        width: 65%;
+    }
+
+    #short {
+        line-height: 1.6;
+    }
+}
 
 
 footer {
