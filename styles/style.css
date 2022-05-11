@@ -229,7 +229,7 @@ figcaption {
 }
 
 /* ON SMALL SCREENS */
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 800px) {
     body {
         background: linear-gradient(to bottom,
                 white 0%,

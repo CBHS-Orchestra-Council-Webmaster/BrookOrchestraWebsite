@@ -102,27 +102,37 @@
 
     <span class = "message">
         <h2>Contact Us</h2>
-        <div class = "name">
-            <input type="text" id="name" name="name" required
-        minlength="4" maxlength="20" size="40" rows = "10" placeholder="Name">
-        </div>
+
+        <form action="mailto:alanjcd2004@gmail.com"
         
-        <div class = "email">
-            <input type="text" id="name" name="name" required
-        minlength="4" maxlength="10" size="40" placeholder="Email">
-        </div>
-        
-        <div class = "subject">
-            <input type="text" id="name" name="name" required
-        minlength="4" maxlength="50" size="40" placeholder="Subject">
-        </div>
-        
-        <div class = "msg">
-            <textarea name="Message" wrap="soft" placeholder="Message" id="name" cols="40" rows="10">
-            </textarea>
-            <!-- <input type="text" id="name" name="name" required
-        minlength="4"  maxlength="200" size="50" placeholder="Message" style="height: 200px;"> -->
-        </div>
+        method="POST"
+        enctype="multipart/form-data"
+        name="EmailForm">
+            <div class = "name">
+                <input type="text" id="name" name="name" required
+            minlength="4" maxlength="20" size="40" rows = "10" placeholder="Name">
+            </div>
+            
+            <div class = "email">
+                <input type="text" id="name" name="name" required
+            minlength="4" maxlength="50" size="40" placeholder="Email">
+            </div>
+            
+            <div class = "subject">
+                <input type="text" id="name" name="name" required
+            minlength="4" maxlength="50" size="40" placeholder="Subject">
+            </div>
+            
+            <div class = "msg">
+                <textarea name="Message" wrap="soft" placeholder="Message" id="name" cols="40" rows="10">
+                </textarea>
+                <!-- <input type="text" id="name" name="name" required
+            minlength="4"  maxlength="200" size="50" placeholder="Message" style="height: 200px;"> -->
+            </div>
+        <input type="submit" value="Send">
+        <input type="reset" value = "Reset">
+        </form>
+       
         
  
     </span>
