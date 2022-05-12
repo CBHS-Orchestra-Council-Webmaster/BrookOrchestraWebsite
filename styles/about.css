@@ -95,12 +95,20 @@ h2 {
 
 .meyerbio {
     padding: 0px 30px;
+    font-size: medium;
 }
 
 
 .meyer {
     width: min-content;
     height: min-content;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+#name {
+    font-size: large;
+    font-weight: bold;
 }
 
 h3 {
@@ -325,6 +333,10 @@ th {
         margin-left: auto;
         margin-right: auto;
         padding: 30px;
+    }
+
+    #name {
+        text-align: center;
     }
 
     .director {

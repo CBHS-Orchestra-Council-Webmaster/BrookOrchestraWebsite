@@ -46,12 +46,13 @@ h1 {
     overflow: hidden;
     margin-left: auto;
     margin-right: auto;
+
 }
 
 .slides {
-    width: 400%;
-    height: 400px;
-    margin-left: -40%;
+    width: 300%;
+    height: auto;
+    margin-left: -80%;
     display: flex;
 }
 
@@ -70,7 +71,6 @@ h1 {
 .slide img {
     height: 400px;
     width: auto;
-
     filter: brightness(100%);
 
 }
@@ -111,18 +111,34 @@ h1 {
 
 
 #radio1:checked~.first {
-    margin-left: 15%;
+    margin-left: 35%;
 
 }
 
 #radio2:checked~.first {
-    margin-left: 0%;
+    margin-left: 25%;
 }
 
 
 
 #radio3:checked~.first {
-    margin-left: -15%;
+    margin-left: 10%;
+}
+
+#radio4:checked~.first {
+    margin-left: -10%;
+}
+
+#radio5:checked~.first {
+    margin-left: -25%;
+}
+
+#radio6:checked~.first {
+    margin-left: -35%;
+}
+
+#radio7:checked~.first {
+    margin-left: -55%;
 }
 
 
@@ -147,8 +163,10 @@ h2 {
 }
 
 .pic {
-    text-align: center;
-    padding: 200px;
+    width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
 
 }
 
@@ -257,6 +275,7 @@ a {
 
 
 footer {
+    margin-top: 100px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     bottom: 0px;
     color: red;
