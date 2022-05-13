@@ -50,9 +50,9 @@ h1 {
 }
 
 .slides {
-    width: 300%;
+    width: 100%;
     height: auto;
-    margin-left: -80%;
+    margin-left: -65%;
     display: flex;
 }
 
@@ -63,7 +63,7 @@ h1 {
 }
 
 .slide {
-    width: 15%;
+    width: 100%;
     transition: 1s;
 
 }
@@ -72,12 +72,13 @@ h1 {
     height: 400px;
     width: auto;
     filter: brightness(100%);
+    transition: 1s;
 
 }
 
 .slide iframe {
     height: 400px;
-    width: 100%;
+    width: 600px;
 
     filter: brightness(100%);
 
@@ -111,34 +112,34 @@ h1 {
 
 
 #radio1:checked~.first {
-    margin-left: 35%;
+    margin-left: 85%;
 
 }
 
 #radio2:checked~.first {
-    margin-left: 25%;
+    margin-left: 45%;
 }
 
 
 
 #radio3:checked~.first {
-    margin-left: 10%;
+    margin-left: 22%;
 }
 
 #radio4:checked~.first {
-    margin-left: -10%;
+    margin-left: 0%;
 }
 
 #radio5:checked~.first {
-    margin-left: -25%;
+    margin-left: -22%;
 }
 
 #radio6:checked~.first {
-    margin-left: -35%;
+    margin-left: -60%;
 }
 
 #radio7:checked~.first {
-    margin-left: -55%;
+    margin-left: -115%;
 }
 
 
@@ -162,11 +163,13 @@ h2 {
 
 }
 
-.pic {
+.pic22 {
     width: 100%;
     height: auto;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
 
 }
 
@@ -192,17 +195,26 @@ a {
 }
 
 @media screen and (max-width: 800px) {
+
+    #full {
+        display: none;
+    }
+
+    #choir {
+        display: none;
+    }
+
     .slider {
         width: 400px;
-        height: 350px;
+        height: 550px;
         overflow: hidden;
         margin-left: auto;
         margin-right: auto;
     }
 
     .slides {
-        width: 350%;
-        height: 400px;
+        width: 300%;
+        height: auto;
         margin-left: -100%;
         display: flex;
     }
@@ -214,22 +226,23 @@ a {
     }
 
     .slide {
-        width: 30%;
+        width: 20%;
         transition: 1s;
 
     }
 
     .slide img {
         height: auto;
-        width: 400px;
+        width: 300px;
 
         filter: brightness(100%);
 
     }
 
     .slide iframe {
-        width: 400px;
-        height: 250px;
+        width: 350px;
+        height: 480px;
+        margin-left: 60px;
         filter: brightness(100%);
 
     }
@@ -237,7 +250,7 @@ a {
     /* manual-nav */
     .navigation-manual {
         position: relative;
-        margin-top: -125px;
+        margin-top: -10px;
         display: flex;
         justify-content: center;
     }
@@ -254,21 +267,44 @@ a {
 
 
 
-    #radio1:checked~.first {
-        margin-left: 28%;
+    #radio1 {
+        display: none;
 
+
+    }
+
+    .radio1 {
+        display: none;
     }
 
     #radio2:checked~.first {
-        margin-left: -1%;
+        margin-left: 40%;
     }
-
 
 
     #radio3:checked~.first {
-        margin-left: -32%;
+        margin-left: 20%;
     }
 
+    #radio4:checked~.first {
+        margin-left: 0%;
+    }
+
+    #radio5:checked~.first {
+        margin-left: -40%;
+    }
+
+    #radio6:checked~.first {
+        margin-left: -70%;
+    }
+
+    #radio7 {
+        visibility: hidden;
+    }
+
+    .radio7 {
+        display: none;
+    }
 
 }
 

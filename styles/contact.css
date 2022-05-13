@@ -1,8 +1,8 @@
 body {
     background: linear-gradient(to bottom,
             white 3%,
-            white 60%,
-            rgb(202, 7, 7) 60%,
+            white 650px,
+            rgb(202, 7, 7) 650px,
             rgb(202, 7, 7) 95%);
 
     z-index: 0;
@@ -62,9 +62,12 @@ h1 {
 
     color: black;
     text-decoration: none;
-    text-align: center;
 
 
+}
+
+td {
+    padding-right: 10px;
 }
 
 .message {
@@ -118,6 +121,16 @@ h2 {
 }
 
 @media screen and (max-width: 640px) {
+
+    body {
+        background: linear-gradient(to bottom,
+                white 3%,
+                white 750px,
+                rgb(202, 7, 7) 750px,
+                rgb(202, 7, 7) 95%);
+
+    }
+
     .contact {
         display: flex;
         flex-direction: column;
@@ -134,6 +147,7 @@ h2 {
         margin-left: auto;
         margin-right: auto;
     }
+
 
 }
 

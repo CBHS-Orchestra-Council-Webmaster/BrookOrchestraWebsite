@@ -2,7 +2,7 @@ body {
     z-index: 0;
     background: linear-gradient(to bottom,
             white 5%,
-            white 25%,
+            white 5%,
             rgb(202, 7, 7) 95%);
     font-family: 'Montserrat', sans-serif;
     margin: 0;
@@ -50,8 +50,35 @@ h1 {
 }
 
 h2 {
-    padding: 50px;
+    padding: 10px;
+    text-align: center;
+    border: 3px dotted black;
+
 }
+
+td,
+th {
+
+
+    padding: 15px;
+    background-color: white;
+    max-width: 800px;
+}
+
+
+
+.members {
+    margin-bottom: 75px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    color: black;
+    font-weight: 600;
+    font-size: medium;
+
+}
+
+
 
 
 footer {

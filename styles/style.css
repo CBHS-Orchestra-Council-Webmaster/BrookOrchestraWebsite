@@ -312,8 +312,8 @@ figcaption {
     }
 
     .slide img {
-        width: auto;
-        height: 400px;
+        width: 400px;
+        height: auto;
         filter: brightness(100%);
     }
 
