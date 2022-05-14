@@ -156,7 +156,7 @@ h3 {
     box-shadow: 20px -20px red, -20px 20px white;
     position: relative;
     height: min-content;
-
+    margin-top: 50px;
 }
 
 
@@ -183,6 +183,8 @@ h3 {
     position: inherit;
     height: min-content;
     order: 1;
+    margin-top: 50px;
+
 
 }
 
@@ -223,6 +225,8 @@ h3 {
     box-shadow: 20px -20px red, -20px 20px white;
     position: relative;
     height: min-content;
+    margin-top: 50px;
+
 
 }
 
@@ -249,6 +253,8 @@ h3 {
     position: relative;
     height: min-content;
     order: 1;
+    margin-top: 50px;
+
 
 }
 
@@ -373,6 +379,8 @@ th {
         height: 250px;
         display: block;
         box-shadow: 10px -10px red, -10px 10px white;
+        margin-top: 0px;
+
 
     }
 
@@ -395,6 +403,8 @@ th {
         height: 250px;
         display: block;
         box-shadow: 10px -10px red, -10px 10px white;
+        margin-top: 0px;
+
 
     }
 
@@ -415,6 +425,8 @@ th {
         height: 275px;
         display: block;
         box-shadow: 10px -10px red, -10px 10px white;
+        margin-top: 0px;
+
 
 
     }
@@ -438,6 +450,8 @@ th {
         height: 275px;
         display: block;
         box-shadow: 10px -10px red, -10px 10px white;
+        margin-top: 0px;
+
 
     }
 

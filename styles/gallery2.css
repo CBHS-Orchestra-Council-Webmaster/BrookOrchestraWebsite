@@ -2,6 +2,8 @@ body {
     background: linear-gradient(to bottom,
             white 3%,
             black 3%,
+
+
             black 95%);
     z-index: 0;
     margin: 0;
