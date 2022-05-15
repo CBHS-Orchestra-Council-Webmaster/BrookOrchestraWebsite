@@ -18,7 +18,7 @@ body {
     top:20px;
     z-index: 50;
     text-align: right;
-    font-size: small;
+    font-size: 1em;
     font-weight: lighter;
     width: 100%;
     height: max-content;
@@ -359,7 +359,7 @@ figcaption {
 
 #contact {
     font-weight: lighter;
-    font-size: small;
+    font-size: 1em;
     background-color: #FCF3F1;
     color: black;
     height: max-content;
@@ -367,6 +367,6 @@ figcaption {
 footer{
     padding-top: 10px;
     background-color: #FCF3F1;
-    font-size: small;
+    font-size: 1em;
     font-weight: lighter;
 }
