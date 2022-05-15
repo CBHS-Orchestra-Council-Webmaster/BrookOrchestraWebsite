@@ -56,7 +56,7 @@ a:hover{
 
 
 .logo {
-    font-size: 7em;
+    font-size: 7rm;
     font-weight: 10;
     position: absolute;
     border: 0;
@@ -359,7 +359,7 @@ figcaption {
 
 #contact {
     font-weight: lighter;
-    font-size: 1em;
+    font-size: 1rm;
     background-color: #FCF3F1;
     color: black;
     height: max-content;
@@ -367,6 +367,6 @@ figcaption {
 footer{
     padding-top: 10px;
     background-color: #FCF3F1;
-    font-size: 1em;
+    font-size: 1rm;
     font-weight: lighter;
 }
