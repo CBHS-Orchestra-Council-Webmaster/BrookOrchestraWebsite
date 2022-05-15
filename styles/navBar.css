@@ -25,8 +25,35 @@
 }
 
 .navLogo {
-  padding: 5px;
-  width: 125px;
+  padding-top: 5px;
+  padding-left: 5px;
+  padding-bottom: 2px;
+  height: 33px;
+  width: 113px;
+  position: relative;
+  display: inline-block;
+
+}
+
+.colorLogo {
+  opacity: 0;
+  padding-top: 4px;
+  padding-left: 4px;
+  height: 35px;
+  width: 115px;
+  position: absolute;
+  left: 0px;
+  transition: all .5s ease-in-out;
+
+
+
+
+}
+
+
+
+.card:hover .colorLogo {
+  opacity: 1;
 }
 
 .icons {
@@ -35,9 +62,10 @@
 }
 
 .share {
-  width: 25px;
+  width: 23px;
   padding: 4px 10px;
-  margin-top: 8px
+  margin-top: 5px;
+
 }
 
 a {
@@ -50,16 +78,16 @@ a {
 
 /* Dropdown Button */
 .menu {
-  width: 32px;
+  width: 30px;
   padding-right: 10px;
-  margin-top: 8px
+  margin-top: 5px;
+
 }
 
 /* Dropdown button on hover & focus */
 .dropbtn:hover,
 .dropbtn:focus,
-.navLogo:hover,
-.navLogo:focus,
+
 .share:hover,
 .share:focus {
   background-color: none;

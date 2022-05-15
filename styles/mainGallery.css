@@ -1,7 +1,7 @@
 body {
     background: linear-gradient(to bottom,
-            white 3%,
-            black 5%,
+            white 45px,
+            black 45px,
             black 95%);
     z-index: 0;
     margin: 0;
@@ -26,6 +26,7 @@ body {
 
 .container {
     padding: 0px 10px;
+    margin-top: 45px;
     text-align: center;
     background-color: black;
     color: white;
