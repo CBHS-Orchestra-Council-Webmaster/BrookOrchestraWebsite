@@ -1,9 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+
 body {
-    background: linear-gradient(to bottom,
-            white 0%,
-            white 70%,
-            black 70%,
-            black 100%);
+    font-family: 'Montserrat', sans-serif;
+    background-color: #16161d;
     /* rgb(202, 7, 7); */
     z-index: 0;
     margin: 0;
@@ -14,8 +13,25 @@ body {
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
+.header{
+    position: sticky;
+    top:20px;
+    z-index: 50;
+    text-align: right;
+    font-size: small;
+    font-weight: lighter;
+    width: 100%;
+    height: max-content;
+}
 
-
+a:link, a:visited {
+    padding: 5px;
+    color: white;
+    transition: color .3s ease-in;
+  }
+a:hover{
+    color: red;
+}
 
 @keyframes fadeInAnimation {
     0% {
@@ -33,28 +49,25 @@ body {
     margin-left: 0;
     border: 0;
     padding: 0;
-    margin-top: 55px;
-    filter: brightness(60%);
+    margin-top: -100px;
+    filter: brightness(40%);
 }
 
 
 
 .logo {
+    font-size: 7em;
+    font-weight: 10;
     position: absolute;
     border: 0;
-    top: 15%;
-    width: 40%;
-
-
-
-
-
+    text-align: center;
+    top: 20%;
+    color: white;
 }
 
 .box {
     display: flex;
     justify-content: center;
-    /* opacity: 80%; */
 }
 
 .appear2 {
@@ -77,6 +90,7 @@ body {
 }
 
 .about {
+    color: white;
     width: 80%;
     margin-top: 100px;
     margin-bottom: 100px;
@@ -98,12 +112,10 @@ body {
 }
 
 .smallGallery {
-    margin: 0;
     width: 100%;
-    padding: 50px 0px;
-    height: 510px;
+    height: 600px;
     display: flex;
-    background: black;
+    background: transparent;
     justify-content: center;
     align-items: center;
     z-index: 2;
@@ -130,14 +142,9 @@ figcaption {
     height: auto;
     padding: 20px;
     padding-bottom: 5px;
-    border: solid 3px white;
-    transition: border-width 0.3s ease-in;
+
 }
 
-#border:hover {
-    border-width: 10px;
-    border-color: red;
-}
 
 .slider {
     width: 700px;
@@ -243,17 +250,7 @@ figcaption {
         overflow: hidden;
     }
 
-    .front_pic {
-        position: relative;
-        width: 200%;
-        margin-left: 0;
-        border: 0;
-        padding: 0;
-        margin-top: 55px;
-        filter: brightness(60%);
-        left: -50%;
 
-    }
 
 
     .logo {
@@ -360,9 +357,16 @@ figcaption {
 }
 
 
-footer {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    bottom: 0px;
-    padding: 15px;
-    color: red;
+#contact {
+    font-weight: lighter;
+    font-size: small;
+    background-color: #FCF3F1;
+    color: black;
+    height: max-content;
+}
+footer{
+    padding-top: 10px;
+    background-color: #FCF3F1;
+    font-size: small;
+    font-weight: lighter;
 }
