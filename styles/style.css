@@ -18,7 +18,7 @@ body {
     top:20px;
     z-index: 50;
     text-align: right;
-    font-size: 1em;
+    font-size: 2vw;
     font-weight: lighter;
     width: 100%;
     height: max-content;
@@ -56,7 +56,7 @@ a:hover{
 
 
 .logo {
-    font-size: 7rm;
+    font-size: 7vw;
     font-weight: 10;
     position: absolute;
     border: 0;
@@ -68,6 +68,7 @@ a:hover{
 .box {
     display: flex;
     justify-content: center;
+    align-items: center
 }
 
 .appear2 {
@@ -83,19 +84,17 @@ a:hover{
 
 
 #short {
-    font-family: 'Montserrat', sans-serif;
     line-height: 20px;
     z-index: 0;
-
+    font-size: 1vw;
+    font-weight: smaller;
 }
 
 .about {
     color: white;
-    width: 80%;
     margin-top: 100px;
-    margin-bottom: 100px;
     margin-left: auto;
-    margin-right: auto;
+    margin-right:auto;
     z-index: 1;
 }
 
@@ -237,51 +236,21 @@ figcaption {
 
 /* ON SMALL SCREENS */
 @media screen and (max-width: 800px) {
-    body {
-        background: linear-gradient(to bottom,
-                white 0%,
-                white 70%,
-                black 70%,
-                black 100%);
-    }
-
-    .bg {
-        max-width: 100%;
-        overflow: hidden;
-    }
-
-
-
 
     .logo {
         position: absolute;
         border: 0;
-        top: 10%;
-        width: 70%;
+        text-align: center;
+        color: white;
+        top:50px;
     }
 
 
     .about {
-        font-size: small;
-        width: 80%;
         margin-top: 50px;
-        margin-bottom: 50px;
         margin-left: auto;
         margin-right: auto;
 
-    }
-
-    #border {
-        display: flex;
-        justify-content: center;
-        width: auto;
-        height: auto;
-        padding-top: 30px;
-        padding-bottom: 30px;
-        padding-right: 5px;
-        padding-left: 5px;
-
-        border: solid 3px white;
     }
 
     #border:hover {
@@ -359,7 +328,6 @@ figcaption {
 
 #contact {
     font-weight: lighter;
-    font-size: 1rm;
     background-color: #FCF3F1;
     color: black;
     height: max-content;
@@ -367,6 +335,9 @@ figcaption {
 footer{
     padding-top: 10px;
     background-color: #FCF3F1;
-    font-size: 1rm;
     font-weight: lighter;
+}
+
+h3{
+    font-size:1.5vw;
 }
