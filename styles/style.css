@@ -27,7 +27,7 @@ body {
 a:link, a:visited {
     padding: 5px;
     color: white;
-    transition: color .3s ease-in;
+    transition: all .3s ease-in;
   }
 a:hover{
     color: red;

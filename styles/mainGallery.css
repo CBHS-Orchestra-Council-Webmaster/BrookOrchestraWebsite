@@ -13,7 +13,10 @@ body {
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
-
+#preview{
+    position: absolute;
+    top:-20px;
+}
 .header{
     position: sticky;
     top:20px;
@@ -28,7 +31,7 @@ body {
 a:link, a:visited {
     padding: 5px;
     color: white;
-    transition: color .3s ease-in;
+    transition: all .3s ease-in;
   }
 a:hover{
     color: red;
@@ -49,9 +52,6 @@ h1 {
     font-size: xxx-large;
 
 }
-
-
-
 
 .slider {
     width: 1200px;
@@ -195,24 +195,21 @@ a {
 
 }
 
-#2021{
+.viewbtn{
     border: none;
-    background:#e21835;
+    background: #e21835;
+    font-size: large;
+    border: 5px;
+    border-radius: 5px;
+    transform: scale(1);
+    display: table;
+    margin: 0 auto;
+    transition: all .3s ease-in;
 }
-
-.btn {
-    width: fit-content;
-    padding: 25px;
-    border: 5px double black;
-    background-color: red;
-    transition: all 0.4s ease-in-out;
-}
-
-.btn:hover {
-    background-color: white;
-
-    color: black;
-
+.viewbtn:hover{
+    transform: scale(1.05);
+    color: white;
+    transition: all .3s ease-in-out;
 }
 
 .logo22 {
