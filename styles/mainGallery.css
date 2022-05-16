@@ -16,14 +16,22 @@ body {
 
 .header{
     position: sticky;
-    top:10px;
+    top:20px;
     z-index: 50;
     text-align: right;
     font-size: 2vw;
     font-weight: lighter;
     width: 100%;
     height: max-content;
-    padding-bottom:25px;
+}
+
+a:link, a:visited {
+    padding: 5px;
+    color: white;
+    transition: color .3s ease-in;
+  }
+a:hover{
+    color: red;
 }
 
 @keyframes fadeInAnimation {
