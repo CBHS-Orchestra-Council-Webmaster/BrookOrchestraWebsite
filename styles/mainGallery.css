@@ -198,7 +198,7 @@ a {
 .viewbtn{
     border: none;
     background: #e21835;
-    font-size: large;
+    font-size: 3vw;
     border: 5px;
     border-radius: 5px;
     transform: scale(1);
