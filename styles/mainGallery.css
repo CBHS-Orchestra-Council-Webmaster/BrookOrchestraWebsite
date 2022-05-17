@@ -341,10 +341,15 @@ a {
 
 
 
-footer {
-    margin-top: 100px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    bottom: 0px;
-    color: red;
-    padding: 15px;
+#contact {
+    clear:both;
+    font-weight: lighter;
+    background-color: #FCF3F1;
+    color: black;
+    height: max-content;
+}
+footer{
+    padding-top: 10px;
+    background-color: #FCF3F1;
+    font-weight: lighter;
 }
