@@ -95,13 +95,12 @@ a:hover{
     margin-top: 100px;
     margin-left: auto;
     margin-right:auto;
-    z-index: 1;
 }
 
 .appear {
     transition: all 1.5s;
     opacity: 1;
-    transform: translateY(250px);
+    transform: translateX(-10vw);
 }
 
 .appear.inview {
