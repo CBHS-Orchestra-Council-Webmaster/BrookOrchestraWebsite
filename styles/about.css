@@ -1,0 +1,478 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: white;
+    /*rgb(202, 7, 7);  */
+    z-index: 0;
+    font-family: 'Montserrat', sans-serif;
+    /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+    margin: 0;
+    padding: 0;
+    width: 100%;
+
+    animation: fadeInAnimation ease 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 45px;
+
+
+}
+
+h1 {
+    padding-top: 20px;
+    font-size: xxx-large;
+    font-weight: bold;
+}
+
+.abt.text {
+    padding: 0px 150px;
+    padding-bottom: 50px;
+}
+
+
+
+/* h2 {
+
+    text-align: center;
+    padding: 30px;
+    background-color: rgb(1, 1, 1);
+    color: white;
+    border-radius: 15px;
+    
+} */
+
+h2 {
+
+    text-align: center;
+    padding: 25px;
+    background-color: rgb(202, 7, 7);
+    color: white;
+    height: 50px;
+    margin-top: 0;
+    font-size: xx-large;
+    margin-bottom: 0;
+
+}
+
+
+
+.abt {
+    padding: 0px 10px;
+    text-align: center;
+    background-color: black;
+    color: white;
+
+}
+
+
+.director {
+
+    /* border: 5px #000 solid; */
+    padding: 50px;
+    display: flex;
+    /* background-color: rgb(245, 211, 205); */
+}
+
+
+.meyerbio {
+    padding: 0px 30px;
+    font-size: medium;
+}
+
+
+.meyer {
+    width: min-content;
+    height: min-content;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+#name {
+    font-size: large;
+    font-weight: bold;
+}
+
+h3 {
+    text-align: center;
+    padding: 10px;
+    font-weight: bolder;
+
+}
+
+.orchestras {
+    background-color: black;
+
+}
+
+.orchestras1 {
+    gap: 50px;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    flex-wrap: wrap;
+    max-width: 1500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.phil {
+    margin-top: 50px;
+    background-color: white;
+    text-align: justify;
+    padding: 20px;
+    width: 500px;
+    transition: all .4s ease-in-out;
+}
+
+
+.phil:hover {
+    transform: scale(1.075);
+
+}
+
+
+
+#philPic {
+    display: none;
+    box-shadow: 20px -20px red, -20px 20px white;
+    position: relative;
+    height: min-content;
+    margin-top: 50px;
+}
+
+
+.symph {
+    margin-top: 50px;
+    background-color: white;
+    text-align: right;
+    text-align: justify;
+    padding: 20px;
+    width: 500px;
+    transition: all .4s ease-in-out;
+    order: 2;
+
+}
+
+.symph:hover {
+    transform: scale(1.075);
+
+}
+
+#symphPic {
+    display: none;
+    box-shadow: 20px -20px white, -20px 20px red;
+    position: inherit;
+    height: min-content;
+    order: 1;
+    margin-top: 50px;
+
+
+}
+
+
+
+.orchestras2 {
+    gap: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 0px;
+    justify-content: center;
+    padding: 50px 0px;
+    max-width: 1500px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+
+.chmb2 {
+    background-color: white;
+    padding-right: 120px;
+    text-align: justify;
+    padding: 20px;
+    width: 500px;
+    margin-bottom: 50px;
+    transition: all .4s ease-in-out;
+
+}
+
+.chmb2:hover {
+    transform: scale(1.075);
+
+}
+
+#ch2Pic {
+    display: none;
+    box-shadow: 20px -20px red, -20px 20px white;
+    position: relative;
+    height: min-content;
+    margin-top: 50px;
+
+
+}
+
+.chmb1 {
+    background-color: white;
+    text-align: right;
+    padding-left: 100px;
+    text-align: justify;
+    padding: 20px;
+    width: 500px;
+    margin-bottom: 50px;
+    transition: all .4s ease-in-out;
+    order: 2;
+}
+
+.chmb1:hover {
+    transform: scale(1.075);
+
+}
+
+#ch1Pic {
+    display: none;
+    box-shadow: 20px -20px white, -20px 20px red;
+    position: relative;
+    height: min-content;
+    order: 1;
+    margin-top: 50px;
+
+
+}
+
+.council {
+    margin-top: 50px;
+    margin-left: 150px;
+    margin-right: 150px;
+    font-size: large;
+    text-align: justify;
+}
+
+td,
+th {
+
+
+    padding: 5px;
+    background-color: white;
+    border-bottom: 2px red solid;
+    max-width: 200px;
+}
+
+.officers {
+    margin-top: 50px;
+    margin-bottom: 75px;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    color: black;
+    font-weight: 600;
+    font-size: medium;
+
+}
+
+.cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+}
+
+
+
+
+@media only screen and (max-width: 1150px) {
+
+    .symph {
+        order: 1;
+
+    }
+
+
+    #symphPic {
+        order: 2;
+    }
+
+
+    .chmb1 {
+        order: 1;
+
+    }
+
+    #ch1Pic {
+        order: 1;
+    }
+
+}
+
+
+@media only screen and (max-width: 800px) {
+
+    p {
+        font-size: small;
+    }
+
+    .abt.text {
+        padding: 0px 10px;
+        padding-bottom: 50px;
+    }
+
+    .meyer {
+        margin-left: auto;
+        margin-right: auto;
+        padding: 30px;
+    }
+
+    #name {
+        text-align: center;
+    }
+
+    .director {
+        flex-wrap: wrap;
+        padding: 10px;
+    }
+
+    .meyerbio {
+        padding: 0px 10px;
+
+    }
+
+    .orchestras2 {
+        gap: 10px;
+    }
+
+    .orchestras1 {
+        gap: 10px;
+    }
+
+    .phil {
+        width: 350px;
+        text-align: left;
+        margin-bottom: 40px;
+    }
+
+    .phil:hover {
+        transform: none;
+
+    }
+
+
+    #philPic {
+        height: 250px;
+        display: block;
+        box-shadow: 10px -10px red, -10px 10px white;
+        margin-top: 0px;
+
+
+    }
+
+    .symph {
+        width: 350px;
+        text-align: left;
+        order: 1;
+        margin-bottom: 40px;
+
+
+    }
+
+    .symph:hover {
+        transform: none;
+
+    }
+
+    #symphPic {
+        order: 2;
+        height: 250px;
+        display: block;
+        box-shadow: 10px -10px red, -10px 10px white;
+        margin-top: 0px;
+
+
+    }
+
+    .chmb2 {
+        width: 350px;
+        text-align: left;
+        margin-bottom: 40px;
+
+    }
+
+    .chmb2:hover {
+        transform: none;
+
+    }
+
+    #ch2Pic {
+        margin-bottom: 40px;
+        height: 275px;
+        display: block;
+        box-shadow: 10px -10px red, -10px 10px white;
+        margin-top: 0px;
+
+
+
+    }
+
+    .chmb1 {
+        width: 350px;
+        text-align: left;
+        order: 1;
+        margin-bottom: 40px;
+
+
+    }
+
+    .chmb1:hover {
+        transform: none;
+
+    }
+
+    #ch1Pic {
+        order: 1;
+        height: 275px;
+        display: block;
+        box-shadow: 10px -10px red, -10px 10px white;
+        margin-top: 0px;
+
+
+    }
+
+    .council {
+        margin-top: 50px;
+        margin-left: 25px;
+        margin-right: 25px;
+        font-size: large;
+        text-align: justify;
+    }
+
+    .officers {
+        font-size: small;
+
+    }
+
+
+}
+
+footer {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    bottom: 0px;
+    padding: 15px;
+}

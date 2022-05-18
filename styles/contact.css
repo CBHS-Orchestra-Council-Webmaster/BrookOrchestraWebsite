@@ -1,0 +1,159 @@
+body {
+    background: linear-gradient(to bottom,
+            white 3%,
+            white 650px,
+            rgb(202, 7, 7) 650px,
+            rgb(202, 7, 7) 95%);
+
+    z-index: 0;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+
+    animation: fadeInAnimation ease 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+.container {
+    margin-top: 45px;
+    padding: 0px 10px;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+h1 {
+    padding: 50px;
+    font-size: xxx-large;
+
+}
+
+.contact {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.contact-a {
+
+
+    padding: 25px;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+
+
+}
+
+.contact-b {
+
+    padding: 25px;
+
+    color: black;
+    text-decoration: none;
+
+
+}
+
+td {
+    padding-right: 10px;
+}
+
+.message {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    margin-top: 200px;
+    width: min-content;
+    margin-left: auto;
+    margin-right: auto;
+
+
+}
+
+input {
+    height: 25px;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.name {
+    padding-bottom: 5px;
+}
+
+.email {
+    padding-bottom: 5px;
+}
+
+.message {
+    padding-bottom: 5px;
+
+}
+
+.subject {
+    padding-bottom: 5px;
+
+}
+
+input[type="text"],
+textarea {
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    font-family: 'Montserrat', sans-serif;
+
+
+}
+
+h2 {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media screen and (max-width: 640px) {
+
+    body {
+        background: linear-gradient(to bottom,
+                white 3%,
+                white 750px,
+                rgb(202, 7, 7) 750px,
+                rgb(202, 7, 7) 95%);
+
+    }
+
+    .contact {
+        display: flex;
+        flex-direction: column;
+
+
+    }
+
+    .contact-a {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .contact-b {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+}
+
+footer {
+
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    bottom: 0px;
+    padding: 15px;
+}

@@ -1,0 +1,144 @@
+.tab {
+  background-color: rgb(253, 251, 251);
+  /* opacity: 0.5; filter: alpha(opacity=50); */
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Montserrat', sans-serif;
+  height: auto;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 80%;
+}
+
+
+.title {
+  text-decoration: none;
+  font-size: large;
+  color: black;
+  padding-left: 5px;
+  padding-top: 3px;
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 550;
+}
+
+.navLogo {
+  padding-top: 5px;
+  padding-left: 5px;
+  padding-bottom: 2px;
+  height: 33px;
+  width: 113px;
+  position: relative;
+  display: inline-block;
+
+}
+
+.colorLogo {
+  opacity: 0;
+  padding-top: 4px;
+  padding-left: 4px;
+  height: 35px;
+  width: 115px;
+  position: absolute;
+  left: 0px;
+  transition: all .5s ease-in-out;
+
+
+
+
+}
+
+
+
+.card:hover .colorLogo {
+  opacity: 1;
+}
+
+.icons {
+  flex-direction: column;
+  right: 0;
+}
+
+.share {
+  width: 23px;
+  padding: 4px 10px;
+  margin-top: 5px;
+
+}
+
+a {
+  text-decoration: none;
+}
+
+.tab {
+  z-index: 5;
+}
+
+/* Dropdown Button */
+.menu {
+  width: 30px;
+  padding-right: 10px;
+  margin-top: 5px;
+
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover,
+.dropbtn:focus,
+
+.share:hover,
+.share:focus {
+  background-color: none;
+  opacity: 0.75;
+
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: rgb(211, 204, 204)
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {
+  display: block;
+}
+
+@media screen and (max-width: 500px) {
+  .title {
+    text-decoration: none;
+    font-size: medium;
+    color: black;
+    padding-left: 5px;
+    padding-top: 3px;
+    /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 550;
+  }
+}
