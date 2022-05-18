@@ -14,16 +14,7 @@ body {
     animation-fill-mode: forwards;
 }
 
-.header {
-    position: sticky;
-    top: 20px;
-    z-index: 50;
-    text-align: right;
-    font-size: 2vw;
-    font-weight: lighter;
-    width: 100%;
-    height: max-content;
-}
+
 
 a:link,
 a:visited {
@@ -89,7 +80,8 @@ a:hover {
 #short {
     line-height: 20px;
     z-index: 0;
-    font-size: 1vw;
+    font-size: 1.25vw;
+    line-height: 2.5vw;
     font-weight: smaller;
 }
 
@@ -98,6 +90,7 @@ a:hover {
     margin-top: 100px;
     margin-left: auto;
     margin-right: auto;
+    padding: 0px 100px;
 }
 
 .appear {
@@ -239,12 +232,27 @@ figcaption {
 /* ON SMALL SCREENS */
 @media screen and (max-width: 800px) {
 
+
+
+    .front_pic {
+        position: relative;
+        width: 200%;
+        margin-left: 0;
+        border: 0;
+        padding: 0;
+        margin-top: -40px;
+        filter: brightness(60%);
+        left: -50%;
+
+    }
+
     .logo {
         position: absolute;
         border: 0;
         text-align: center;
         color: white;
-        top: 50px;
+        font-weight: 400;
+        top: 150px;
     }
 
 
@@ -252,6 +260,8 @@ figcaption {
         margin-top: 50px;
         margin-left: auto;
         margin-right: auto;
+        padding: 0px 15px;
+
 
     }
 
