@@ -11,6 +11,14 @@ $(window).scroll(function () {
             return opacity;
         }
     });
+
+    $('.headerbg').css({
+        opacity: function () {
+            var elementHeight = $(this).height(),
+                opacity = ((elementHeight + scrollTop) / (elementHeight + 1000));
+            return opacity;
+        }
+    });
 });
 
 
