@@ -13,8 +13,25 @@ body {
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
+.header{
+    position: sticky;
+    top:20px;
+    z-index: 50;
+    text-align: right;
+    font-size: 2vw;
+    font-weight: lighter;
+    width: 100%;
+    height: max-content;
+}
 
-
+a:link, a:visited {
+    padding: 5px;
+    color: white;
+    transition: all .3s ease-in;
+  }
+a:hover{
+    color: red;
+}
 
 a:link,
 a:visited {
@@ -80,6 +97,7 @@ a:hover {
 #short {
     line-height: 20px;
     z-index: 0;
+
     font-size: 1.25vw;
     line-height: 2.5vw;
     font-weight: smaller;
@@ -234,6 +252,7 @@ figcaption {
 
 
 
+
     .front_pic {
         position: relative;
         width: 200%;
@@ -264,6 +283,7 @@ figcaption {
 
 
     }
+
 
     #border:hover {
         border-width: 3px;
@@ -350,6 +370,7 @@ footer {
     background-color: #FCF3F1;
     font-weight: lighter;
 }
+
 
 h3 {
     font-size: 1.5vw;
