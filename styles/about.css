@@ -32,13 +32,13 @@ body {
 .container {
     display: flex;
     flex-direction: column;
-    padding-top: 45px;
+    padding-top: 0px;
 
 
 }
 
 h1 {
-    padding-top: 20px;
+    padding-top: 50px;
     font-size: xxx-large;
     font-weight: bold;
 }
@@ -78,7 +78,7 @@ h2 {
 .abt {
     padding: 0px 10px;
     text-align: center;
-    background-color: black;
+    background-color: #16161d;
     color: white;
 
 }
@@ -119,7 +119,7 @@ h3 {
 }
 
 .orchestras {
-    background-color: black;
+    background-color: #16161d;
 
 }
 

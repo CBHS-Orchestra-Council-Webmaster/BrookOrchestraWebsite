@@ -13,13 +13,16 @@ body {
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
-#preview{
+
+#preview {
     position: absolute;
-    top:-20px;
+    display: flex;
+    justify-content: center;
 }
-.header{
+
+.header {
     position: sticky;
-    top:20px;
+    top: 20px;
     z-index: 50;
     text-align: right;
     font-size: 2vw;
@@ -28,12 +31,14 @@ body {
     height: max-content;
 }
 
-a:link, a:visited {
+a:link,
+a:visited {
     padding: 5px;
     color: white;
     transition: all .3s ease-in;
-  }
-a:hover{
+}
+
+a:hover {
     color: red;
 }
 
@@ -195,7 +200,7 @@ a {
 
 }
 
-.viewbtn{
+.viewbtn {
     border: none;
     background: #e21835;
     font-size: 3vw;
@@ -206,7 +211,8 @@ a {
     margin: 0 auto;
     transition: all .3s ease-in;
 }
-.viewbtn:hover{
+
+.viewbtn:hover {
     transform: scale(1.05);
     color: white;
     transition: all .3s ease-in-out;
@@ -342,14 +348,19 @@ a {
 
 
 #contact {
-    clear:both;
+    clear: both;
     font-weight: lighter;
     background-color: #FCF3F1;
     color: black;
     height: max-content;
 }
-footer{
+
+footer {
     padding-top: 10px;
     background-color: #FCF3F1;
     font-weight: lighter;
+    bottom: 0px;
+    padding: 15px;
+    bottom: 0px;
+    padding: 15px;
 }

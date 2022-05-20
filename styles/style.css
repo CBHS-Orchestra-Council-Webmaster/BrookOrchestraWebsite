@@ -16,16 +16,6 @@ body {
 
 
 
-a:link,
-a:visited {
-    padding: 5px;
-    color: white;
-    transition: all .3s ease-in;
-}
-
-a:hover {
-    color: red;
-}
 
 @keyframes fadeInAnimation {
     0% {
@@ -43,7 +33,6 @@ a:hover {
     margin-left: 0;
     border: 0;
     padding: 0;
-    margin-top: -100px;
     filter: brightness(40%);
 }
 
@@ -55,7 +44,7 @@ a:hover {
     position: absolute;
     border: 0;
     text-align: center;
-    top: 20%;
+    top: 15%;
     color: white;
 }
 
@@ -113,6 +102,7 @@ a:hover {
     justify-content: center;
     align-items: center;
     z-index: 2;
+    padding-bottom: 50px;
 }
 
 figure {
@@ -232,6 +222,10 @@ figcaption {
 /* ON SMALL SCREENS */
 @media screen and (max-width: 800px) {
 
+    .bg {
+        max-width: 100%;
+        overflow: hidden;
+    }
 
 
     .front_pic {
@@ -251,8 +245,9 @@ figcaption {
         border: 0;
         text-align: center;
         color: white;
-        font-weight: 400;
+        font-weight: 350;
         top: 150px;
+
     }
 
 
@@ -263,6 +258,14 @@ figcaption {
         padding: 0px 15px;
 
 
+    }
+
+    #short {
+        line-height: 20px;
+        z-index: 0;
+        font-size: 3vw;
+        line-height: 4.5vw;
+        font-weight: smaller;
     }
 
     #border:hover {
@@ -343,13 +346,20 @@ figcaption {
     background-color: #FCF3F1;
     color: black;
     height: max-content;
+    padding: 25px;
 }
 
 footer {
     padding-top: 10px;
     background-color: #FCF3F1;
     font-weight: lighter;
+    bottom: 0px;
+    padding: 15px;
+    bottom: 0px;
+    padding: 15px;
 }
+
+
 
 h3 {
     font-size: 1.5vw;

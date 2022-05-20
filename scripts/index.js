@@ -1,4 +1,8 @@
-
+window.scroll({
+    top: 0,
+    left: 0,
+    behavior: 'smooth'
+});
 
 
 $(window).scroll(function () {
@@ -15,7 +19,7 @@ $(window).scroll(function () {
     $('.headerbg').css({
         opacity: function () {
             var elementHeight = $(this).height(),
-                opacity = ((elementHeight + scrollTop) / (elementHeight + 1000));
+                opacity = scrollTop / 500;
             return opacity;
         }
     });
