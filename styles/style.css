@@ -14,7 +14,27 @@ body {
     animation-fill-mode: forwards;
 }
 
+.header {
+    position: sticky;
+    top: 20px;
+    z-index: 50;
+    text-align: right;
+    font-size: 2vw;
+    font-weight: lighter;
+    width: 100%;
+    height: max-content;
+}
 
+a:link,
+a:visited {
+    padding: 5px;
+    color: white;
+    transition: all .3s ease-in;
+}
+
+a:hover {
+    color: red;
+}
 
 
 @keyframes fadeInAnimation {
@@ -69,6 +89,7 @@ body {
 #short {
     line-height: 20px;
     z-index: 0;
+
     font-size: 1.25vw;
     line-height: 2.5vw;
     font-weight: smaller;
@@ -228,6 +249,7 @@ figcaption {
     }
 
 
+
     .front_pic {
         position: relative;
         width: 200%;
@@ -260,13 +282,6 @@ figcaption {
 
     }
 
-    #short {
-        line-height: 20px;
-        z-index: 0;
-        font-size: 3vw;
-        line-height: 4.5vw;
-        font-weight: smaller;
-    }
 
     #border:hover {
         border-width: 3px;
@@ -358,7 +373,6 @@ footer {
     bottom: 0px;
     padding: 15px;
 }
-
 
 
 h3 {
