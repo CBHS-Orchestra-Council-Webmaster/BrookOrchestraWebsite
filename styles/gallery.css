@@ -1,13 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+
 body {
-    background: linear-gradient(to bottom,
-            white 3%,
-            black 5%,
-            black 95%);
+    font-family: 'Montserrat', sans-serif;
+    background-color: #16161d;
+    /* rgb(202, 7, 7); */
     z-index: 0;
     margin: 0;
-    font-family: 'Montserrat', sans-serif;
+    padding: 0;
+    width: 100%;
 
-    animation: fadeInAnimation ease 1s;
+    animation: fadeInAnimation ease 2s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }

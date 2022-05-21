@@ -2,7 +2,7 @@ body {
     z-index: 0;
     background: linear-gradient(to bottom,
             white 5%,
-            black 5%,
+            #16161d 5%,
             rgb(202, 7, 7) 95%);
     font-family: 'Montserrat', sans-serif;
     margin: 0;
@@ -27,7 +27,7 @@ body {
     text-align: center;
     top: 0;
     color: white;
-    background-color: black;
+    background-color: #16161d;
 
 }
 
