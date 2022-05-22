@@ -1,3 +1,11 @@
+window.scroll({
+    top: 0,
+    left: 0,
+    behavior: 'smooth'
+});
+
+
+
 var pclicked = true;
 var sclicked = true;
 var c1clicked = true;

@@ -17,3 +17,16 @@ window.onclick = function (event) {
         }
     }
 }
+
+$(window).scroll(function () {
+    var scrollTop = $(this).scrollTop();
+
+
+    $('.headerbg').css({
+        opacity: function () {
+            var elementHeight = $(this).height(),
+                opacity = scrollTop / 500;
+            return opacity;
+        }
+    });
+});

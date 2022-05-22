@@ -9,8 +9,8 @@ body {
 
 
     background: linear-gradient(to bottom,
-            white 5%,
-            rgb(202, 7, 7) 5%,
+
+            rgb(202, 7, 7) 0%,
             rgb(202, 7, 7) 15%,
             black 95%);
 
@@ -30,15 +30,16 @@ body {
 }
 
 .container {
-    margin-top: 43px;
+    margin-top: -40px;
     padding: 0px 10px;
     text-align: center;
-    background-color: black;
+    background-color: #16161d;
     color: white;
 }
 
 h1 {
     padding: 50px;
+    padding-top: 80px;
     font-size: xxx-large;
     font-family: 'Montserrat', sans-serif;
 }

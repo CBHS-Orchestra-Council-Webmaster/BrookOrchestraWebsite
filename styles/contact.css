@@ -26,8 +26,9 @@ body {
 
 
 .container {
-    margin-top: 45px;
-    padding: 0px 10px;
+    margin-top: 0px;
+    padding-top: 10px;
+
     text-align: center;
     background-color: #16161d;
     color: white;
@@ -38,6 +39,23 @@ h1 {
     font-size: xxx-large;
 
 }
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:link,
+a:visited {
+    padding: 5px;
+    color: black;
+    transition: all .3s ease-in;
+}
+
+a:hover {
+    color: red;
+}
+
 
 .contact {
     display: flex;

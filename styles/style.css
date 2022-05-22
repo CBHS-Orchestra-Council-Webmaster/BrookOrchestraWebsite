@@ -37,6 +37,7 @@ a:hover {
 }
 
 
+
 @keyframes fadeInAnimation {
     0% {
         opacity: 0;
@@ -106,24 +107,22 @@ a:hover {
 .appear {
     transition: all 1.5s;
     opacity: 1;
-    transform: translateX(-10vw);
+    transform: translateX(-15vw);
 }
 
 .appear.inview {
     opacity: 1;
     transform: none;
-    transition-delay: 0.0025s;
+    transition-delay: 0.0050s;
 }
 
 .smallGallery {
-    width: 100%;
-    height: 600px;
     display: flex;
-    background: transparent;
+    width: 100%;
+    height: fit-content;
     justify-content: center;
     align-items: center;
     z-index: 2;
-    padding-bottom: 50px;
 }
 
 figure {
@@ -139,44 +138,24 @@ figcaption {
 
 }
 
-#border {
-    display: flex;
-    justify-content: center;
-    margin-top: 50px;
-    width: 800px;
-    height: auto;
-    padding: 20px;
-    padding-bottom: 5px;
-
-}
 
 
-.slider {
-    width: 700px;
-    height: 540px;
-    overflow: hidden;
-}
+
 
 .slides {
     width: 500%;
-    height: 500px;
+    height: auto;
     display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 75px;
 }
 
-.slides input {
-    display: none;
 
 
-}
-
-.slide {
-    width: 25%;
-    transition: 1s;
-
-}
 
 .slide img {
-    width: 700px;
+    width: 60vw;
     height: auto;
     filter: brightness(100%);
 
@@ -184,60 +163,57 @@ figcaption {
 
 /* manual-nav */
 .navigation-manual {
-    position: relative;
-    margin-top: 15px;
+    position: absolute;
     display: flex;
     justify-content: center;
+    z-index: 100;
+    gap: 60vw;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
-.manual-btn {
-    border: 2px solid #ffffff;
-    padding: 5px;
-    border-radius: 10px;
+
+
+/* Next & previous buttons */
+.prev,
+.next {
     cursor: pointer;
-    transition: 2s;
-
+    width: auto;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 5px 0px 0px 5px;
+    user-select: none;
 }
 
-.manual-btn:not(:last-child) {
-    margin-right: 10px;
+/* Position the "next button" to the right */
+.next {
+
+    border-radius: 0px 5px 5px 0px;
 }
 
-.manual-btn:hover {
-    background: rgb(255, 0, 0);
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: white;
 }
 
-
-#radio1:checked~.first {
-    margin-left: 0;
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 2s;
 }
 
-#radio2:checked~.first {
-    margin-left: -20%;
-}
+@keyframes fade {
+    from {
+        opacity: .2
+    }
 
-#radio3:checked~.first {
-    margin-left: -40%;
-}
-
-#radio4:checked~.first {
-    margin-left: -60%;
-}
-
-#radio5:checked~.first {
-    margin-left: -100%;
-}
-
-#radio6:checked~.first {
-    margin-left: -125%;
-}
-
-#radio7:checked~.first {
-    margin-left: -150%;
-}
-
-#radio8:checked~.first {
-    margin-left: -175%;
+    to {
+        opacity: 1
+    }
 }
 
 /* ON SMALL SCREENS */
@@ -282,64 +258,39 @@ figcaption {
 
     }
 
+    #short {
+        line-height: 20px;
+        z-index: 0;
 
-    #border:hover {
-        border-width: 3px;
-        border-color: white;
+        font-size: x-small;
+        font-weight: smaller;
     }
 
 
-    .slider {
-        width: 400px;
-        height: auto;
-        overflow: hidden;
+    .prev,
+    .next {
+        cursor: pointer;
+        width: auto;
+        padding: 8px;
+        color: white;
+        font-weight: bold;
+        font-size: 12px;
+        transition: 0.6s ease;
+        border-radius: 5px 0px 0px 5px;
+        user-select: none;
     }
 
-    .slides {
-        width: 700%;
-        height: auto;
-        display: flex;
+    .next {
+
+        border-radius: 0px 5px 5px 0px;
     }
 
-    .slide {
-        width: 15%;
-        transition: 1s;
-
+    figcaption {
+        font-size: x-small;
     }
 
-    .slide img {
-        width: 400px;
-        height: auto;
-        filter: brightness(100%);
-    }
 
-    #radio2:checked~.first {
-        margin-left: -14.25%;
-    }
 
-    #radio3:checked~.first {
-        margin-left: -30%;
-    }
-
-    #radio4:checked~.first {
-        margin-left: -45%;
-    }
-
-    #radio5:checked~.first {
-        margin-left: -60%;
-    }
-
-    #radio6:checked~.first {
-        margin-left: -75%;
-    }
-
-    #radio7:checked~.first {
-        margin-left: -90%;
-    }
-
-    #radio8:checked~.first {
-        margin-left: -105%;
-    }
 
 
 }

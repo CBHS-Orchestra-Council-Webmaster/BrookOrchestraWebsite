@@ -25,7 +25,7 @@
   height: 4.5vw;
   width: 100%;
   z-index: 2;
-  opacity: 0;
+  opacity: 0.5;
 
 }
 
@@ -70,26 +70,29 @@
 
 
 
-a {
+.nav {
   text-decoration: none;
   color: white;
 }
 
-a:link,
-a:visited {
+.nav:link,
+.nav:visited {
   padding: 5px;
   color: white;
   transition: all .3s ease-in;
 }
 
-a:hover {
+.nav:hover {
   color: red;
 }
+
+
 
 
 .tab {
   z-index: 5;
 }
+
 
 
 
