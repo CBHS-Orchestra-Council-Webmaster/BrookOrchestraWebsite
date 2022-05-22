@@ -1,10 +1,5 @@
 body {
-    background: linear-gradient(to bottom,
-            white 3%,
-            white 650px,
-            rgb(202, 7, 7) 650px,
-            rgb(202, 7, 7) 95%);
-
+    background-color: #CA0707;
     z-index: 0;
     font-family: 'Montserrat', sans-serif;
     margin: 0;
@@ -13,6 +8,9 @@ body {
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
+
+
+
 
 @keyframes fadeInAnimation {
     0% {
@@ -60,6 +58,8 @@ a:hover {
 .contact {
     display: flex;
     justify-content: space-around;
+    padding-bottom: 100px;
+    background-color: #FCF3F1;
 
 }
 
@@ -86,16 +86,20 @@ a:hover {
 
 td {
     padding-right: 10px;
+    padding-bottom: 10px;
 }
+
+
 
 .message {
     display: flex;
     flex-direction: column;
     padding: 30px;
-    margin-top: 200px;
+    margin-top: 10px;
     width: min-content;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 100px;
 
 
 }
@@ -127,7 +131,7 @@ input {
 input[type="text"],
 textarea {
     color: rgb(0, 0, 0);
-    background-color: rgb(255, 255, 255);
+    background-color: #FCF3F1;
     font-family: 'Montserrat', sans-serif;
 
 
@@ -136,16 +140,49 @@ textarea {
 h2 {
     margin-left: auto;
     margin-right: auto;
+    text-align: center;
 }
+
+#contact {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+h3 {
+    font-size: 1.5vw;
+    margin: 0px;
+    padding: 5px;
+}
+
+.content {
+    margin: 0px;
+}
+
+#rights {
+    text-align: center;
+    padding-top: 20px;
+    margin: 0px;
+}
+
+footer {
+    padding-top: 10px;
+    background-color: #FCF3F1;
+    height: max-content;
+    font-weight: lighter;
+    bottom: 0px;
+    padding: 15px;
+    margin: 0px;
+
+}
+
 
 @media screen and (max-width: 640px) {
 
     body {
-        background: linear-gradient(to bottom,
-                white 3%,
-                white 750px,
-                rgb(202, 7, 7) 750px,
-                rgb(202, 7, 7) 95%);
+        background-color: #CA0707;
 
     }
 
@@ -166,12 +203,22 @@ h2 {
         margin-right: auto;
     }
 
+    h3 {
+        margin: 0px;
+        font-size: 3vw;
+        padding: 0px;
+    }
 
-}
+    .content {
+        margin: 0px;
+        font-size: 2.5vw;
+    }
 
-footer {
+    #rights {
+        font-size: 2.5vw;
 
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    bottom: 0px;
-    padding: 15px;
+    }
+
+
+
 }

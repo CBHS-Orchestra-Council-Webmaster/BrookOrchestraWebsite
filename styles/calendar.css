@@ -11,8 +11,9 @@ body {
     background: linear-gradient(to bottom,
 
             rgb(202, 7, 7) 0%,
-            rgb(202, 7, 7) 15%,
-            black 95%);
+            rgb(202, 7, 7) 50%,
+            #16161d 85%,
+            #16161d 100%);
 
     animation: fadeInAnimation ease 1s;
     animation-iteration-count: 1;
@@ -47,15 +48,45 @@ h1 {
 .cal {
     display: flex;
     justify-content: center;
+    margin-bottom: 100px;
+    margin-top: 50px;
 
 
 
 }
 
+#contact {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+h3 {
+    font-size: 1.5vw;
+    margin: 0px;
+    padding: 5px;
+}
+
+.content {
+    margin: 0px;
+}
+
+#rights {
+    text-align: center;
+    padding-top: 20px;
+    margin: 0px;
+}
+
 footer {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding-top: 10px;
+    color: white;
+    background-color: #16161d;
+    height: max-content;
+    font-weight: lighter;
     bottom: 0px;
     padding: 15px;
-    color: white;
+    margin: 0px;
 
 }

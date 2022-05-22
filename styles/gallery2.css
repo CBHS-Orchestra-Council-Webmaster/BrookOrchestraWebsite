@@ -76,6 +76,32 @@ a {
     /* to match column gap */
 }
 
+a {
+    text-decoration: none;
+    color: white;
+}
+
+
+.viewbtn {
+    border: none;
+    background: #e21835;
+    font-size: 2.25vw;
+    padding: 10px;
+    border: 5px;
+    border-radius: 5px;
+    transform: scale(1);
+    display: table;
+    margin: 0 auto;
+    transition: all .3s ease-in;
+}
+
+.viewbtn:hover {
+    transform: scale(1.05);
+    color: white;
+    transition: all .3s ease-in-out;
+}
+
+
 @media screen and (max-width: 640px) {
 
     #gallery {
@@ -103,9 +129,37 @@ a {
 }
 
 
+#contact {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+h3 {
+    font-size: 1.5vw;
+    margin: 0px;
+    padding: 5px;
+}
+
+.content {
+    margin: 0px;
+}
+
+#rights {
+    text-align: center;
+    padding-top: 20px;
+    margin: 0px;
+}
+
 footer {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding-top: 10px;
+    background-color: #FCF3F1;
+    height: max-content;
+    font-weight: lighter;
     bottom: 0px;
     padding: 15px;
-    color: red;
+    margin: 0px;
+
 }

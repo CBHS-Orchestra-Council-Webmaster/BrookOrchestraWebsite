@@ -216,6 +216,51 @@ figcaption {
     }
 }
 
+#contact {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+h3 {
+    font-size: 1.5vw;
+    margin: 0px;
+    padding: 5px;
+}
+
+.content {
+    margin: 0px;
+
+}
+
+#rights {
+    text-align: center;
+    padding-top: 20px;
+    margin: 0px;
+}
+
+footer {
+    padding-top: 10px;
+    background-color: #FCF3F1;
+    height: max-content;
+    font-weight: lighter;
+    bottom: 0px;
+    padding: 15px;
+    margin: 0px;
+
+}
+
+
+.svg {
+    z-index: -1;
+    width: 100%;
+    margin-top: 68px;
+    position: absolute;
+}
+
+
 /* ON SMALL SCREENS */
 @media screen and (max-width: 800px) {
 
@@ -289,6 +334,25 @@ figcaption {
         font-size: x-small;
     }
 
+    h3 {
+        margin: 0px;
+        font-size: 3vw;
+        padding: 0px;
+    }
+
+    .content {
+        margin: 0px;
+        font-size: 2.5vw;
+    }
+
+    #rights {
+        font-size: 2.5vw;
+
+    }
+
+    .svg {
+        margin-top: 30px;
+    }
 
 
 
@@ -304,28 +368,4 @@ figcaption {
     #short {
         line-height: 1.6;
     }
-}
-
-
-#contact {
-    font-weight: lighter;
-    background-color: #FCF3F1;
-    color: black;
-    height: max-content;
-    padding: 25px;
-}
-
-footer {
-    padding-top: 10px;
-    background-color: #FCF3F1;
-    font-weight: lighter;
-    bottom: 0px;
-    padding: 15px;
-    bottom: 0px;
-    padding: 15px;
-}
-
-
-h3 {
-    font-size: 1.5vw;
 }

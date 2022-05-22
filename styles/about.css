@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    background-color: white;
+    background-color: #FCF3F1;
     /*rgb(202, 7, 7);  */
     z-index: 0;
     font-family: 'Montserrat', sans-serif;
@@ -33,6 +33,7 @@ body {
     display: flex;
     flex-direction: column;
     padding-top: 0px;
+    z-index: 50;
 
 
 }
@@ -64,7 +65,7 @@ h2 {
 
     text-align: center;
     padding: 25px;
-    background-color: rgb(202, 7, 7);
+    background-color: #CA0707;
     color: white;
     height: 50px;
     margin-top: 0;
@@ -264,6 +265,8 @@ h3 {
     margin-right: 150px;
     font-size: large;
     text-align: justify;
+
+
 }
 
 td,
@@ -271,7 +274,7 @@ th {
 
 
     padding: 5px;
-    background-color: white;
+    background-color: #FCF3F1;
     border-bottom: 2px red solid;
     max-width: 200px;
 }
@@ -468,11 +471,59 @@ th {
 
     }
 
+    h3 {
+        margin: 0px;
+        font-size: 3vw;
+        padding: 0px;
+    }
+
+    .content {
+        margin: 0px;
+        font-size: 2.5vw;
+    }
+
+    #rights {
+        font-size: 2.5vw;
+
+    }
+
+
+
 
 }
 
+#contact {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+h3 {
+    font-size: 1.5vw;
+    margin: 0px;
+    padding: 5px;
+}
+
+.content {
+    margin: 0px;
+}
+
+#rights {
+    text-align: center;
+    padding-top: 20px;
+    margin: 0px;
+}
+
 footer {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding-top: 10px;
+    color: white;
+    background-color: #16161d;
+    height: max-content;
+    font-weight: lighter;
     bottom: 0px;
     padding: 15px;
+    margin: 0px;
+
 }
