@@ -365,7 +365,8 @@ footer {
     }
 
     .navigation-manual {
-        bottom: 90px;
+        margin-top: auto;
+        margin-bottom: auto;
         gap: 80vw;
 
     }
