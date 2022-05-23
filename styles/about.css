@@ -302,32 +302,53 @@ th {
 
 
 
-@media only screen and (max-width: 1150px) {
-
-    .symph {
-        order: 1;
-
-    }
 
 
-    #symphPic {
-        order: 2;
-    }
+
+#contact {
+    display: flex;
+    justify-content: center;
+}
 
 
-    .chmb1 {
-        order: 1;
 
-    }
 
-    #ch1Pic {
-        order: 1;
-    }
+.title {
+    color: white;
+    font-size: 1.5vw;
+    margin: 0px;
+    padding: 5px;
+}
+
+.content {
+    margin: 0px;
+    font-size: 1vw;
+}
+
+#rights {
+    text-align: center;
+    padding-top: 20px;
+    margin: 0px;
+}
+
+footer {
+    padding-top: 10px;
+    color: white;
+    background-color: #16161d;
+    height: max-content;
+    font-weight: lighter;
+    bottom: 0px;
+    padding: 15px;
+    margin: 0px;
 
 }
 
 
 @media only screen and (max-width: 800px) {
+
+    h1 {
+        font-size: 40px;
+    }
 
     p {
         font-size: small;
@@ -471,7 +492,7 @@ th {
 
     }
 
-    h3 {
+    .title {
         margin: 0px;
         font-size: 3vw;
         padding: 0px;
@@ -492,38 +513,26 @@ th {
 
 }
 
-#contact {
-    display: flex;
-    justify-content: center;
-}
+@media only screen and (max-width: 1150px) {
+
+    .symph {
+        order: 1;
+
+    }
 
 
+    #symphPic {
+        order: 2;
+    }
 
 
-h3 {
-    font-size: 1.5vw;
-    margin: 0px;
-    padding: 5px;
-}
+    .chmb1 {
+        order: 1;
 
-.content {
-    margin: 0px;
-}
+    }
 
-#rights {
-    text-align: center;
-    padding-top: 20px;
-    margin: 0px;
-}
-
-footer {
-    padding-top: 10px;
-    color: white;
-    background-color: #16161d;
-    height: max-content;
-    font-weight: lighter;
-    bottom: 0px;
-    padding: 15px;
-    margin: 0px;
+    #ch1Pic {
+        order: 1;
+    }
 
 }

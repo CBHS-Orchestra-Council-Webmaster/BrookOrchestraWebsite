@@ -127,50 +127,7 @@ a {
 
 
 
-@media screen and (max-width: 800px) {
 
-
-
-    .logo22 {
-        width: 350px;
-
-    }
-
-    h3 {
-        margin: 0px;
-        font-size: 3vw;
-        padding: 0px;
-    }
-
-    .content {
-        margin: 0px;
-        font-size: 2.5vw;
-    }
-
-    #rights {
-        font-size: 2.5vw;
-
-    }
-
-
-    h3 {
-        margin: 0px;
-        font-size: 3vw;
-        padding: 0px;
-    }
-
-    .content {
-        margin: 0px;
-        font-size: 2.5vw;
-    }
-
-    #rights {
-        font-size: 2.5vw;
-
-    }
-
-
-}
 
 #contact {
     display: flex;
@@ -204,5 +161,36 @@ footer {
     bottom: 0px;
     padding: 15px;
     margin: 0px;
+
+}
+
+@media screen and (max-width: 800px) {
+
+
+
+    .logo22 {
+        width: 350px;
+
+    }
+
+
+
+
+    h3 {
+        margin: 0px;
+        font-size: 3vw;
+        padding: 0px;
+    }
+
+    .content {
+        margin: 0px;
+        font-size: 2.5vw;
+    }
+
+    #rights {
+        font-size: 2.5vw;
+
+    }
+
 
 }

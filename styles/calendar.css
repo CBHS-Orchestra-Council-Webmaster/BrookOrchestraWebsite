@@ -1,5 +1,4 @@
 body {
-    background-color: white;
     /* rgb(202, 7, 7); */
     z-index: 0;
     margin: 0;
@@ -71,6 +70,7 @@ h3 {
 
 .content {
     margin: 0px;
+    font-size: 1vw;
 }
 
 #rights {
@@ -89,4 +89,23 @@ footer {
     padding: 15px;
     margin: 0px;
 
+}
+
+@media only screen and (max-width: 800px) {
+
+    h3 {
+        margin: 0px;
+        font-size: 3vw;
+        padding: 0px;
+    }
+
+    .content {
+        margin: 0px;
+        font-size: 2.5vw;
+    }
+
+    #rights {
+        font-size: 2.5vw;
+
+    }
 }

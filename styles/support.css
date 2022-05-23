@@ -35,6 +35,7 @@ body {
 .container.two {
 
     background-color: #FCF3F1;
+    top: -20px;
 }
 
 h1 {
@@ -94,32 +95,6 @@ th {
 
 }
 
-@media screen and (max-width: 640px) {
-    .members {
-        margin-bottom: 75px;
-        width: 90%;
-
-
-    }
-
-    h3 {
-        margin: 0px;
-        font-size: 3vw;
-        padding: 0px;
-    }
-
-    .content {
-        margin: 0px;
-        font-size: 2.5vw;
-    }
-
-    #rights {
-        font-size: 2.5vw;
-
-    }
-
-
-}
 
 
 #contact {
@@ -155,5 +130,32 @@ footer {
     bottom: 0px;
     padding: 15px;
     margin: 0px;
+
+}
+
+@media screen and (max-width: 640px) {
+    .members {
+        margin-bottom: 75px;
+        width: 90%;
+
+
+    }
+
+    h3 {
+        margin: 0px;
+        font-size: 3vw;
+        padding: 0px;
+    }
+
+    .content {
+        margin: 0px;
+        font-size: 2.5vw;
+    }
+
+    #rights {
+        font-size: 2.5vw;
+
+    }
+
 
 }
