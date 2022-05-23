@@ -125,7 +125,7 @@ h3 {
 }
 
 .orchestras1 {
-    gap: 50px;
+    gap: 10vw;
     display: flex;
     justify-content: center;
     padding-top: 50px;
@@ -192,10 +192,10 @@ h3 {
 
 
 .orchestras2 {
-    gap: 50px;
+    gap: 10vw;
     display: flex;
     flex-wrap: wrap;
-    margin-top: 0px;
+    margin-top: 10vw;
     justify-content: center;
     padding: 50px 0px;
     max-width: 1500px;
