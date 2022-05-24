@@ -46,12 +46,6 @@ h1 {
 
 }
 
-.cont {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding-bottom: 50px;
-}
 
 
 
@@ -73,20 +67,32 @@ th {
 
     padding: 15px;
     background-color: #FCF3F1;
-    max-width: 800px;
+    width: 800px;
+    vertical-align: top;
+
+
 }
 
 
 
 .members {
-    margin-bottom: 75px;
-    width: 70%;
+
+    display: flex;
+    padding-bottom: 50px;
+    width: 90%;
+    margin-bottom: 50px;
     margin-left: auto;
     margin-right: auto;
     color: black;
     font-weight: 600;
-    font-size: medium;
+    font-size: 1.5vw;
 
+
+}
+
+.membersMob,
+.second {
+    display: none;
 }
 
 .pdf {
@@ -166,10 +172,19 @@ footer {
 
 @media screen and (max-width: 640px) {
     .members {
-        margin-bottom: 75px;
-        width: 90%;
+        display: none;
 
+    }
 
+    .membersMob {
+        display: flex;
+        width: 95%;
+
+        margin-left: auto;
+        margin-right: auto;
+        color: black;
+        font-weight: 600;
+        font-size: 3vw;
     }
 
     h3 {
@@ -192,5 +207,16 @@ footer {
         font-size: 4vw;
     }
 
+    .second {
+        display: flex;
+        width: 95%;
+
+        margin-left: auto;
+        margin-right: auto;
+        color: black;
+        font-weight: 600;
+        font-size: 3vw;
+        padding-bottom: 100px;
+    }
 
 }

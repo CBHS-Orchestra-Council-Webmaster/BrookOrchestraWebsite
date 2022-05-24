@@ -34,6 +34,8 @@ function sshow() {
         document.getElementById("symphPic").style.display = 'block';
         sclicked = false;
         document.getElementById("philPic").style.display = 'block';
+        document.getElementById("philPic").style.opacity = 'block';
+
         pclicked = false;
         var scrollDiv = document.getElementById("symphPic").offsetTop;
         window.scrollTo({

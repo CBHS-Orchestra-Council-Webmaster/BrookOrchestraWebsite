@@ -65,7 +65,10 @@
 }
 
 
-
+.list {
+  display: flex;
+  gap: 1.5vw;
+}
 
 
 
@@ -208,4 +211,8 @@
     font-family: 'Montserrat', sans-serif;
     font-weight: 550;
   }
+
+
 }
+
+@media screen and (max-width: 500px) {}
