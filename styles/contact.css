@@ -7,11 +7,14 @@ body {
     animation: fadeInAnimation ease 1s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
+
 }
 
 html,
 body {
     width: 100%;
+    overflow-x: hidden;
+
 }
 
 

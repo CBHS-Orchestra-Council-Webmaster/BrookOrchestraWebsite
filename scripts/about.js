@@ -16,12 +16,22 @@ function pshow() {
     if (pclicked) {
         document.getElementById("philPic").style.display = 'block';
         pclicked = false;
+
+
+        document.getElementById("ghost1").style.display = 'none';
+
     }
     else {
+
         document.getElementById("philPic").style.display = 'none';
         pclicked = true;
-        document.getElementById("symphPic").style.display = 'none';
-        sclicked = true;
+
+        if (!sclicked) {
+            document.getElementById("ghost1").style.display = 'block';
+
+        }
+
+
     }
 
 
@@ -33,10 +43,12 @@ function sshow() {
     if (sclicked) {
         document.getElementById("symphPic").style.display = 'block';
         sclicked = false;
-        document.getElementById("philPic").style.display = 'block';
-        document.getElementById("philPic").style.opacity = 'block';
+        if (pclicked) {
+            document.getElementById("ghost1").style.display = 'block';
 
-        pclicked = false;
+        }
+        // document.getElementById("philPic").style.display = 'block';
+
         var scrollDiv = document.getElementById("symphPic").offsetTop;
         window.scrollTo({
             top: scrollDiv,
@@ -46,8 +58,13 @@ function sshow() {
     else {
         document.getElementById("symphPic").style.display = 'none';
         sclicked = true;
-        document.getElementById("philPic").style.display = 'none';
-        pclicked = true;
+        // document.getElementById("philPic").style.display = 'none';
+        // pclicked = true;
+
+        if (pclicked) {
+            document.getElementById("ghost1").style.display = 'none';
+
+        }
     }
 
 
@@ -62,12 +79,19 @@ function c2show() {
         document.getElementById("ch2Pic").style.display = 'block';
         c2clicked = false;
 
+        document.getElementById("ghost2").style.display = 'none';
+
+
     }
     else {
         document.getElementById("ch2Pic").style.display = 'none';
         c2clicked = true;
-        document.getElementById("ch1Pic").style.display = 'none';
-        c1clicked = true;
+
+
+        if (!c1clicked) {
+            document.getElementById("ghost2").style.display = 'block';
+
+        }
     }
 
 
@@ -78,8 +102,11 @@ function c1show() {
     if (c1clicked) {
         document.getElementById("ch1Pic").style.display = 'block';
         c1clicked = false;
-        document.getElementById("ch2Pic").style.display = 'block';
-        c2clicked = false;
+        if (c2clicked) {
+            document.getElementById("ghost2").style.display = 'block';
+
+        }
+
         var scrollDiv = document.getElementById("ch1Pic").offsetTop;
         window.scrollTo({
             top: scrollDiv,
@@ -89,8 +116,12 @@ function c1show() {
     else {
         document.getElementById("ch1Pic").style.display = 'none';
         c1clicked = true;
-        document.getElementById("ch2Pic").style.display = 'none';
-        c2clicked = true;
+
+        if (c2clicked) {
+            document.getElementById("ghost2").style.display = 'none';
+
+        }
+
     }
 
 
@@ -98,18 +129,6 @@ function c1show() {
 
 
 
-const appear = document.querySelector('.appear');
-const cb = function (entries) {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add('inview');
-        } else {
-            entry.target.classList.remove('inview');
-        }
-    });
-}
-const io = new IntersectionObserver(cb);
-io.observe(appear);
 
 
 // const observer = new IntersectionObserver(entries => {
