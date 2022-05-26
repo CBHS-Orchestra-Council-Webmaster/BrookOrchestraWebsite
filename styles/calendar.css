@@ -67,6 +67,12 @@ h3 {
     padding: 5px;
 }
 
+
+.png {
+    display: none;
+}
+
+
 .content {
     margin: 0px;
     font-size: 1vw;
@@ -107,4 +113,13 @@ footer {
         font-size: 2.5vw;
 
     }
+
+    .svg {
+        display: none;
+    }
+
+    .png {
+        display: block;
+    }
+
 }

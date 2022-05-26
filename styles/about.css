@@ -640,5 +640,14 @@ footer {
 
     }
 
+    h1 {
+        margin-top: 5%;
+    }
+
+    .abt {
+        margin-bottom: 5%;
+        line-height: 2vw;
+    }
+
 
 }

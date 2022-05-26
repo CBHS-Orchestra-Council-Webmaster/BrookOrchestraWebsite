@@ -60,7 +60,7 @@ a:hover {
 
 
 .logo {
-    font-size: 7vw;
+    font-size: 10vw;
     font-weight: 10;
     position: absolute;
     border: 0;
@@ -277,13 +277,13 @@ footer {
 
     .front_pic {
         position: relative;
-        width: 200%;
+        width: 350%;
         margin-left: 0;
         border: 0;
         padding: 0;
         margin-top: -40px;
         filter: brightness(60%);
-        left: -50%;
+        left: -120%;
 
     }
 
@@ -292,14 +292,15 @@ footer {
         border: 0;
         text-align: center;
         color: white;
-        font-weight: 350;
-        top: 150px;
+        font-weight: 375;
+        top: 250px;
+        font-size: 14vw;
 
     }
 
 
     .about {
-        margin-top: 50px;
+        margin-top: 75px;
         margin-left: auto;
         margin-right: auto;
         padding: 0px 15px;
@@ -308,11 +309,12 @@ footer {
     }
 
     #short {
-        line-height: 20px;
+        line-height: 30px;
         z-index: 0;
 
-        font-size: x-small;
-        font-weight: smaller;
+        font-size: medium;
+        font-weight: lighter;
+
     }
 
 

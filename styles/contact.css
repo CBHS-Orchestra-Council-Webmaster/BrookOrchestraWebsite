@@ -157,6 +157,12 @@ h2 {
 
 
 
+.png {
+    display: none;
+}
+
+
+
 h3 {
     font-size: 1.5vw;
     margin: 0px;
@@ -223,6 +229,15 @@ footer {
     #rights {
         font-size: 2.5vw;
 
+    }
+
+
+    .svg {
+        display: none;
+    }
+
+    .png {
+        display: block;
     }
 
 
