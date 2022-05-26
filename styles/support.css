@@ -70,7 +70,10 @@ th {
     width: 800px;
     vertical-align: top;
 
+}
 
+li {
+    padding-bottom: 0.5vw;
 }
 
 

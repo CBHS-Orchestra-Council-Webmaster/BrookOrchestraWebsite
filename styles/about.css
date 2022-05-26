@@ -61,6 +61,12 @@ h1 {
     
 } */
 
+
+
+.png {
+    display: none;
+}
+
 h2 {
 
     text-align: center;
@@ -427,6 +433,16 @@ footer {
     p {
         font-size: small;
     }
+
+    .svg {
+        display: none;
+    }
+
+    .png {
+        display: block;
+    }
+
+
 
     .abt.text {
         padding: 0px 10px;
