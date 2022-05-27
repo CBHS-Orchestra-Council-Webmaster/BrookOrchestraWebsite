@@ -200,19 +200,27 @@
 
 }
 
-@media screen and (max-width: 500px) {
-  .title {
-    text-decoration: none;
-    font-size: medium;
-    color: black;
-    padding-left: 5px;
-    padding-top: 3px;
-    /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 550;
+@media screen and (max-width: 380px) {
+  .home {
+    font-size: 7vw;
+
+  }
+
+  .share {
+    width: 21px;
+    padding: 4px 10px;
+    margin-top: 5px;
+
+  }
+
+
+  /* Dropdown Button */
+  .menu {
+    width: 23px;
+    padding-right: 25px;
+    padding-bottom: 2px;
+
   }
 
 
 }
-
-@media screen and (max-width: 500px) {}

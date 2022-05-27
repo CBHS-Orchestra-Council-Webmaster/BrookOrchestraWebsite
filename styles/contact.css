@@ -93,6 +93,7 @@ a:hover {
 td {
     padding-right: 10px;
     padding-bottom: 10px;
+
 }
 
 
@@ -238,6 +239,16 @@ footer {
 
     .png {
         display: block;
+    }
+
+
+
+}
+
+@media screen and (max-width: 380px) {
+    td {
+        font-size: 4vw;
+
     }
 
 
