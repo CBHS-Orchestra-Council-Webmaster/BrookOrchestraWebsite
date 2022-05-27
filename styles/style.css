@@ -308,6 +308,12 @@ footer {
 
     }
 
+    .appear {
+        transition: all 2.5s;
+        opacity: 1;
+        transform: translateX(-40vw);
+    }
+
     #short {
         line-height: 30px;
         z-index: 0;

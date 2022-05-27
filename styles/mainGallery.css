@@ -58,6 +58,10 @@ h1 {
 
 }
 
+.content {
+    top: -10vw;
+}
+
 
 
 
@@ -123,6 +127,7 @@ a {
     margin-left: auto;
     margin-right: auto;
     margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 
@@ -191,6 +196,16 @@ footer {
         font-size: 2.5vw;
 
     }
+
+    #preview {
+        margin-top: 12vw;
+    }
+
+    .content {
+        top: 5vw;
+    }
+
+
 
 
 }
