@@ -266,7 +266,7 @@ footer {
 
 
 /* ON SMALL SCREENS */
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 600px) {
 
     .bg {
         max-width: 100%;

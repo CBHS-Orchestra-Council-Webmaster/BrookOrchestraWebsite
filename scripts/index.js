@@ -5,6 +5,7 @@ window.scroll({
 });
 
 
+
 $(window).scroll(function () {
     var scrollTop = $(this).scrollTop();
 
@@ -24,6 +25,10 @@ $(window).scroll(function () {
     });
 
 });
+
+
+
+
 
 
 const appear = document.querySelector('.appear');

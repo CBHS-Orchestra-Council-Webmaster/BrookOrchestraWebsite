@@ -47,6 +47,7 @@ h1 {
 .abt.text {
     padding: 0px 150px;
     padding-bottom: 50px;
+
 }
 
 
@@ -94,7 +95,10 @@ h2 {
 .director {
 
     /* border: 5px #000 solid; */
-    padding: 50px;
+    padding: 25px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
     display: flex;
     /* background-color: rgb(245, 211, 205); */
 }
