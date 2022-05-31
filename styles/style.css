@@ -67,6 +67,29 @@ a:hover {
     text-align: center;
     top: 15%;
     color: white;
+
+
+}
+
+.orch {
+    animation: bg ease 5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+}
+
+@keyframes bg {
+    0% {
+
+        color: red;
+    }
+
+
+
+    100% {
+        color: white;
+        text-shadow: 5px 3px red;
+
+    }
 }
 
 .orch {
@@ -81,7 +104,9 @@ a:hover {
 
 .appear2 {
     transition: all 1.5s;
-    transform: scale(1.2);
+    transform: scale(0.8);
+
+
 }
 
 .appear2.inview {
@@ -170,7 +195,7 @@ figcaption {
     position: absolute;
     display: flex;
     justify-content: center;
-    z-index: 100;
+    z-index: 50;
     gap: 60vw;
     margin-top: auto;
     margin-bottom: auto;
@@ -296,6 +321,21 @@ footer {
         top: 250px;
         font-size: 14vw;
 
+    }
+
+    @keyframes bg {
+        0% {
+
+            color: red;
+        }
+
+
+
+        100% {
+            color: white;
+            text-shadow: 3px 2px red;
+
+        }
     }
 
 

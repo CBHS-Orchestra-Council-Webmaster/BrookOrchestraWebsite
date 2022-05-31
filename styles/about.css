@@ -427,6 +427,24 @@ footer {
 
 }
 
+@media only screen and (max-width: 1300px) {
+    .symph {
+        order: 1;
+    }
+
+    #symphPic {
+        order: 2;
+    }
+
+    .chmb1 {
+        order: 1;
+    }
+
+    #ch1 {
+        order: 2;
+    }
+}
+
 
 @media only screen and (max-width: 800px) {
 
@@ -652,6 +670,8 @@ footer {
         margin-bottom: 5%;
         line-height: 2vw;
     }
+
+
 
 
 }
