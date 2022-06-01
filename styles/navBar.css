@@ -239,8 +239,6 @@
     filter: brightness(1);
 
 
-
-
   }
 
   /* Links inside the dropdown */
@@ -259,7 +257,8 @@
 
   /* Change color of dropdown links on hover */
   .dropdown-content a:hover {
-    background-color: rgb(211, 204, 204)
+    background-color: rgb(211, 204, 204);
+    color: black;
   }
 
   /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
@@ -270,9 +269,43 @@
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 
+  }
+
+  .transparent {
+    display: none;
+    z-index: 9;
+    top: -25px;
+    position: absolute;
+    justify-content: left;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #16161d;
+  }
+
+  .transparent.open {
+    display: block;
+
+    animation: dark ease 1.25s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes dark {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 0.5;
+    }
 
 
   }
+
+
+
+
 
   @keyframes dropDown {
     0% {

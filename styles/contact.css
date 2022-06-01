@@ -150,10 +150,6 @@ h2 {
     text-align: center;
 }
 
-#contact {
-    display: flex;
-    justify-content: center;
-}
 
 
 
@@ -164,30 +160,9 @@ h2 {
 
 
 
-h3 {
-    font-size: 1.5vw;
-    margin: 0px;
-    padding: 5px;
-}
-
-.content {
-    margin: 0px;
-}
-
-#rights {
-    text-align: center;
-    padding-top: 20px;
-    margin: 0px;
-}
-
 footer {
-    padding-top: 10px;
     background-color: #FCF3F1;
-    height: max-content;
-    font-weight: lighter;
-    bottom: 0px;
-    padding: 15px;
-    margin: 0px;
+
 
 }
 

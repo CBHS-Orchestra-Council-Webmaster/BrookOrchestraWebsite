@@ -137,10 +137,6 @@ a {
 }
 
 
-#contact {
-    display: flex;
-    justify-content: center;
-}
 
 .png {
     display: none;
@@ -148,31 +144,10 @@ a {
 
 
 
-h3 {
-    font-size: 1.5vw;
-    margin: 0px;
-    padding: 5px;
-}
-
-.content {
-    margin: 0px;
-}
-
-#rights {
-    text-align: center;
-    padding-top: 20px;
-    margin: 0px;
-}
-
 footer {
-    padding-top: 10px;
     background-color: #16161d;
     color: white;
-    height: max-content;
-    font-weight: lighter;
-    bottom: 0px;
-    padding: 15px;
-    margin: 0px;
+
 
 }
 
@@ -201,21 +176,7 @@ footer {
         font-size: 3vw;
     }
 
-    h3 {
-        margin: 0px;
-        font-size: 3vw;
-        padding: 0px;
-    }
 
-    .content {
-        margin: 0px;
-        font-size: 2.5vw;
-    }
-
-    #rights {
-        font-size: 2.5vw;
-
-    }
 
     .btn {
         font-size: 4vw;

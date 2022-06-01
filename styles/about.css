@@ -388,44 +388,14 @@ th {
 
 
 
-
-#contact {
-    display: flex;
-    justify-content: center;
-}
-
-
-
-
-.title {
-    color: white;
-    font-size: 1.5vw;
-    margin: 0px;
-    padding: 5px;
-}
-
-.content {
-    margin: 0px;
-    font-size: 1vw;
-}
-
-#rights {
-    text-align: center;
-    padding-top: 20px;
-    margin: 0px;
-}
-
 footer {
-    padding-top: 10px;
+
     color: white;
     background-color: #16161d;
-    height: max-content;
-    font-weight: lighter;
-    bottom: 0px;
-    padding: 15px;
-    margin: 0px;
+
 
 }
+
 
 @media only screen and (max-width: 1300px) {
     .symph {
@@ -632,15 +602,7 @@ footer {
         padding: 0px;
     }
 
-    .content {
-        margin: 0px;
-        font-size: 2.5vw;
-    }
 
-    #rights {
-        font-size: 2.5vw;
-
-    }
 
 
 
