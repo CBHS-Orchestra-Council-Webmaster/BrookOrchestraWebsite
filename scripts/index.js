@@ -1,3 +1,7 @@
+$.getJSON("https://api.countapi.xyz/hit/04aj.github.ioBrookOrchestraWebsite/visits", function (response) {
+    $("#visits").text(response.value);
+});
+
 window.scroll({
     top: 0,
     left: 0,
