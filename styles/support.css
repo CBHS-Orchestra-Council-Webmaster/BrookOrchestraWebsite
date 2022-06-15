@@ -1,9 +1,11 @@
 body {
     z-index: 0;
     background: linear-gradient(to bottom,
-            white 5%,
-            black 5%,
-            rgb(202, 7, 7) 95%);
+            rgb(202, 7, 7)20%,
+            #16161d 40%,
+            #16161d 80%,
+
+            rgb(202, 7, 7) 85%);
     font-family: 'Montserrat', sans-serif;
     margin: 0;
 
@@ -23,26 +25,27 @@ body {
 }
 
 .container {
-    margin-top: 45px;
     text-align: center;
-    top: 0;
+    margin-top: -50px;
     color: white;
-    background-color: black;
+    background-color: #16161d;
 
+}
+
+.container.two {
+
+    background-color: #FCF3F1;
+    padding-bottom: 50px;
 }
 
 h1 {
     padding: 50px;
+    padding-top: 100px;
     font-size: xxx-large;
 
 
 }
 
-.cont {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
 
 
 
@@ -63,35 +66,132 @@ th {
 
 
     padding: 15px;
-    background-color: white;
-    max-width: 800px;
+    background-color: #FCF3F1;
+    width: 800px;
+    vertical-align: top;
+
+}
+
+li {
+    padding-bottom: 0.5vw;
 }
 
 
 
 .members {
-    margin-bottom: 75px;
-    width: 70%;
+
+    display: flex;
+    padding-bottom: 50px;
+    width: 90%;
+    margin-bottom: 50px;
     margin-left: auto;
     margin-right: auto;
     color: black;
     font-weight: 600;
-    font-size: medium;
+    font-size: 1.5vw;
+
+
+}
+
+.membersMob,
+.second {
+    display: none;
+}
+
+.pdf {
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+
+.btn {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    padding: 5px;
+    border: none;
+    background: #e21835;
+    font-size: 2.5vw;
+    border: 5px;
+    border-radius: 5px;
+    transform: scale(1);
+    display: table;
+    margin: 0 auto;
+    transition: all .3s ease-in;
+
+}
+
+
+
+
+.btn:hover {
+    transform: scale(1.05);
+    color: white;
+    transition: all .3s ease-in-out;
+}
+
+
+
+.png {
+    display: none;
+}
+
+
+
+footer {
+    background-color: #16161d;
+    color: white;
+
 
 }
 
 @media screen and (max-width: 640px) {
     .members {
-        margin-bottom: 75px;
-        width: 90%;
-
+        display: none;
 
     }
-}
+
+    .svg {
+        display: none;
+    }
+
+    .png {
+        display: block;
+    }
+
+    .membersMob {
+        display: flex;
+        width: 95%;
+
+        margin-left: auto;
+        margin-right: auto;
+        color: black;
+        font-weight: 600;
+        font-size: 3vw;
+    }
 
 
-footer {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    bottom: 0px;
-    padding: 15px;
+
+    .btn {
+        font-size: 4vw;
+    }
+
+    .second {
+        display: flex;
+        width: 95%;
+
+        margin-left: auto;
+        margin-right: auto;
+        color: black;
+        font-weight: 600;
+        font-size: 3vw;
+        padding-bottom: 100px;
+    }
+
 }

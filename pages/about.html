@@ -6,66 +6,105 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel = "stylesheet" href = "../styles/about.css">
     <link rel="stylesheet" href="../styles/navBar.css">
+    <link rel="stylesheet" href="../styles/footer.css">
+
     <script src = "../scripts/navBar.js"></script>
     <script src = "../scripts/about.js" defer></script>
+    
     <title>About Us</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
 
+
+    <link rel="icon" href = "../images/B.jpg" >
+
 </head>
 
 
 <body>
 
-    <div class = "tab">
-        <a href="../pages/index.html">
+    <div style = "opacity: 0.75;" class = "headerbg">
+    </div>
+
+  
 
 
-            <div class = "card">
-                <img class = "navLogo" src="../images/whiteLogo" alt="">
-                <img class = "colorLogo" src="../images/colorLogo" alt="">
-            </div>
-            
-          
+    <div class="header1">
 
-        </a>        <span class = "icons">
+        <a class = "home nav" href="../index.html">CBHS Orchestra       
+        </a>
+
+        <div class = "list">
+            <a class = "nav" href="../pages/about.html">About </a>
+
+            <a class = "nav" href="../pages/contact.html">Contact </a>
+    
+            <a class = "nav" href="../pages/calendar.html">Calendar</a>
+    
+    
+            <a class = "nav" href="../pages/mainGallery.html">Gallery </a>
+    
+            <a class = "nav" href="../pages/support.html">Support </a>
+    
+        </div>
+        
+      
+    </div>
+
+    <!-- Mobile Dropdown -->
+    <span class = "header2">
+        
+        <a class = "home nav" href="../index.html">CBHS Orchestra       
+        </a>
+
+        <span class = "icons">
             <a href="https://www.instagram.com/clearbrookorchestra/" >  
                 <img src= "../images/instaPic.png" class = "share">
-            </a>
+            </a>            
             <span class = "dropdown">
-                <img onclick="myFunction()" src= "../images/newMenu.png" class = "menu dropbtn" >
+                <!-- <a target="_blank" href="https://icons8.com/icon/dMz54mFbVirR/menu">Menu</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a> -->
+                <div onclick="myFunction()" class = "menu-btn dropbtn">
+                    <div   class="menu-btn__burger dropbtn"></div>
+                </div>    
 
                 <div id = "myDropdown" class = "dropdown-content">
-                    <a href="../pages/about.html" class="button">About Us</a>
-
+                    <a href="../pages/about.html" class="button" style="margin-top: 50px;">About Us</a>
+    
                     <a href="../pages/calendar.html" class="button">Calendar</a>
     
-                    <a href="../pages/contact.html" class="button">Contact</a>
+                    <a href="../pages/contact.html" class="button">Contact</a>   
     
-    
-                    <a href="../pages/news.html" class="button">News</a>
     
                     <a href="../pages/mainGallery.html" class="button">Gallery</a>
     
                     <a href="../pages/support.html" class="button">Support Us</a>
+    
+                </div>
+
+                <div class = "transparent">
 
                 </div>
+               
                 
                 
             </span>
-            
+
         </span>
-        
+
        
-    </div>
+    </span>
 
     <div class = "container">
             <div class = "abt"> 
                 <h1>About Clear Brook Orchestra</h1> 
-                <p class="abt text">The Clear Brook Orchestra program aims to create an optimal environment for the development of musical skill and the nurturing of artistic passion. Under Brady Meyer’s direction, students with instrumental experience are given the opportunity to expand their musical borders both as an individual and as a member of an orchestra. Together, you will learn pieces that challenge your own skillset and hone the perspective of being one part of a larger whole. Within the program, those wishing for personal aid have easy access to an array of seasoned musicians for private tutoring. Challenging annual events including UIL Solo and Ensemble, and TMEA Region and All-State are heavily encouraged and supported. Seasonal concerts alongside a multitude of social events provide a busy schedule full of not only musical growth but the development of friendships and comradery within a unique community.</p>
+                <p class="abt text">The Clear Brook Orchestra program aims to create an optimal environment for the development of musical skill and the nurturing of artistic passion. Under Brady Meyer’s direction, students with instrumental experience are given the opportunity to expand their musical borders both as an individual and as a member of an orchestra. Together, you will learn pieces that challenge your own skillset and hone the perspective of being one part of a larger whole. Within the program, those wishing for personal aid have easy access to an array of seasoned musicians for private tutoring. Challenging annual events including UIL Solo and Ensemble, and TMEA All-Region and All-State are heavily encouraged and supported. Seasonal concerts alongside a multitude of social events provide a busy schedule full of not only musical growth but the development of friendships and comradery within a unique community.</p>
             </div>
+            <object class = "svg" type="image/svg+xml" data="../images/svgs/layered-peaks-haikei.svg" style = "width: 100%; margin-top: -50%; z-index: -1;"></object>
+
+            <img class = "png" style = "width: 100%; margin-top: -20%; z-index: -1;" src="../images/svgs/mobile1.png"  >
+
 
             <h2>DIRECTOR</h2>
             <div class = "director">
@@ -79,13 +118,15 @@
 
             </div>
             <h2>ORCHESTRAS</h2>
-            
-           
+
+            <img class = "svg" src="../images/svgs/layered-peaks-haikei2.svg" style = "margin-bottom: -10px; z-index: -1;width: 100%;" alt="">
+
+           <img class = "png" style = "width: 100%; margin-bottom: -25%; z-index: -1;" src="../images/svgs/mobile2.png" alt="">
             
             
     </div>
 
-    <div = class = "orchestras">
+    <div class = "orchestras">
 
         <div class = "orchestras1">
 
@@ -102,7 +143,10 @@
                         position. All students should know one octave scales through 3 sharps and 1 flat.</p>        
     
                 </div>
-                    <img id = "philPic" src="../images/Orchestras/phil.png" alt="">
+                    <img class = "appear" id = "philPic" src="../images/Orchestras/phil.png" alt="">
+
+                    <!-- ghost -->
+                    <div id = "ghost1"></div>
 
   
                 
@@ -125,7 +169,6 @@
                 </div>
                 <img id = "symphPic" src="../images/Orchestras/symph.png" alt="">
 
-              </dv>
                      
            
 
@@ -137,7 +180,7 @@
         <div  class = "orchestras2">
 
 
-                <div onclick="c2show()"class = "chmb2">
+                <div onclick="c2show()" class = "chmb2">
                 <h3>CHAMBER 2</h3>
                 <p>This orchestra will provide students an opportunity to perform at an advanced level. Students
                     must demonstrate proficiency in the upper positions, use of vibrato, characteristic tone quality, use of proper
@@ -151,6 +194,8 @@
                     3 sharps and 2 flats. All students must be able to demonstrate beautiful vibrato with all four fingers.</p>          
             </div>
             <img id = "ch2Pic" src="../images/Orchestras/chmb2.png" alt="">
+            <div id = "ghost2"></div>
+
            
           
                 <div onclick="c1show()" class = "chmb1">
@@ -172,15 +217,19 @@
             
         </div>
     </div>
-    
   
 
     <div>
+       
+        <img  class = "svg" src="../images/svgs/layered-peaks-haikei3.svg" style = "width: 100%; margin-bottom: -10px; " alt="">
+        
+        <img  class = "png" src="../images/svgs/mobile1.png" style = "width: 100%; margin-bottom: -10px; " alt="">
+
         <h2>OFFICERS</h2>
   
         <div class = "council">
             <p>
-                The Orchestra Council is a group of orchestra members who dedicate their time and passion by helping the program. The council members organize events to bring all members together; they aim to foster a sense of community both within the orchestra and with others as well. The members work hard to plan for social events, activities for feeder schools, the end-of-year banquet, and many other parts of the exciting orchestra experience.
+                The Orchestra Council is a group of orchestra students who dedicate their time and passion by helping the program. The council members organize events to bring all members together; they aim to foster a sense of community both within the orchestra and with others as well. The members work hard to plan for social events, activities for feeder schools, the end-of-year banquet, and many other parts of the exciting orchestra experience.
             </p>
         </div>
 
@@ -244,7 +293,37 @@
    
 </body>
 
-<footer >
-    <div >  ©2022 by Clear Brook High School Orchestra</div>
+<footer>
+    <div id="contact" >
+        <span style="text-align: center;width: 25vw; ">
+            <h3>Instagram</h3>
+            <div class = "content">
+                <a href="https://www.instagram.com/clearbrookorchestra/" style="color:red; text-decoration: none;">@clearbrookorchestra</a>
+               
+            </div>
+        </span>
+       
+    
+        <span  style="text-align: center;width: 50vw;">
+            <h3 >Clear Brook Highschool</h3>
+        
+                <p class = "content">4607 FM 2351<br> Friendswood<br> TX 77546</p>
+            
+        </span>
+
+        <span style="text-align: center;width: 25vw;">
+        
+        <p style="text-align: center;padding-top: 5px;" class = "content">Developed by Alan Johnson and Blake Sharp</p>
+    
+        </span>
+
+   
+
+      
+    </div>
+
+
+    <div id = "rights">©2022 by Clear Brook High School Orchestra</div>
+
 </footer>
 </html>

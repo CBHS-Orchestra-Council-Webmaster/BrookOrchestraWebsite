@@ -6,57 +6,89 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/support.css">
     <link rel="stylesheet" href="../styles/navBar.css">
+    <link rel="stylesheet" href="../styles/footer.css">
     <script src = "../scripts/navBar.js"></script>
     <title>Support Us</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="icon" href = "../images/B.jpg" >
+
+
 </head>
 <body>
-    <div class = "tab">
-        <a href="../pages/index.html">
+    <div style = "opacity: 0.75;" class = "headerbg">
+    </div>
 
 
-            <div class = "card">
-                <img class = "navLogo" src="../images/whiteLogo" alt="">
-                <img class = "colorLogo" src="../images/colorLogo" alt="">
-            </div>
-            
-          
 
-        </a>        <span class = "icons">
+    <div class="header1 list">
+
+        <a class = "home nav" href="../index.html">CBHS Orchestra       
+        </a>
+
+        <a class = "nav" href="../pages/about.html">About </a>
+
+        <a class = "nav" href="../pages/contact.html">Contact </a>
+
+        <a class = "nav" href="../pages/calendar.html">Calendar</a>
+
+
+        <a class = "nav" href="../pages/mainGallery.html">Gallery </a>
+
+        <a class = "nav" href="../pages/support.html">Support </a>
+        
+      
+    </div>
+
+    <!-- Mobile Dropdown -->
+    <span class = "header2">
+        
+        <a class = "home nav" href="../index.html">CBHS Orchestra       
+        </a>
+
+        <span class = "icons">
             <a href="https://www.instagram.com/clearbrookorchestra/" >  
                 <img src= "../images/instaPic.png" class = "share">
-            </a>            <span class = "dropdown">
-                <img onclick="myFunction()" src= "../images/newMenu.png" class = "menu dropbtn" >
-
+            </a>            
+            <span class = "dropdown">
+                <!-- <a target="_blank" href="https://icons8.com/icon/dMz54mFbVirR/menu">Menu</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a> -->
+                <div onclick="myFunction()" class = "menu-btn dropbtn">
+                    <div   class="menu-btn__burger dropbtn"></div>
+                </div>    
                 <div id = "myDropdown" class = "dropdown-content">
-                    <a href="../pages/about.html" class="button">About Us</a>
-
+                    <a href="../pages/about.html" class="button" style="margin-top: 50px;">About Us</a>
+    
                     <a href="../pages/calendar.html" class="button">Calendar</a>
     
-                    <a href="../pages/contact.html" class="button">Contact</a>
+                    <a href="../pages/contact.html" class="button">Contact</a>   
     
-    
-    
-                    <a href="../pages/news.html" class="button">News</a>
     
                     <a href="../pages/mainGallery.html" class="button">Gallery</a>
     
                     <a href="../pages/support.html" class="button">Support Us</a>
-
+    
                 </div>
                 
+                <div class = "transparent">
+
+                </div>
+               
                 
             </span>
+
         </span>
-        
+
        
-    </div>
+    </span>
+
 
     <div class = "container"> 
         <h1>Support Us</h1> 
+        <img class = "svg" src="../images/svgs/calendar1.svg" style="width: 100%;margin-bottom: -50px" >
+        <img class = "png" src="../images/svgs/support1.png" alt="" style="width: 100%;margin-bottom: -50px" >
         <h2>Booster Club Members
         </h2>
     </div>
@@ -64,91 +96,220 @@
    
 
 
-    <span class = "cont">
         
    
 
 
                
-                <table class = "members">
+        <table class = "members">
 
-                    
-                    <tr>
-                        <td>Platinum Contributor</td>
-                        <td>Lisle Violin Shop</td>
-                    </tr>
-        
-                    <tr>
-                        <td>Business Member</td>
-                        <td>Art & Patsy Meyer <br>
-                            Kathryn Nguyen </td>
-                    </tr>
-        
-                    <tr>
-                        <td>Golden Bow</td>
-                        <td> Curtis & Olivia Daugherty <br>
-                            Duncan & Denise Flintoff <br>
-                            Amy & Nick Kiszka <br>
-                            Matt & Rebecca Lisle <br>
-                            Tony & Jodi Masington <br>
-                            Shamal & Ayomi Silva <br>
-                            Shreerekha & Santosh Subramanian <br>
-                            Vargeese & Raji Thomas
+            
+            <tr>
+                <th style = "background-color: rgb(223, 217, 233); ">Platinum Contributor</th>
+                <th style = "background-color: rgb(76, 201, 45);">Business Member</th>
+                <th style = "background-color: rgb(255, 233, 38);">Golden Bow</th>
+                <th style = "background-color: rgb(155, 155, 155);">Silver Strings</th>
+                <th  style="background-color: rgb(226, 159, 15);">Strings</th>
+            </tr>
 
-                        </td>
-                    </tr>
-        
-        
-                    <tr>
-                        <td>Silver Strings</td>
-                        <td>  
-                            Khuong Bui <br>
-                            Michael & Stacey Ecord <br>
-                            Tania & Paul Garcia <br>
-                            Haresh & Neema Ghansyam <br>
-                            Kerri & Bob Hines <br>
-                            John & Amy Law <br>
-                            Kerri & Charles Pastrano <br>
-                            Chau & Julie Pham <br>
-                            Dalia Quintanilla <br>
-                            Alex Cotter-Salyer <br>
-                            Matt & Jessica Sitka <br>
-                            Devassy & Soosy Johnson <br>
-                            Tuan & Vivian Hoang
+            <tr>
+                
+                    <td><li> Lisle Violin Shop</li></td>
 
+            
+                
+                    <td>
+                        <li>Art & Patsy Meyer</li> 
+                       <li>Kathryn Nguyen </li> </td>
 
+                
+            
 
-                        </td>
-                    </tr>
+                    <td> 
+                        <li>Curtis & Olivia Daugherty</li> 
+                        <li> Duncan & Denise Flintoff</li> 
+                        <li>Amy & Nick Kiszka</li> 
+                        <li>Matt & Rebecca Lisle</li> 
+                        <li> Tony & Jodi Masington</li> 
+                        <li>Shamal & Ayomi Silva </li>
+                        <li> Shreerekha & Santosh Subramanian</li> 
+                        <li>Vargeese & Raji Thomas</li> 
+    
+                    </td>
 
-                    <tr>
-                        <td>Strings</td>
-                        <td>  
-                            Devassy & Soosy Johnson <br>
-                            Tuan & Vivian Hoang
+                    <td>  
+                        <li>Khuong Bui</li> 
+                        <li>Michael & Stacey Ecord </li> 
+                        <li> Tania & Paul Garcia</li> 
+                        <li>  Haresh & Neema Ghansyam</li> 
+                        <li> Kerri & Bob Hines</li> 
+                        <li>John & Amy Law </li>
+                        <li> Kerri & Charles Pastrano </li> 
+                        <li>  Chau & Julie Pham </li> 
+                        <li> Kerri & Bob Hines</li> 
+                        <li>John & Amy Law </li>
+                        <li> Kerri & Charles Pastrano </li> 
+                        <li>Dalia Quintanilla </li>
+                        <li>Alex Cotter-Salyer</li>
+                        <li>Matt & Jessica Sitka</li>
+                      
+    
+    
+    
+                    </td>
 
+                    <td>  
+                        <li>Devassy & Soosy Johnson
+                        </li>
+                        <li>Tuan & Vivian Hoang
+                        </li>
+    
+    
+    
+                    </td>
+            </tr>
 
-
-                        </td>
-                    </tr>
-        
-                    
-        
-                </table>
-                    
      
+            
+
+        </table>
+            
+
+        <table class = "membersMob">
+
+            
+            <tr>
+                <th style = "background-color: rgb(223, 217, 233); ">Platinum Contributor</th>
+                <th style = "background-color: rgb(128, 245, 99);">Business Member</th>
+                <th style = "background-color: rgb(255, 233, 38);">Golden Bow</th>
+               
+            </tr>
+
+            <tr>
+                <td><li> Lisle Violin Shop</li></td>
+
+            
+                
+                <td>
+                    <li>Art & Patsy Meyer</li> 
+                   <li>Kathryn Nguyen </li> </td>
+
+            
         
+
+                <td> 
+                    <li>Curtis & Olivia Daugherty</li> 
+                    <li> Duncan & Denise Flintoff</li> 
+                    <li>Amy & Nick Kiszka</li> 
+                    <li>Matt & Rebecca Lisle</li> 
+                    <li> Tony & Jodi Masington</li> 
+                    <li>Shamal & Ayomi Silva </li>
+                    <li> Shreerekha & Santosh Subramanian</li> 
+                    <li>Vargeese & Raji Thomas</li> 
+
+                </td>
+
+            </tr>
+
+            
+        </table>
+
+            <table class = "second">
+                <tr>
+                    <th style = "background-color: rgb(155, 155, 155); ">Silver Strings</th>
+                    <th  style="background-color: rgb(187, 101, 3);">Strings</th>
+                 </tr>
+
+        <tr>
+            
+            <td>  
+                <li>Khuong Bui</li> 
+                <li>Michael & Stacey Ecord </li> 
+                <li> Tania & Paul Garcia</li> 
+                <li>  Haresh & Neema Ghansyam</li> 
+                <li> Kerri & Bob Hines</li> 
+                <li>John & Amy Law </li>
+                <li> Kerri & Charles Pastrano </li> 
+                <li>  Chau & Julie Pham </li> 
+                <li> Kerri & Bob Hines</li> 
+                <li>John & Amy Law </li>
+                <li> Kerri & Charles Pastrano </li> 
+                <li>Dalia Quintanilla </li>
+                <li>Alex Cotter-Salyer</li>
+                <li>Matt & Jessica Sitka</li>
+               
+
+
+
+            </td>
+
+            <td>  
+                <li>Devassy & Soosy Johnson
+                </li>
+                <li>Tuan & Vivian Hoang
+                </li>
+
+
+
+            </td>
+        </tr>
+
+    </table>
+
+            
+     
+            
+
       
 
-    </span>
 
 
+
+    <div class = "container two"> 
+            
+        <img class = "svg" src="../images/svgs/calendar1.svg" style="width: 100%;margin-bottom: 0px" >
+        <img class = "png" src="../images/svgs/support2.png" alt="" style="width: 100%;margin-bottom: 0px">
+        <h2 style = "margin-top: -5px;">Join Booster Club!</h2>
+        <iframe class = "pdf" src="../Membership Form 2022 2023.pdf" frameborder="0" width="75%" height="700px"></iframe>
+
+        <a class="btn" href="../Membership Form 2022 2023.pdf" target="_blank">or click here</a>
+    
+    </div>
 
 
 
 </body>
 
-<footer >
-    <div >  ©2022 by Clear Brook High School Orchestra</div>
+<footer>
+    <div id="contact" >
+        <span style="text-align: center;width: 25vw; ">
+            <h3>Instagram</h3>
+            <div class = "content">
+                <a href="https://www.instagram.com/clearbrookorchestra/" style="color:red; text-decoration: none;">@clearbrookorchestra</a>
+               
+            </div>
+        </span>
+       
+    
+        <span  style="text-align: center;width: 50vw;">
+            <h3 >Clear Brook Highschool</h3>
+        
+                <p class = "content">4607 FM 2351<br> Friendswood<br> TX 77546</p>
+            
+        </span>
+
+        <span style="text-align: center;width: 25vw;">
+        
+        <p style="text-align: center;padding-top: 5px;" class = "content">Developed by Alan Johnson and Blake Sharp</p>
+    
+        </span>
+
+   
+
+      
+    </div>
+
+    <div id = "rights">©2022 by Clear Brook High School Orchestra</div>
+
 </footer>
 </html>

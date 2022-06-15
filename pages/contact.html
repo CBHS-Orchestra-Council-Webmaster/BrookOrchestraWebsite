@@ -6,65 +6,108 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/contact.css">
     <link rel="stylesheet" href="../styles/navBar.css">
+    <link rel="stylesheet" href="../styles/footer.css">
     <script src = "../scripts/navBar.js"></script>
     <title>Contact</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="icon" href = "../images/B.jpg" >
+
+
+
 </head>
 <body>
 
-    <div class = "tab">
-        <a href="../pages/index.html">
+    
+    <div style = "opacity: 0.75;" class = "headerbg">
+    </div>
 
 
-            <div class = "card">
-                <img class = "navLogo" src="../images/whiteLogo" alt="">
-                <img class = "colorLogo" src="../images/colorLogo" alt="">
-            </div>
-            
-          
 
-        </a>        <span class = "icons">
+    <div class="header1">
+
+        <a class = "home nav" href="../index.html">CBHS Orchestra       
+        </a>
+
+        <div class = "list">
+            <a class = "nav" href="../pages/about.html">About </a>
+
+            <a class = "nav" href="../pages/contact.html">Contact </a>
+    
+            <a class = "nav" href="../pages/calendar.html">Calendar</a>
+    
+    
+            <a class = "nav" href="../pages/mainGallery.html">Gallery </a>
+    
+            <a class = "nav" href="../pages/support.html">Support </a>
+    
+        </div>
+        
+      
+    </div>
+
+    <!-- Mobile Dropdown -->
+    <span class = "header2">
+        
+        <a class = "home nav" href="../index.html">CBHS Orchestra       
+        </a>
+
+        <span class = "icons">
             <a href="https://www.instagram.com/clearbrookorchestra/" >  
                 <img src= "../images/instaPic.png" class = "share">
-            </a>
+            </a>            
             <span class = "dropdown">
-                <img onclick="myFunction()" src= "../images/newMenu.png" class = "menu dropbtn" >
-
+                <!-- <a target="_blank" href="https://icons8.com/icon/dMz54mFbVirR/menu">Menu</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a> -->
+                <div onclick="myFunction()" class = "menu-btn dropbtn">
+                    <div   class="menu-btn__burger dropbtn"></div>
+                </div>    
                 <div id = "myDropdown" class = "dropdown-content">
-                    <a href="../pages/about.html" class="button">About Us</a>
-
+                    <a href="../pages/about.html" class="button" style="margin-top: 50px;">About Us</a>
+    
                     <a href="../pages/calendar.html" class="button">Calendar</a>
     
-                    <a href="../pages/contact.html" class="button">Contact</a>
+                    <a href="../pages/contact.html" class="button">Contact</a>   
     
-
-    
-                    <a href="../pages/news.html" class="button">News</a>
     
                     <a href="../pages/mainGallery.html" class="button">Gallery</a>
     
                     <a href="../pages/support.html" class="button">Support Us</a>
+    
+                </div>
+
+                <div class = "transparent">
 
                 </div>
+               
                 
                 
             </span>
-            
+
         </span>
+
+       
+    </span>
         
        
-    </div>
+
     <div class = "container"> 
         <h1>Contact</h1> 
+
+        <object class = "svg" type="image/svg+xml" data="../images/svgs/contact1.svg" style = "width: 100%;z-index: -1; margin-bottom: -10px;"></object>
+
+        <img class = "png" src="../images/svgs/contact1.png" alt="" style = "width: 100%;z-index: -1; margin-bottom: -10px;">
+
+
+
+
     </div>
     <span class = "contact">
         <div class = "contact-a">
             <h2>Brady Meyer</h2>
             <a href="mailto:brmeyer@ccisd.net">brmeyer@ccisd.net</a> 
-            <p>Office Phone: <a href="tel:281-284-2294">281-284-2294</a></p> 
         
         </div>
         
@@ -76,23 +119,24 @@
                     
                     <tr>
                         <td>President:</td>
-                        <td>  Kerri Pastrano</td>
+                        <td>Kerri Pastrano<br><a  href="mailto:kerristeckler@hotmail.com"> kerristeckler@hotmail.com</a> </td>
                     </tr>
         
                     <tr>
                         <td>Vice President:</td>
-                        <td>  Kathryn Nguyen</td>
+                        <td>  Kathy Carmona<br><a href="mailto:kathleencarmona@hotmail.com ">kathleencarmona@hotmail.com </a></td>
+
                     </tr>
         
                     <tr>
                         <td>Secretary:</td>
-                        <td>  Amy Kiszka</td>
+                        <td>  Kathryn Nguyen<br><a href="mailto:kathryn6584@gmail.com">kathryn6584@gmail.com</a></td>
                     </tr>
         
         
                     <tr>
                         <td>Treasurer</td>
-                        <td>  Jessica Sitka</td>
+                        <td>  Jessica Sitka<br><a href="mailto:sitka79@protonmail.com">sitka79@protonmail.com</a></td>
                     </tr>
         
                     
@@ -104,6 +148,16 @@
         </div>
         
     </span>
+
+
+    <object class = "svg" type="image/svg+xml" data="../images/svgs/contact2.svg" style = "width: 100%; margin-top: -50px; z-index: -50;"></object>
+
+    <img class = "png" src="../images/svgs/contact2.png" alt="" style = "width: 100%; margin-top: -50px; z-index: -50;">
+
+
+
+
+
 
     <span class = "message">
         <h2>Contact Us</h2>
@@ -118,12 +172,12 @@
             </div>
             
             <div class = "email">
-                <input type="text" id="name" name="name" required
+                <input type="text" id="email" name="email" required
             minlength="4" maxlength="50" size="45" placeholder="Email">
             </div>
             
             <div class = "subject">
-                <input type="text" id="name" name="name" required
+                <input type="text" id="subject" name="subject" required
             minlength="4" maxlength="50" size="45" placeholder="Subject">
             </div>
             
@@ -144,7 +198,36 @@
 
 </body>
 
-<footer >
-    <div >  ©2022 by Clear Brook High School Orchestra</div>
+<footer>
+    <div id="contact" >
+        <span style="text-align: center;width: 25vw; ">
+            <h3>Instagram</h3>
+            <div class = "content">
+                <a href="https://www.instagram.com/clearbrookorchestra/" style="color:red; text-decoration: none;">@clearbrookorchestra</a>
+               
+            </div>
+        </span>
+       
+    
+        <span  style="text-align: center;width: 50vw;">
+            <h3 >Clear Brook Highschool</h3>
+        
+                <p class = "content">4607 FM 2351<br> Friendswood<br> TX 77546</p>
+            
+        </span>
+
+        <span style="text-align: center;width: 25vw;">
+        
+        <p style="text-align: center;padding-top: 5px;" class = "content">Developed by Alan Johnson and Blake Sharp</p>
+    
+        </span>
+
+   
+
+      
+    </div>
+
+    <div id = "rights">©2022 by Clear Brook High School Orchestra</div>
+
 </footer>
 </html>

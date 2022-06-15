@@ -1,10 +1,5 @@
 body {
-    background: linear-gradient(to bottom,
-            white 3%,
-            white 650px,
-            rgb(202, 7, 7) 650px,
-            rgb(202, 7, 7) 95%);
-
+    background-color: #CA0707;
     z-index: 0;
     font-family: 'Montserrat', sans-serif;
     margin: 0;
@@ -12,7 +7,16 @@ body {
     animation: fadeInAnimation ease 1s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
+
 }
+
+html,
+body {
+    width: 100%;
+    overflow-x: hidden;
+
+}
+
 
 @keyframes fadeInAnimation {
     0% {
@@ -26,10 +30,11 @@ body {
 
 
 .container {
-    margin-top: 45px;
-    padding: 0px 10px;
+    margin-top: 0px;
+    padding-top: 10px;
+
     text-align: center;
-    background-color: black;
+    background-color: #16161d;
     color: white;
 }
 
@@ -39,9 +44,28 @@ h1 {
 
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:link,
+a:visited {
+    padding: 5px;
+    color: black;
+    transition: all .3s ease-in;
+}
+
+a:hover {
+    color: red;
+}
+
+
 .contact {
     display: flex;
     justify-content: space-around;
+    padding-bottom: 100px;
+    background-color: #FCF3F1;
 
 }
 
@@ -68,16 +92,21 @@ h1 {
 
 td {
     padding-right: 10px;
+    padding-bottom: 10px;
+
 }
+
+
 
 .message {
     display: flex;
     flex-direction: column;
     padding: 30px;
-    margin-top: 200px;
+    margin-top: 10px;
     width: min-content;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 100px;
 
 
 }
@@ -109,7 +138,7 @@ input {
 input[type="text"],
 textarea {
     color: rgb(0, 0, 0);
-    background-color: rgb(255, 255, 255);
+    background-color: #FCF3F1;
     font-family: 'Montserrat', sans-serif;
 
 
@@ -118,16 +147,30 @@ textarea {
 h2 {
     margin-left: auto;
     margin-right: auto;
+    text-align: center;
 }
+
+
+
+
+
+.png {
+    display: none;
+}
+
+
+
+footer {
+    background-color: #FCF3F1;
+
+
+}
+
 
 @media screen and (max-width: 640px) {
 
     body {
-        background: linear-gradient(to bottom,
-                white 3%,
-                white 750px,
-                rgb(202, 7, 7) 750px,
-                rgb(202, 7, 7) 95%);
+        background-color: #CA0707;
 
     }
 
@@ -148,12 +191,41 @@ h2 {
         margin-right: auto;
     }
 
+    h3 {
+        margin: 0px;
+        font-size: 3vw;
+        padding: 0px;
+    }
+
+    .content {
+        margin: 0px;
+        font-size: 2.5vw;
+    }
+
+    #rights {
+        font-size: 2.5vw;
+
+    }
+
+
+    .svg {
+        display: none;
+    }
+
+    .png {
+        display: block;
+    }
+
+
 
 }
 
-footer {
+@media screen and (max-width: 380px) {
+    td {
+        font-size: 4vw;
 
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    bottom: 0px;
-    padding: 15px;
+    }
+
+
+
 }

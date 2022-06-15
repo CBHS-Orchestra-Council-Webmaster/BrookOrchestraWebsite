@@ -13,24 +13,16 @@ body {
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
-.header{
+
+.header {
     position: sticky;
-    top:20px;
+    top: 20px;
     z-index: 50;
     text-align: right;
     font-size: 2vw;
     font-weight: lighter;
     width: 100%;
     height: max-content;
-}
-
-a:link, a:visited {
-    padding: 5px;
-    color: white;
-    transition: all .3s ease-in;
-  }
-a:hover{
-    color: red;
 }
 
 a:link,
@@ -43,6 +35,8 @@ a:visited {
 a:hover {
     color: red;
 }
+
+
 
 @keyframes fadeInAnimation {
     0% {
@@ -60,20 +54,46 @@ a:hover {
     margin-left: 0;
     border: 0;
     padding: 0;
-    margin-top: -100px;
     filter: brightness(40%);
 }
 
 
 
 .logo {
-    font-size: 7vw;
+    font-size: 10vw;
     font-weight: 10;
     position: absolute;
     border: 0;
     text-align: center;
-    top: 20%;
+    top: 15%;
     color: white;
+
+
+}
+
+.orch {
+    animation: bg ease 5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+}
+
+@keyframes bg {
+    0% {
+
+        color: red;
+    }
+
+
+
+    100% {
+        color: white;
+        text-shadow: 5px 3px red;
+
+    }
+}
+
+.orch {
+    color: red;
 }
 
 .box {
@@ -83,8 +103,10 @@ a:hover {
 }
 
 .appear2 {
-    transition: all 1.5s;
-    transform: scale(1.2);
+    transition: all 2s;
+    transform: scale(0.8);
+
+
 }
 
 .appear2.inview {
@@ -114,20 +136,19 @@ a:hover {
 .appear {
     transition: all 1.5s;
     opacity: 1;
-    transform: translateX(-10vw);
+    transform: translateX(-15vw);
 }
 
 .appear.inview {
     opacity: 1;
     transform: none;
-    transition-delay: 0.0025s;
+    transition-delay: 0.0050s;
 }
 
 .smallGallery {
-    width: 100%;
-    height: 600px;
     display: flex;
-    background: transparent;
+    width: 100%;
+    height: fit-content;
     justify-content: center;
     align-items: center;
     z-index: 2;
@@ -146,44 +167,24 @@ figcaption {
 
 }
 
-#border {
-    display: flex;
-    justify-content: center;
-    margin-top: 50px;
-    width: 800px;
-    height: auto;
-    padding: 20px;
-    padding-bottom: 5px;
-
-}
 
 
-.slider {
-    width: 700px;
-    height: 540px;
-    overflow: hidden;
-}
+
 
 .slides {
     width: 500%;
-    height: 500px;
+    height: auto;
     display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 75px;
 }
 
-.slides input {
-    display: none;
 
 
-}
-
-.slide {
-    width: 25%;
-    transition: 1s;
-
-}
 
 .slide img {
-    width: 700px;
+    width: 60vw;
     height: auto;
     filter: brightness(100%);
 
@@ -191,77 +192,97 @@ figcaption {
 
 /* manual-nav */
 .navigation-manual {
-    position: relative;
-    margin-top: 15px;
+    position: absolute;
     display: flex;
     justify-content: center;
+    z-index: 50;
+    gap: 60vw;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
-.manual-btn {
-    border: 2px solid #ffffff;
-    padding: 5px;
-    border-radius: 10px;
+
+
+/* Next & previous buttons */
+.prev,
+.next {
     cursor: pointer;
-    transition: 2s;
+    width: auto;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 5px 0px 0px 5px;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+
+    border-radius: 0px 5px 5px 0px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: white;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 2s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .2
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+
+footer {
+
+    background-color: #FCF3F1;
+
 
 }
 
-.manual-btn:not(:last-child) {
-    margin-right: 10px;
-}
-
-.manual-btn:hover {
-    background: rgb(255, 0, 0);
-}
 
 
-#radio1:checked~.first {
-    margin-left: 0;
+
+.svg {
+    z-index: -1;
+    width: 100%;
+    margin-top: 68px;
+    position: absolute;
 }
 
-#radio2:checked~.first {
-    margin-left: -20%;
-}
-
-#radio3:checked~.first {
-    margin-left: -40%;
-}
-
-#radio4:checked~.first {
-    margin-left: -60%;
-}
-
-#radio5:checked~.first {
-    margin-left: -100%;
-}
-
-#radio6:checked~.first {
-    margin-left: -125%;
-}
-
-#radio7:checked~.first {
-    margin-left: -150%;
-}
-
-#radio8:checked~.first {
-    margin-left: -175%;
-}
 
 /* ON SMALL SCREENS */
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 600px) {
 
+    .bg {
+        max-width: 100%;
+        overflow: hidden;
+    }
 
 
 
     .front_pic {
         position: relative;
-        width: 200%;
+        width: 350%;
         margin-left: 0;
         border: 0;
         padding: 0;
         margin-top: -40px;
         filter: brightness(60%);
-        left: -50%;
+        left: -120%;
 
     }
 
@@ -270,13 +291,32 @@ figcaption {
         border: 0;
         text-align: center;
         color: white;
-        font-weight: 400;
-        top: 150px;
+        font-weight: 375;
+        top: 250px;
+        font-size: 14vw;
+
+    }
+
+    @keyframes bg {
+        0% {
+
+            color: red;
+        }
+
+
+
+        100% {
+            color: white;
+            text-shadow: 3px 2px red;
+
+        }
     }
 
 
+
+
     .about {
-        margin-top: 50px;
+        margin-top: 75px;
         margin-left: auto;
         margin-right: auto;
         padding: 0px 15px;
@@ -284,64 +324,64 @@ figcaption {
 
     }
 
+    .appear {
+        transition: all 2.5s;
+        opacity: 1;
+        transform: translateX(-40vw);
+    }
 
-    #border:hover {
-        border-width: 3px;
-        border-color: white;
+    #short {
+        line-height: 30px;
+        z-index: 0;
+
+        font-size: medium;
+        font-weight: lighter;
+
     }
 
 
-    .slider {
-        width: 400px;
-        height: auto;
-        overflow: hidden;
+    .prev,
+    .next {
+        cursor: pointer;
+        width: auto;
+        padding: 8px;
+        color: white;
+        font-weight: bold;
+        font-size: 12px;
+        transition: 0.6s ease;
+        border-radius: 5px 0px 0px 5px;
+        user-select: none;
     }
 
-    .slides {
-        width: 700%;
-        height: auto;
-        display: flex;
+    .next {
+
+        border-radius: 0px 5px 5px 0px;
     }
 
-    .slide {
-        width: 15%;
-        transition: 1s;
+    figcaption {
+        font-size: x-small;
+    }
 
+
+
+    .svg {
+        margin-top: 60px;
     }
 
     .slide img {
-        width: 400px;
-        height: auto;
-        filter: brightness(100%);
+        width: 80vw;
+
+
     }
 
-    #radio2:checked~.first {
-        margin-left: -14.25%;
+    .navigation-manual {
+        margin-top: auto;
+        margin-bottom: auto;
+        gap: 80vw;
+
     }
 
-    #radio3:checked~.first {
-        margin-left: -30%;
-    }
 
-    #radio4:checked~.first {
-        margin-left: -45%;
-    }
-
-    #radio5:checked~.first {
-        margin-left: -60%;
-    }
-
-    #radio6:checked~.first {
-        margin-left: -75%;
-    }
-
-    #radio7:checked~.first {
-        margin-left: -90%;
-    }
-
-    #radio8:checked~.first {
-        margin-left: -105%;
-    }
 
 
 }
@@ -355,23 +395,4 @@ figcaption {
     #short {
         line-height: 1.6;
     }
-}
-
-
-#contact {
-    font-weight: lighter;
-    background-color: #FCF3F1;
-    color: black;
-    height: max-content;
-}
-
-footer {
-    padding-top: 10px;
-    background-color: #FCF3F1;
-    font-weight: lighter;
-}
-
-
-h3 {
-    font-size: 1.5vw;
 }
