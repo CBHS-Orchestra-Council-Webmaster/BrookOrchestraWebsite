@@ -1,5 +1,5 @@
 body {
-    background-color: #CA0707;
+    background-color: #16161d;
     z-index: 0;
     font-family: 'Montserrat', sans-serif;
     margin: 0;
@@ -27,6 +27,7 @@ body {
         opacity: 1;
     }
 }
+
 
 
 .container {
@@ -64,32 +65,36 @@ a:hover {
 .contact {
     display: flex;
     justify-content: space-around;
-    padding-bottom: 100px;
-    background-color: #FCF3F1;
+    padding-bottom: 4.5rem;
+    background-color: #16161d;
+    margin-top:2.5rem;margin-left: 13.5rem;
 
 }
-
+input{
+    border-width: .15rem;
+    border-color: black;
+    border-style: solid;
+    border-radius: .2rem;
+}
 .contact-a {
 
-
-    padding: 25px;
-    color: black;
-    text-decoration: none;
-    text-align: center;
 
 
 }
 
 .contact-b {
-
-    padding: 25px;
-
+    display: block;
+padding-top: 1rem;
     color: black;
     text-decoration: none;
+    background:white;border-radius:.5rem;padding:.5rem;width: 35rem;
+    margin-top: .5rem;;
 
 
 }
-
+table{
+    margin:auto;
+}
 td {
     padding-right: 10px;
     padding-bottom: 10px;
@@ -99,19 +104,19 @@ td {
 
 
 .message {
-    display: flex;
-    flex-direction: column;
-    padding: 30px;
-    margin-top: 10px;
-    width: min-content;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 100px;
+    margin-left:2.5rem;
+    margin-right:15rem;
+    background-color: white;
+    border-radius: .5rem;
+    padding: 1rem;
+    padding-top: .5rem;
+    padding-bottom: 5px;
 
 
 }
 
 input {
+    font-size: medium;
     height: 25px;
     font-family: 'Montserrat', sans-serif;
 
@@ -125,10 +130,6 @@ input {
     padding-bottom: 5px;
 }
 
-.message {
-    padding-bottom: 5px;
-
-}
 
 .subject {
     padding-bottom: 5px;
@@ -168,28 +169,39 @@ footer {
 
 
 @media screen and (max-width: 640px) {
-
-    body {
-        background-color: #CA0707;
-
+    body{
+        display: block;
     }
 
     .contact {
-        display: flex;
-        flex-direction: column;
-
+        display: block;
+        clear: both;
+        margin-inline: 1rem;
 
     }
 
     .contact-a {
-        margin-left: auto;
-        margin-right: auto;
     }
 
     .contact-b {
-        margin-left: auto;
-        margin-right: auto;
+        clear: both;
+        margin-top: .5rem;
+        width: 100%;
+        width: auto;
     }
+    .message{
+        width: min-content;
+        margin: auto;
+        padding:.5rem;
+    color: black;
+    border-radius:.5rem;
+    margin-top: .5rem;
+    }
+    form{
+        clear: both;
+    }
+
+
 
     h3 {
         margin: 0px;
