@@ -1,214 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/gallery2.css">
-    <link rel="stylesheet" href="../styles/navBar.css">
-    <link rel="stylesheet" href="../styles/footer.css">
-    <script src = "../scripts/navBar.js"></script>
-    <script src = "../scripts/gallery2.js"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/gallery2.css" />
+    <link rel="stylesheet" href="../styles/navBar.css" />
+    <link rel="stylesheet" href="../styles/footer.css" />
+    <script src="../scripts/navBar.js"></script>
+    <script src="../scripts/gallery2.js"></script>
     <title>Gallery</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap"
+      rel="stylesheet"
+    />
 
-    <link rel="icon" href = "../images/B.jpg" >
-
-</head>
-<body>
-    <div style = "opacity: 0.75;" class = "headerbg">
-    </div>
-
-
+    <link rel="icon" href="../images/B.jpg" />
+  </head>
+  <body>
+    <div style="opacity: 0.75" class="headerbg"></div>
 
     <div class="header1">
+      <a class="home nav" href="../index.html">CBHS Orchestra </a>
 
-        <a class = "home nav" href="../index.html">CBHS Orchestra       
-        </a>
+      <div class="list">
+        <a class="nav" href="../pages/about.html">About </a>
 
-        <div class = "list">
-            <a class = "nav" href="../pages/about.html">About </a>
+        <a class="nav" href="../pages/contact.html">Contact </a>
 
-            <a class = "nav" href="../pages/contact.html">Contact </a>
-    
-            <a class = "nav" href="../pages/calendar.html">Calendar</a>
-    
-    
-            <a class = "nav" href="../pages/mainGallery.html">Gallery </a>
-    
-            <a class = "nav" href="../pages/support.html">Support </a>
-    
-        </div>
-        
-      
+        <a class="nav" href="../pages/calendar.html">Calendar</a>
+
+        <a class="nav" href="../pages/mainGallery.html">Gallery </a>
+
+        <a class="nav" href="../pages/support.html">Support </a>
+      </div>
     </div>
 
     <!-- Mobile Dropdown -->
-    <span class = "header2">
-        
-        <a class = "home nav" href="../index.html">CBHS Orchestra       
+    <span class="header2">
+      <a class="home nav" href="../index.html">CBHS Orchestra </a>
+
+      <span class="icons">
+        <a href="https://www.instagram.com/clearbrookorchestra/">
+          <img src="../images/instaPic.png" class="share" />
         </a>
+        <span class="dropdown">
+          <!-- <a target="_blank" href="https://icons8.com/icon/dMz54mFbVirR/menu">Menu</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a> -->
+          <div onclick="myFunction()" class="menu-btn dropbtn">
+            <div class="menu-btn__burger dropbtn"></div>
+          </div>
+          <div id="myDropdown" class="dropdown-content">
+            <a
+              href="../pages/about.html"
+              class="button"
+              style="margin-top: 50px"
+              >About Us</a
+            >
 
-        <span class = "icons">
-            <a href="https://www.instagram.com/clearbrookorchestra/" >  
-                <img src= "../images/instaPic.png" class = "share">
-            </a>            
-            <span class = "dropdown">
-                <!-- <a target="_blank" href="https://icons8.com/icon/dMz54mFbVirR/menu">Menu</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a> -->
-                <div onclick="myFunction()" class = "menu-btn dropbtn">
-                    <div   class="menu-btn__burger dropbtn"></div>
-                </div>    
-                <div id = "myDropdown" class = "dropdown-content">
-                    <a href="../pages/about.html" class="button" style="margin-top: 50px;">About Us</a>
-    
-                    <a href="../pages/calendar.html" class="button">Calendar</a>
-    
-                    <a href="../pages/contact.html" class="button">Contact</a>   
-    
-    
-                    <a href="../pages/mainGallery.html" class="button">Gallery</a>
-    
-                    <a href="../pages/support.html" class="button">Support Us</a>
-    
-                </div>
-                
-                <div class = "transparent">
+            <a href="../pages/calendar.html" class="button">Calendar</a>
 
-                </div>
-               
-                
-            </span>
+            <a href="../pages/contact.html" class="button">Contact</a>
 
+            <a href="../pages/mainGallery.html" class="button">Gallery</a>
+
+            <a href="../pages/support.html" class="button">Support Us</a>
+          </div>
+
+          <div class="transparent"></div>
         </span>
-
-       
+      </span>
     </span>
 
-
-    <div class = "container"> 
-        <h1>2021-2022 Photo Gallery</h1> 
+    <div class="container">
+      <h1>2021-2022 Photo Gallery</h1>
     </div>
 
-    <div >
-        <a class = "viewbtn" href = "../pages/mainGallery.html">Back to Main Gallery</a>
+    <div>
+      <a class="viewbtn" href="../pages/mainGallery.html"
+        >Back to Main Gallery</a
+      >
     </div>
 
-    <div id  = "gallery" class="gallery">
-   
-        
-      <img src="../images/WebsiteGallery/IMG_1051.heic" alt="">
-      <img src="../images/WebsiteGallery/IMG_1877.jpg" alt="">
-      <img src="../images/WebsiteGallery/IMG_1948.jpg" alt="">
-      <img src="../images/WebsiteGallery/IMG_2024.jpg" alt="">
-      <img src="../images/WebsiteGallery/IMG_2028.jpg" alt="">
-      <img src="../images/WebsiteGallery/IMG_2033.jpg" alt="">
-      <img src="../images/WebsiteGallery/IMG_2036.jpg" alt="">
-      <img src="../images/WebsiteGallery/IMG_2038.jpg" alt="">
+    <div id="gallery" class="gallery">
+      <img src="../images/WebsiteGallery/IMG_1051.heic" alt="" />
+      <img src="../images/WebsiteGallery/IMG_1877.jpg" alt="" />
+      <img src="../images/WebsiteGallery/IMG_1948.jpg" alt="" />
+      <img src="../images/WebsiteGallery/IMG_2024.jpg" alt="" />
+      <img src="../images/WebsiteGallery/IMG_2028.jpg" alt="" />
+      <img src="../images/WebsiteGallery/IMG_2033.jpg" alt="" />
+      <img src="../images/WebsiteGallery/IMG_2036.jpg" alt="" />
+      <img src="../images/WebsiteGallery/IMG_2038.jpg" alt="" />
 
-    <img src="../images/WebsiteGallery/DSCF9248-1.png" alt="">
-    <img src="../images/WebsiteGallery/DSCF9251-1.png" alt="">
-    <img src="../images/WebsiteGallery/DSCF9259-1.png" alt="">
-    <img src="../images/WebsiteGallery/DSCF9264-1.png" alt="">
-    <img src="../images/WebsiteGallery/DSCF9293-1.png" alt="">
+      <img src="../images/WebsiteGallery/DSCF9248-1.png" alt="" />
+      <img src="../images/WebsiteGallery/DSCF9251-1.png" alt="" />
+      <img src="../images/WebsiteGallery/DSCF9259-1.png" alt="" />
+      <img src="../images/WebsiteGallery/DSCF9264-1.png" alt="" />
+      <img src="../images/WebsiteGallery/DSCF9293-1.png" alt="" />
 
-  
-    <img src="../images/Full Orch Rehearsal/IMG_1132-min.jpg" alt="">
-    <img src="../images/Full Orch Rehearsal/IMG_1134-min.jpg" alt="">
-    <img src="../images/Full Orch Rehearsal/IMG_1136-min.jpg" alt="">
-    <img src="../images/Full Orch Rehearsal/IMG_1141-min.jpg" alt="">
-    <img src="../images/Full Orch Rehearsal/IMG_1145-min.jpg" alt="">
-    <img src="../images/Full Orch Rehearsal/IMG_1152-min.jpg" alt="">
-    <img src="../images/Full Orch Rehearsal/IMG_1155-min.jpg" alt="">
-    <img src="../images/Full Orch Rehearsal/IMG_1165-min.jpg" alt="">   
-    <img src="../images/Full Orch Rehearsal/IMG_1166-min.jpg" alt="">
-    <img src="../images/Full Orch Rehearsal/IMG_1167-min.jpg" alt="">
-    <img src="../images/Full Orch Rehearsal/IMG_1168-min.jpg" alt="">
-    <img src="../images/Full Orch Rehearsal/IMG_1169-min.jpg" alt="">
-    <img src="../images/Full Orch Rehearsal/IMG_1171-min.jpg" alt="">
-    <img src="../images/Full Orch Rehearsal/IMG_1172-min.jpg" alt="">
-    <img src="../images/Full Orch Rehearsal/IMG_1175-min.jpg" alt="">
-    <img src="../images/Full Orch Rehearsal/IMG_1187-min.jpg" alt="">
-    <img src="../images/Full Orch Rehearsal/IMG_1188-min.jpg" alt="">
-    <img src="../images/Full Orch Rehearsal/IMG_1190-min.jpg" alt="">
-    <img src="../images/Full Orch Rehearsal/IMG_1194-min.jpg" alt="">
-    <img src="../images/Full Orch Rehearsal/IMG_1195-min.jpg" alt="">
-    <img src="../images/Full Orch Rehearsal/IMG_1125-min.jpg" alt="">
+      <img
+        src="../images/WebsiteGallery/1E2D07E4-DA62-4ACC-A60C-EDD2E64C8D2B.jpg"
+        alt=""
+      />
 
-      <img src="../images/WebsiteGallery/1E2D07E4-DA62-4ACC-A60C-EDD2E64C8D2B.jpg" alt="">
-      <img src="../images/WebsiteGallery/20220324_181253.jpg" alt="">
-      <img src="../images/WebsiteGallery/20220324_181437.jpg" alt="">
-      <img src="../images/WebsiteGallery/20220324_182147.jpg" alt="">
-      <img src="../images/WebsiteGallery/20220324_190016.jpg" alt="">
-      <img src="../images/WebsiteGallery/20220324_195417.jpg" alt="">
-      <img src="../images/WebsiteGallery/IMG_0852.JPEG" alt="">
-      <img src="../images/WebsiteGallery/IMG_0866.JPEG" alt="">
-      <img src="../images/WebsiteGallery/IMG_0905.JPEG" alt="">
-      <img src="../images/WebsiteGallery/IMG_0912.JPEG" alt="">
-      <img src="../images/WebsiteGallery/IMG_0915.JPEG" alt="">
-      <img src="../images/WebsiteGallery/IMG_0916.JPEG" alt="">
-      <img src="../images/WebsiteGallery/IMG_0921.JPEG" alt="">
-       <img src="../images/WebsiteGallery/IMG_0930.JPEG" alt="">
-       <img src="../images/WebsiteGallery/IMG_1445.JPEG" alt="">
-       <img src="../images/WebsiteGallery/IMG_1445.JPEG" alt="">
-       <img src="../images/WebsiteGallery/IMG_1450.JPEG" alt="">
-       <img src="../images/WebsiteGallery/IMG_1468.JPEG" alt="">
-   
+      <img src="../images/WebsiteGallery/IMG_0916.JPEG" alt="" />
+      <img src="../images/WebsiteGallery/IMG_0921.JPEG" alt="" />
+      <img src="../images/WebsiteGallery/IMG_0930.JPEG" alt="" />
+      <img src="../images/WebsiteGallery/IMG_1445.JPEG" alt="" />
+      <img src="../images/WebsiteGallery/IMG_1445.JPEG" alt="" />
+      <img src="../images/WebsiteGallery/IMG_1450.JPEG" alt="" />
+      <img src="../images/WebsiteGallery/IMG_1468.JPEG" alt="" />
+      <img src="../images/WebsiteGallery/20220324_181253.jpg" alt="" />
+      <img src="../images/WebsiteGallery/20220324_181437.jpg" alt="" />
+      <img src="../images/WebsiteGallery/20220324_182147.jpg" alt="" />
+      <img src="../images/WebsiteGallery/20220324_190016.jpg" alt="" />
+      <img src="../images/WebsiteGallery/20220324_195417.jpg" alt="" />
+      <img src="../images/WebsiteGallery/IMG_0852.JPEG" alt="" />
+      <img src="../images/WebsiteGallery/IMG_0866.JPEG" alt="" />
+      <img src="../images/WebsiteGallery/IMG_0905.JPEG" alt="" />
+      <img src="../images/WebsiteGallery/IMG_0912.JPEG" alt="" />
+      <img src="../images/WebsiteGallery/IMG_0915.JPEG" alt="" />
+      <img src="../images/WebsiteGallery/tempImagezcQEr1.jpg" alt="" />
 
+      <img src="../images/Full Orch Rehearsal/IMG_1132-min.jpg" alt="" />
+      <img src="../images/Full Orch Rehearsal/IMG_1134-min.jpg" alt="" />
+      <img src="../images/Full Orch Rehearsal/IMG_1136-min.jpg" alt="" />
+      <img src="../images/Full Orch Rehearsal/IMG_1141-min.jpg" alt="" />
+      <img src="../images/Full Orch Rehearsal/IMG_1145-min.jpg" alt="" />
+      <img src="../images/Full Orch Rehearsal/IMG_1152-min.jpg" alt="" />
+      <img src="../images/Full Orch Rehearsal/IMG_1155-min.jpg" alt="" />
+      <img src="../images/Full Orch Rehearsal/IMG_1165-min.jpg" alt="" />
+      <img src="../images/Full Orch Rehearsal/IMG_1166-min.jpg" alt="" />
+      <img src="../images/Full Orch Rehearsal/IMG_1167-min.jpg" alt="" />
+      <img src="../images/Full Orch Rehearsal/IMG_1168-min.jpg" alt="" />
+      <img src="../images/Full Orch Rehearsal/IMG_1169-min.jpg" alt="" />
+      <img src="../images/Full Orch Rehearsal/IMG_1171-min.jpg" alt="" />
+      <img src="../images/Full Orch Rehearsal/IMG_1172-min.jpg" alt="" />
+      <img src="../images/Full Orch Rehearsal/IMG_1175-min.jpg" alt="" />
+      <img src="../images/Full Orch Rehearsal/IMG_1187-min.jpg" alt="" />
+      <img src="../images/Full Orch Rehearsal/IMG_1188-min.jpg" alt="" />
+      <img src="../images/Full Orch Rehearsal/IMG_1190-min.jpg" alt="" />
+      <img src="../images/Full Orch Rehearsal/IMG_1194-min.jpg" alt="" />
+      <img src="../images/Full Orch Rehearsal/IMG_1195-min.jpg" alt="" />
+      <img src="../images/Full Orch Rehearsal/IMG_1125-min.jpg" alt="" />
 
-
-      <img src="../images/HomePage/img1-min.png" alt="">
-      <img src="../images/HomePage/img2-min.png" alt="">
-      <img src="../images/HomePage/img3-min.png" alt="">
-      <img src="../images/HomePage/img4-min.png" alt="">
-      <img src="../images/HomePage/img5-min.png" alt="">
-      <img src="../images/HomePage/img6-min.png" alt="">
-      <img src="../images/HomePage/img7-min.png" alt="">
-      <img src="../images/HomePage/img8-min.png" alt="">
-      <img src="../images/Orchestras/chmb1.png" alt="">
-      <img src="../images/Orchestras/chmb2.png" alt="">
-      <img src="../images/Orchestras/symph.png" alt="">
-      <img src="../images/Orchestras/phil.png" alt="">
-
-
-
-
+      <img src="../images/HomePage/img1-min.png" alt="" />
+      <img src="../images/HomePage/img2-min.png" alt="" />
+      <img src="../images/HomePage/img3-min.png" alt="" />
+      <img src="../images/HomePage/img4-min.png" alt="" />
+      <img src="../images/HomePage/img5-min.png" alt="" />
+      <img src="../images/HomePage/img6-min.png" alt="" />
+      <img src="../images/HomePage/img7-min.png" alt="" />
+      <img src="../images/HomePage/img8-min.png" alt="" />
+      <img src="../images/Orchestras/chmb1.png" alt="" />
+      <img src="../images/Orchestras/chmb2.png" alt="" />
+      <img src="../images/Orchestras/symph.png" alt="" />
+      <img src="../images/Orchestras/phil.png" alt="" />
     </div>
-</body>
+  </body>
 
-<footer>
-    <div id="contact" >
-        <span style="text-align: center;width: 25vw; ">
-            <h3>Instagram</h3>
-            <div class = "content">
-                <a href="https://www.instagram.com/clearbrookorchestra/" style="color:red; text-decoration: none;">@clearbrookorchestra</a>
-               
-            </div>
-        </span>
-       
-    
-        <span  style="text-align: center;width: 50vw;">
-            <h3 >Clear Brook Highschool</h3>
-        
-                <p class = "content">4607 FM 2351<br> Friendswood<br> TX 77546</p>
-            
-        </span>
+  <footer>
+    <div id="contact">
+      <span style="text-align: center; width: 25vw">
+        <h3>Instagram</h3>
+        <div class="content">
+          <a
+            href="https://www.instagram.com/clearbrookorchestra/"
+            style="color: red; text-decoration: none"
+            >@clearbrookorchestra</a
+          >
+        </div>
+      </span>
 
-        <span style="text-align: center;width: 25vw;">
-        
-        <p style="text-align: center;padding-top: 5px;" class = "content">Developed by Alan Johnson and Blake Sharp</p>
-    
-        </span>
+      <span style="text-align: center; width: 50vw">
+        <h3>Clear Brook Highschool</h3>
 
-   
+        <p class="content">
+          4607 FM 2351<br />
+          Friendswood<br />
+          TX 77546
+        </p>
+      </span>
 
-      
+      <span style="text-align: center; width: 25vw">
+        <p style="text-align: center; padding-top: 5px" class="content">
+          Developed by Alan Johnson and Blake Sharp
+        </p>
+      </span>
     </div>
 
-    <div id = "rights">©2022 by Clear Brook High School Orchestra</div>
-
-</footer>
+    <div id="rights">©2022 by Clear Brook High School Orchestra</div>
+  </footer>
 </html>

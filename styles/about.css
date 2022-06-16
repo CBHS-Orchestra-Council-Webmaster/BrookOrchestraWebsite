@@ -167,6 +167,7 @@ h3 {
     display: none;
     box-shadow: 20px -20px red, -20px 20px white;
     position: relative;
+    width: 500px;
     height: min-content;
     margin-top: 50px;
 
@@ -216,9 +217,10 @@ h3 {
     display: none;
     box-shadow: 20px -20px white, -20px 20px red;
     position: inherit;
+    width: 500px;
     height: min-content;
     order: 1;
-    margin-top: 50px;
+    margin-top: 75px;
 
     animation: fadeInAnimationSymph ease 2s;
     animation-iteration-count: 1;
@@ -273,8 +275,9 @@ h3 {
     display: none;
     box-shadow: 20px -20px red, -20px 20px white;
     position: relative;
+    width: 500px;
     height: min-content;
-    margin-top: 50px;
+    margin-top: 25px;
 
     animation: fadeInAnimationC2 ease 1.5s;
     animation-iteration-count: 1;
@@ -321,6 +324,7 @@ h3 {
     display: none;
     box-shadow: 20px -20px white, -20px 20px red;
     position: relative;
+    width: 500px;
     height: min-content;
     order: 1;
     margin-top: 50px;
@@ -472,7 +476,7 @@ footer {
     .phil {
         width: 350px;
         text-align: left;
-        margin-bottom: 40px;
+        margin-bottom: 20px;
     }
 
     .phil:hover {
@@ -482,10 +486,13 @@ footer {
 
 
     #philPic {
-        height: 250px;
+        width: 350px;
+        height: min-content;
         display: block;
         box-shadow: 10px -10px red, -10px 10px white;
         margin-top: 0px;
+        margin-bottom: 40px;
+
 
 
     }
@@ -494,7 +501,7 @@ footer {
         width: 350px;
         text-align: left;
         order: 1;
-        margin-bottom: 40px;
+        margin-bottom: 20px;
 
 
     }
@@ -506,10 +513,12 @@ footer {
 
     #symphPic {
         order: 2;
-        height: 250px;
+        width: 350px;
+        height: min-content;
         display: block;
         box-shadow: 10px -10px red, -10px 10px white;
         margin-top: 0px;
+        margin-bottom: 30px;
 
 
 
@@ -529,7 +538,7 @@ footer {
     .chmb2 {
         width: 350px;
         text-align: left;
-        margin-bottom: 40px;
+        margin-bottom: 20px;
 
     }
 
@@ -539,11 +548,13 @@ footer {
     }
 
     #ch2Pic {
-        margin-bottom: 40px;
-        height: 275px;
+        width: 350px;
+        height: min-content;
         display: block;
         box-shadow: 10px -10px red, -10px 10px white;
         margin-top: 0px;
+        margin-bottom: 80px;
+
 
 
 
@@ -553,7 +564,7 @@ footer {
         width: 350px;
         text-align: left;
         order: 1;
-        margin-bottom: 40px;
+        margin-bottom: 20px;
 
 
     }
@@ -565,7 +576,8 @@ footer {
 
     #ch1Pic {
         order: 1;
-        height: 275px;
+        width: 350px;
+        height: min-content;
         display: block;
         box-shadow: 10px -10px red, -10px 10px white;
         margin-top: 0px;

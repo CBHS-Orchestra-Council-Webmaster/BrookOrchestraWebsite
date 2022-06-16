@@ -1,4 +1,4 @@
-$.getJSON("https://api.countapi.xyz/hit/04aj.github.ioBrookOrchestraWebsite/visits", function (response) {
+$.getJSON("https://api.countapi.xyz/hit/cbhsorchestra.org/visits", function (response) {
     $("#visits").text(response.value);
 });
 
