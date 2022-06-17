@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    background-color: white;
+    background-color: #FCF3F1;
     /*rgb(202, 7, 7);  */
     z-index: 0;
     font-family: 'Montserrat', sans-serif;
@@ -33,6 +33,7 @@ body {
     display: flex;
     flex-direction: column;
     padding-top: 0px;
+    z-index: 50;
 
 
 }
@@ -45,7 +46,7 @@ h1 {
 
 .abt.text {
     padding: 0px 150px;
-    padding-bottom: 50px;
+
 }
 
 
@@ -60,11 +61,17 @@ h1 {
     
 } */
 
+
+
+.png {
+    display: none;
+}
+
 h2 {
 
     text-align: center;
     padding: 25px;
-    background-color: rgb(202, 7, 7);
+    background-color: #CA0707;
     color: white;
     height: 50px;
     margin-top: 0;
@@ -76,18 +83,20 @@ h2 {
 
 
 .abt {
-    padding: 0px 10px;
     text-align: center;
     background-color: #16161d;
     color: white;
-
+    margin-top: 5vh;
 }
 
 
 .director {
 
     /* border: 5px #000 solid; */
-    padding: 50px;
+    padding: 25px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
     display: flex;
     /* background-color: rgb(245, 211, 205); */
 }
@@ -124,7 +133,7 @@ h3 {
 }
 
 .orchestras1 {
-    gap: 50px;
+    gap: 10vw;
     display: flex;
     justify-content: center;
     padding-top: 50px;
@@ -141,6 +150,7 @@ h3 {
     padding: 20px;
     width: 500px;
     transition: all .4s ease-in-out;
+
 }
 
 
@@ -157,7 +167,30 @@ h3 {
     position: relative;
     height: min-content;
     margin-top: 50px;
+
+    animation: fadeInAnimationPhil ease 1.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
+
+@keyframes fadeInAnimationPhil {
+    0% {
+        transform: translateX(-20vw);
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+
+#ghost1 {
+    display: none;
+
+}
+
 
 
 .symph {
@@ -185,16 +218,30 @@ h3 {
     order: 1;
     margin-top: 50px;
 
+    animation: fadeInAnimationSymph ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
 
+@keyframes fadeInAnimationSymph {
+    0% {
+        transform: translateX(20vw);
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 
 
+
 .orchestras2 {
-    gap: 50px;
+    gap: 10vw;
     display: flex;
     flex-wrap: wrap;
-    margin-top: 0px;
+    margin-top: 10vw;
     justify-content: center;
     padding: 50px 0px;
     max-width: 1500px;
@@ -227,8 +274,29 @@ h3 {
     height: min-content;
     margin-top: 50px;
 
+    animation: fadeInAnimationC2 ease 1.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+
 
 }
+
+@keyframes fadeInAnimationC2 {
+    0% {
+        transform: translateX(-20vw);
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+#ghost2 {
+    display: none;
+
+}
+
 
 .chmb1 {
     background-color: white;
@@ -255,8 +323,23 @@ h3 {
     order: 1;
     margin-top: 50px;
 
+    animation: fadeInAnimationC1 ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 
 }
+
+@keyframes fadeInAnimationC1 {
+    0% {
+        transform: translateX(20vw);
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
 
 .council {
     margin-top: 50px;
@@ -264,6 +347,8 @@ h3 {
     margin-right: 150px;
     font-size: large;
     text-align: justify;
+
+
 }
 
 td,
@@ -271,7 +356,7 @@ th {
 
 
     padding: 5px;
-    background-color: white;
+    background-color: #FCF3F1;
     border-bottom: 2px red solid;
     max-width: 200px;
 }
@@ -299,41 +384,60 @@ th {
 
 
 
-@media only screen and (max-width: 1150px) {
 
+
+footer {
+
+    color: white;
+    background-color: #16161d;
+
+
+}
+
+
+@media only screen and (max-width: 1200px) {
     .symph {
         order: 1;
-
     }
-
 
     #symphPic {
         order: 2;
     }
 
-
     .chmb1 {
         order: 1;
-
     }
 
-    #ch1Pic {
-        order: 1;
+    #ch1 {
+        order: 2;
     }
-
 }
 
 
 @media only screen and (max-width: 800px) {
+    .abt{
+        margin-top: 0vh;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
 
     p {
         font-size: small;
     }
 
-    .abt.text {
-        padding: 0px 10px;
-        padding-bottom: 50px;
+    .svg {
+        display: none;
     }
+
+    .png {
+        display: block;
+    }
+
+
+
+    
 
     .meyer {
         margin-left: auto;
@@ -406,7 +510,19 @@ th {
         margin-top: 0px;
 
 
+
     }
+
+    @keyframes fadeInAnimationSymph {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
 
     .chmb2 {
         width: 350px;
@@ -455,6 +571,16 @@ th {
 
     }
 
+    @keyframes fadeInAnimationC1 {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
     .council {
         margin-top: 50px;
         margin-left: 25px;
@@ -468,11 +594,44 @@ th {
 
     }
 
+    .title {
+        margin: 0px;
+        font-size: 3vw;
+        padding: 0px;
+    }
+
+
+
+
+
 
 }
 
-footer {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    bottom: 0px;
-    padding: 15px;
+@media only screen and (min-width: 1150px) {
+
+
+    #ghost1 {
+        width: 100px;
+        height: 100px;
+    }
+
+    #ghost2 {
+        width: 100px;
+        height: 100px;
+
+
+    }
+
+    h1 {
+        margin-top: 5%;
+    }
+
+    .abt {
+        margin-bottom: 5%;
+        line-height: 2vw;
+    }
+
+
+
+
 }

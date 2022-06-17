@@ -65,26 +65,31 @@
 }
 
 
+.list {
+  display: flex;
+  gap: 2.5vw;
+}
 
 
 
 
-
-a {
+.nav {
   text-decoration: none;
   color: white;
 }
 
-a:link,
-a:visited {
+.nav:link,
+.nav:visited {
   padding: 5px;
   color: white;
   transition: all .3s ease-in;
 }
 
-a:hover {
+.nav:hover {
   color: red;
 }
+
+
 
 
 .tab {
@@ -93,7 +98,8 @@ a:hover {
 
 
 
-@media screen and (max-width: 800px) {
+
+@media screen and (max-width: 600px) {
   .header1 {
     display: none;
   }
@@ -102,7 +108,7 @@ a:hover {
     text-decoration: none;
     display: flex;
     position: fixed;
-    z-index: 50;
+    z-index: 100;
     justify-content: space-around;
     font-size: 2vw;
     font-weight: lighter;
@@ -114,10 +120,10 @@ a:hover {
   .headerbg {
     position: fixed;
     background-color: #16161d;
-    height: 9vw;
+    height: 12vw;
     width: 100%;
     z-index: 2;
-    opacity: 1;
+
 
   }
 
@@ -132,77 +138,212 @@ a:hover {
     width: 23px;
     padding: 4px 10px;
     margin-top: 5px;
+    z-index: 500;
+
 
   }
 
-
-  /* Dropdown Button */
   .menu {
     width: 25px;
     padding-right: 25px;
     padding-bottom: 2px;
 
-  }
-
-  /* Dropdown button on hover & focus */
-  .dropbtn:hover,
-  .dropbtn:focus,
-
-  .share:hover,
-  .share:focus {
-    background-color: none;
-    opacity: 0.75;
 
   }
+
+
+  /* NEW MENU */
+  .menu-btn {
+    top: -13px;
+    margin-right: 25px;
+    display: flex;
+    position: relative;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    /* border: 3px solid white; */
+
+    z-index: 100;
+
+  }
+
+  .menu-btn__burger {
+
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 25px;
+    height: 3px;
+    background: white;
+    border-radius: 5px;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .menu-btn__burger::before,
+  .menu-btn__burger::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 3px;
+    background: white;
+    border-radius: 5px;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .menu-btn__burger::before {
+    transform: translateY(-8px);
+  }
+
+  .menu-btn__burger::after {
+    transform: translateY(8px);
+  }
+
+  .menu-btn.open .menu-btn__burger {
+    transform: translateX(-20px);
+    background: transparent;
+
+  }
+
+  .menu-btn.open .menu-btn__burger::before {
+    transform: rotate(45deg) translate(10px, -10px);
+  }
+
+  .menu-btn.open .menu-btn__burger::after {
+    transform: rotate(-45deg) translate(10px, 10px);
+  }
+
+
+
+
+
 
   /* The container <div> - needed to position the dropdown content */
   .dropdown {
     position: relative;
     display: inline-block;
+
+
   }
 
   /* Dropdown Content (Hidden by Default) */
   .dropdown-content {
     display: none;
     position: absolute;
+    top: -25px;
     right: 0;
-    background-color: #f1f1f1;
-    min-width: 160px;
+    background-color: #16161d;
+    min-width: 40vw;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
+    z-index: 10;
+    height: 100vh;
+    filter: brightness(1);
+
+
   }
 
   /* Links inside the dropdown */
   .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
+    color: white;
+    padding: 20px 16px;
     text-decoration: none;
     display: block;
-    font-size: medium;
+    text-align: center;
+
+    font-size: large;
+
+
+
   }
 
   /* Change color of dropdown links on hover */
   .dropdown-content a:hover {
-    background-color: rgb(211, 204, 204)
+    background-color: rgb(211, 204, 204);
+    color: black;
   }
 
   /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
   .show {
     display: block;
+
+    animation: dropDown ease 1.25s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+
+  }
+
+  .transparent {
+    display: none;
+    z-index: 9;
+    top: -25px;
+    position: absolute;
+    justify-content: left;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #16161d;
+  }
+
+  .transparent.open {
+    display: block;
+
+    animation: dark ease 1.25s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes dark {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 0.5;
+    }
+
+
+  }
+
+
+
+
+
+  @keyframes dropDown {
+    0% {
+      transform: translateX(20vw);
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+
+
   }
 
 
 }
 
-@media screen and (max-width: 500px) {
-  .title {
-    text-decoration: none;
-    font-size: medium;
-    color: black;
-    padding-left: 5px;
-    padding-top: 3px;
-    /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 550;
+@media screen and (max-width: 380px) {
+  .home {
+    font-size: 7vw;
+
   }
+
+  .share {
+    width: 21px;
+    padding: 4px 10px;
+    margin-top: 5px;
+
+  }
+
+
+  /* Dropdown Button */
+  .menu {
+    width: 23px;
+    padding-right: 25px;
+    padding-bottom: 2px;
+
+  }
+
+
 }

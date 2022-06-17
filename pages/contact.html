@@ -6,37 +6,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/contact.css">
     <link rel="stylesheet" href="../styles/navBar.css">
+    <link rel="stylesheet" href="../styles/footer.css">
     <script src = "../scripts/navBar.js"></script>
     <title>Contact</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="icon" href = "../images/B.jpg" >
+
+
+
 </head>
 <body>
 
     
-    <div class = "headerbg">
+    <div style = "opacity: 0.75;" class = "headerbg">
     </div>
 
 
 
     <div class="header1">
 
-        <a class = "home" href="../pages/index.html">CBHS Orchestra       
+        <a class = "home nav" href="../index.html">CBHS Orchestra       
         </a>
 
         <div class = "list">
-            <a href="../pages/about.html">About </a>
+            <a class = "nav" href="../pages/about.html">About </a>
 
-            <a href="../pages/contact.html">Contact </a>
+            <a class = "nav" href="../pages/contact.html">Contact </a>
     
-            <a href="../pages/calendar.html">Calendar</a>
+            <a class = "nav" href="../pages/calendar.html">Calendar</a>
     
     
-            <a href="../pages/mainGallery.html">Gallery </a>
+            <a class = "nav" href="../pages/mainGallery.html">Gallery </a>
     
-            <a href="../pages/support.html">Support </a>
+            <a class = "nav" href="../pages/support.html">Support </a>
     
         </div>
         
@@ -46,7 +52,7 @@
     <!-- Mobile Dropdown -->
     <span class = "header2">
         
-        <a class = "home" href="../pages/index.html">CBHS Orchestra       
+        <a class = "home nav" href="../index.html">CBHS Orchestra       
         </a>
 
         <span class = "icons">
@@ -55,22 +61,27 @@
             </a>            
             <span class = "dropdown">
                 <!-- <a target="_blank" href="https://icons8.com/icon/dMz54mFbVirR/menu">Menu</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a> -->
-                <img onclick="myFunction()" src= "../images/newMenu.png" class = "menu dropbtn" >
-    
+                <div onclick="myFunction()" class = "menu-btn dropbtn">
+                    <div   class="menu-btn__burger dropbtn"></div>
+                </div>    
                 <div id = "myDropdown" class = "dropdown-content">
-                    <a href="../pages/about.html" class="button">About Us</a>
+                    <a href="../pages/about.html" class="button" style="margin-top: 50px;">About Us</a>
     
                     <a href="../pages/calendar.html" class="button">Calendar</a>
     
                     <a href="../pages/contact.html" class="button">Contact</a>   
     
-                    <a href="../pages/news.html" class="button">News</a>
     
                     <a href="../pages/mainGallery.html" class="button">Gallery</a>
     
                     <a href="../pages/support.html" class="button">Support Us</a>
     
                 </div>
+
+                <div class = "transparent">
+
+                </div>
+               
                 
                 
             </span>
@@ -81,43 +92,49 @@
     </span>
         
        
+
+
+
+
+
     </div>
-    <div class = "container"> 
-        <h1>Contact</h1> 
+    <div style="color: white;text-align: center;padding-top: 5rem;font-size: 4rem;">
+        contact us
     </div>
-    <span class = "contact">
-        <div class = "contact-a">
-            <h2>Brady Meyer</h2>
+    <span class = "contact" style="">
+        <div>
+        <div class = "" style="background: white;border-radius: .5rem;padding: .5rem;text-align: center;height: 7.5rem;">
+            <h2 style="">Brady Meyer</h2>
             <a href="mailto:brmeyer@ccisd.net">brmeyer@ccisd.net</a> 
-            <p>Office Phone: <a href="tel:281-284-2294">281-284-2294</a></p> 
         
         </div>
         
         <div class = "contact-b">
-            <div>
+            <div style = "">
                 <h2>Booster Club</h2>
         
                 <table class = "officers">
                     
                     <tr>
                         <td>President:</td>
-                        <td>  Kerri Pastrano</td>
+                        <td>Kerri Pastrano<br><a  href="mailto:kerristeckler@hotmail.com"> kerristeckler@hotmail.com</a> </td>
                     </tr>
         
                     <tr>
                         <td>Vice President:</td>
-                        <td>  Kathryn Nguyen</td>
+                        <td>  Kathy Carmona<br><a href="mailto:kathleencarmona@hotmail.com ">kathleencarmona@hotmail.com </a></td>
+
                     </tr>
         
                     <tr>
                         <td>Secretary:</td>
-                        <td>  Amy Kiszka</td>
+                        <td>  Kathryn Nguyen<br><a href="mailto:kathryn6584@gmail.com">kathryn6584@gmail.com</a></td>
                     </tr>
         
         
                     <tr>
                         <td>Treasurer</td>
-                        <td>  Jessica Sitka</td>
+                        <td>  Jessica Sitka<br><a href="mailto:sitka79@protonmail.com">sitka79@protonmail.com</a></td>
                     </tr>
         
                     
@@ -127,12 +144,10 @@
             </div>
         
         </div>
-        
-    </span>
+        </div>
 
-    <span class = "message">
-        <h2>Contact Us</h2>
-
+    <div class = "message" style="">
+        <h2 style="text-align: center;clear: both;">Contact Form</h2>
         <form
   action="https://formspree.io/f/mnqwlbbp"
   method="POST"
@@ -143,33 +158,68 @@
             </div>
             
             <div class = "email">
-                <input type="text" id="name" name="name" required
+                <input type="text" id="email" name="email" required
             minlength="4" maxlength="50" size="45" placeholder="Email">
             </div>
             
             <div class = "subject">
-                <input type="text" id="name" name="name" required
+                <input type="text" id="subject" name="subject" required
             minlength="4" maxlength="50" size="45" placeholder="Subject">
             </div>
             
-            <div class = "msg">
-                <textarea name="Message" wrap="soft"  placeholder="Message" id="name" cols="45" rows="10">
+            <div class = "msg" style="border-radius:.5rem;border-width: .15rem;border-color: black;border-style: solid;margin-bottom: .5rem;width:min-content">
+                <textarea name="Message"  placeholder="Message" id="name" cols="45" rows="10" style="border: none;font-size: medium;">
                 </textarea>
                 <!-- <input type="text" id="name" name="name" required
             minlength="4"  maxlength="200" size="50" placeholder="Message" style="height: 200px;"> -->
             </div>
-        <input type="submit" value="Send">
-        <input type="reset" value = "Reset">
+            <div style="margin-left: 37.5%;">
+        <input type="submit" value="Send" style="border-width:.1rem;">
+        <input type="reset" value = "Reset" style="border-width: .1rem;">
+            </div>
         </form>
        
         
  
-    </span>
+    </div>
+        
+</span>
     
 
 </body>
 
-<footer >
-    <div >  ©2022 by Clear Brook High School Orchestra</div>
+<footer>
+    <div id="contact" >
+        <span style="text-align: center;width: 25vw; ">
+            <h4 style="margin:0px;">Instagram</h4>
+            <div class = "content">
+                <a href="https://www.instagram.com/clearbrookorchestra/" style="color:red; text-decoration: none;font-size: small;">@clearbrookorchestra</a>
+               
+            </div>
+        </span>
+       
+    
+        <span  style="text-align: center;width: 50vw;">
+            <h4 style="margin:0px;" >Clear Brook Highschool</h4>
+        
+                <p class = "content" style="font-size:small;">4607 FM 2351<br> Friendswood<br> TX 77546</p>
+            
+        </span>
+        <span style="width: 10vw;text-align: center;width: 25vw;">
+            <h4 style="margin:0px;">Director</h4>
+            <p style="font-size:small;margin:0px;">Brady Meyer</p>
+        </span>
+
+
+
+   
+
+      
+    </div>
+<div style="font-size:.75rem;">
+    <span id = "rights" style="margin-left:2vw;">©2022 by Clear Brook High School Orchestra</span>
+    <span style="float:right;margin-right: 2vw;">Developed by Alan Johnson and Blake Sharp</span>
+</div>
+
 </footer>
 </html>

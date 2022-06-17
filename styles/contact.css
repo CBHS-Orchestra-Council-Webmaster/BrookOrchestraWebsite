@@ -1,10 +1,5 @@
 body {
-    background: linear-gradient(to bottom,
-            white 3%,
-            white 650px,
-            rgb(202, 7, 7) 650px,
-            rgb(202, 7, 7) 95%);
-
+    background-color: #16161d;
     z-index: 0;
     font-family: 'Montserrat', sans-serif;
     margin: 0;
@@ -12,7 +7,16 @@ body {
     animation: fadeInAnimation ease 1s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
+
 }
+
+html,
+body {
+    width: 100%;
+    overflow-x: hidden;
+
+}
+
 
 @keyframes fadeInAnimation {
     0% {
@@ -25,9 +29,11 @@ body {
 }
 
 
+
 .container {
-    margin-top: 45px;
-    padding: 0px 10px;
+    margin-top: 0px;
+    padding-top: 10px;
+
     text-align: center;
     background-color: #16161d;
     color: white;
@@ -39,50 +45,78 @@ h1 {
 
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:link,
+a:visited {
+    padding: 5px;
+    color: black;
+    transition: all .3s ease-in;
+}
+
+a:hover {
+    color: red;
+}
+
+
 .contact {
     display: flex;
     justify-content: space-around;
+    padding-bottom: 4.5rem;
+    background-color: #16161d;
+    margin-top:2.5rem;margin-left: 13.5rem;
 
 }
-
+input{
+    border-width: .15rem;
+    border-color: black;
+    border-style: solid;
+    border-radius: .2rem;
+}
 .contact-a {
 
-
-    padding: 25px;
-    color: black;
-    text-decoration: none;
-    text-align: center;
 
 
 }
 
 .contact-b {
-
-    padding: 25px;
-
+    display: block;
+padding-top: 1rem;
     color: black;
     text-decoration: none;
+    background:white;border-radius:.5rem;padding:.5rem;width: 35rem;
+    margin-top: .5rem;;
 
 
 }
-
+table{
+    margin:auto;
+}
 td {
     padding-right: 10px;
+    padding-bottom: 10px;
+
 }
 
+
+
 .message {
-    display: flex;
-    flex-direction: column;
-    padding: 30px;
-    margin-top: 200px;
-    width: min-content;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left:2.5rem;
+    margin-right:15rem;
+    background-color: white;
+    border-radius: .5rem;
+    padding: 1rem;
+    padding-top: .5rem;
+    padding-bottom: 5px;
 
 
 }
 
 input {
+    font-size: medium;
     height: 25px;
     font-family: 'Montserrat', sans-serif;
 
@@ -96,10 +130,6 @@ input {
     padding-bottom: 5px;
 }
 
-.message {
-    padding-bottom: 5px;
-
-}
 
 .subject {
     padding-bottom: 5px;
@@ -109,7 +139,7 @@ input {
 input[type="text"],
 textarea {
     color: rgb(0, 0, 0);
-    background-color: rgb(255, 255, 255);
+    background-color: #FCF3F1;
     font-family: 'Montserrat', sans-serif;
 
 
@@ -118,42 +148,96 @@ textarea {
 h2 {
     margin-left: auto;
     margin-right: auto;
+    text-align: center;
 }
 
+
+
+
+
+.png {
+    display: none;
+}
+
+
+
+footer {
+    background-color: #FCF3F1;
+
+
+}
+
+
 @media screen and (max-width: 640px) {
-
-    body {
-        background: linear-gradient(to bottom,
-                white 3%,
-                white 750px,
-                rgb(202, 7, 7) 750px,
-                rgb(202, 7, 7) 95%);
-
+    body{
+        display: block;
     }
 
     .contact {
-        display: flex;
-        flex-direction: column;
-
+        display: block;
+        clear: both;
+        margin-inline: 1rem;
 
     }
 
     .contact-a {
-        margin-left: auto;
-        margin-right: auto;
     }
 
     .contact-b {
-        margin-left: auto;
-        margin-right: auto;
+        clear: both;
+        margin-top: .5rem;
+        width: 100%;
+        width: auto;
     }
+    .message{
+        width: min-content;
+        margin: auto;
+        padding:.5rem;
+    color: black;
+    border-radius:.5rem;
+    margin-top: .5rem;
+    }
+    form{
+        clear: both;
+    }
+
+
+
+    h3 {
+        margin: 0px;
+        font-size: 3vw;
+        padding: 0px;
+    }
+
+    .content {
+        margin: 0px;
+        font-size: 2.5vw;
+    }
+
+    #rights {
+        font-size: 2.5vw;
+
+    }
+
+
+    .svg {
+        display: none;
+    }
+
+    .png {
+        display: block;
+    }
+
 
 
 }
 
-footer {
+@media screen and (max-width: 380px) {
+    td {
+        font-size: 4vw;
 
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    bottom: 0px;
-    padding: 15px;
+    }
+
+
+
 }

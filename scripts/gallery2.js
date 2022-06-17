@@ -1,3 +1,6 @@
+
+
+
 window.addEventListener("DOMContentLoaded", () => {
 
     // (A) GET ALL IMAGES
