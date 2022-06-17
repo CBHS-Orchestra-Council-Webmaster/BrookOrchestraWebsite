@@ -13,6 +13,8 @@ window.scroll({
 $(window).scroll(function () {
     var scrollTop = $(this).scrollTop();
 
+
+
     $('.logo').css({
         opacity: function () {
             var elementHeight = $(this).height(),

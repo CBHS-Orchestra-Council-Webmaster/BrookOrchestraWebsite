@@ -14,22 +14,37 @@ body {
     animation-fill-mode: forwards;
 }
 
+.container {
+ 
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    color: white;
+
+   
+
+}
+
+h1{
+    margin-top: 100px;
+    font-size: 6vw;
+}
+
+
+
+
 #preview {
     position: absolute;
     display: flex;
     justify-content: center;
+    opacity: 0.6;
 }
 
-.header {
-    position: sticky;
-    top: 20px;
-    z-index: 50;
-    text-align: right;
-    font-size: 2vw;
-    font-weight: lighter;
-    width: 100%;
-    height: max-content;
+.front{
+    width: 33%;
 }
+
+
 
 a:link,
 a:visited {
@@ -52,31 +67,11 @@ a:hover {
     }
 }
 
-h1 {
-    padding: 50px;
-    font-size: xxx-large;
-
-}
-
-.content {
-    top: -10vw;
-}
 
 
 
 
-h2 {
 
-    text-align: center;
-    padding: 25px;
-    background-color: rgb(202, 7, 7);
-    color: white;
-    height: 50px;
-    margin-top: 0;
-    font-size: xx-large;
-    margin-bottom: 0;
-
-}
 
 
 .year22 {
@@ -141,22 +136,44 @@ footer {
 
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 600px) {
 
 
+    h1{
+        font-size: xxx-large;
+    }
+    #one{
+        display: none;
+    }
 
+    #two{
+        width: 50%;
+    }
+
+    #three{
+        width: 50%;
+    }
+
+    .svg{
+        margin-top: 100px;
+    }
     .logo22 {
         width: 350px;
 
     }
 
-
-
-
     #preview {
         margin-top: 12vw;
     }
 
+    
+    .viewbtn{
+        font-size: 4.5vw;
+    }
+
+
+
+   
     .content {
         top: 5vw;
     }
