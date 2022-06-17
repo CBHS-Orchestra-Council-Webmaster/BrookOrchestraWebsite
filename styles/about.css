@@ -46,7 +46,6 @@ h1 {
 
 .abt.text {
     padding: 0px 150px;
-    padding-bottom: 50px;
 
 }
 
@@ -84,11 +83,10 @@ h2 {
 
 
 .abt {
-    padding: 0px 10px;
     text-align: center;
     background-color: #16161d;
     color: white;
-
+    margin-top: 5vh;
 }
 
 
@@ -417,6 +415,9 @@ footer {
 
 
 @media only screen and (max-width: 800px) {
+    .abt{
+        margin-top: 0vh;
+    }
 
     h1 {
         font-size: 40px;
@@ -436,10 +437,7 @@ footer {
 
 
 
-    .abt.text {
-        padding: 0px 10px;
-        padding-bottom: 50px;
-    }
+    
 
     .meyer {
         margin-left: auto;
