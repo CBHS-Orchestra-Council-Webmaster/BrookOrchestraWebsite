@@ -259,10 +259,13 @@ footer {
 .svg {
     z-index: -1;
     width: 100%;
-    margin-top: 68px;
     position: absolute;
 }
 
+
+.png{
+    display: none;
+}
 
 /* ON SMALL SCREENS */
 @media screen and (max-width: 600px) {
@@ -365,7 +368,12 @@ footer {
 
 
     .svg {
-        margin-top: 60px;
+        display: none;
+      
+    }
+
+    .png{
+        display: block;
     }
 
     .slide img {

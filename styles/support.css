@@ -26,13 +26,14 @@ body {
 
 .container {
     text-align: center;
-    padding-top: 4rem;
+    padding-top: 1rem;
     color: white;
     background-color: #16161d;
 
 }
 
 .container.two {
+    margin-top: -1rem;
 
     background-color: #FCF3F1;
     padding-bottom: 50px;
@@ -142,6 +143,9 @@ a {
     display: none;
 }
 
+.pdf-mob{
+    display: none;
+}
 
 
 footer {
@@ -176,9 +180,16 @@ footer {
         font-size: 3vw;
     }
 
+    .pdf{
+        display: none;
+    }
+    .pdf-mob{
+        display: block;
+    }
 
 
     .btn {
+        margin-top: 1rem;
         font-size: 4vw;
     }
 

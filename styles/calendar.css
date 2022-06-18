@@ -30,7 +30,7 @@ body {
 }
 
 .container {
-    padding-top: 4rem;
+    padding-top: 1rem;
     text-align: center;
     background-color: #16161d;
     color: white;
@@ -44,12 +44,12 @@ h1 {
 }
 
 .cal {
-    display: flex;
-    justify-content: center;
     margin-bottom: 100px;
     margin-top: 50px;
-
-
+    width: 75%;
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
 
 }
 
@@ -79,6 +79,10 @@ footer {
 
     .png {
         display: block;
+    }
+
+    .cal{
+        width: 90%;
     }
 
 }
