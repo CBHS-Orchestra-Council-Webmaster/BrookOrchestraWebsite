@@ -374,6 +374,7 @@ footer {
 
     .png{
         display: block;
+        margin-top: 1.25rem;
     }
 
     .slide img {
