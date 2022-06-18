@@ -30,8 +30,7 @@ body {
 }
 
 .container {
-    margin-top: -40px;
-    padding: 0px 10px;
+    padding-top: 4rem;
     text-align: center;
     background-color: #16161d;
     color: white;

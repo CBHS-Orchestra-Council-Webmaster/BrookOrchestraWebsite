@@ -28,16 +28,15 @@ body {
     }
 }
 
-
-
-.container {
-    margin-top: 0px;
-    padding-top: 10px;
-
-    text-align: center;
-    background-color: #16161d;
-    color: white;
+.mobile{
+    display: none;
 }
+
+.svg1{
+    display: none;
+}
+
+
 
 h1 {
     padding: 50px;
@@ -64,10 +63,15 @@ a:hover {
 
 .contact {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 20px;
     padding-bottom: 4.5rem;
     background-color: #16161d;
-    margin-top:2.5rem;margin-left: 13.5rem;
+    margin-top: 4.5rem;
+    margin-bottom: 3rem;
+    flex-wrap: wrap;
+    
+    
 
 }
 input{
@@ -76,18 +80,15 @@ input{
     border-style: solid;
     border-radius: .2rem;
 }
-.contact-a {
 
-
-
-}
 
 .contact-b {
     display: block;
 padding-top: 1rem;
     color: black;
     text-decoration: none;
-    background:white;border-radius:.5rem;padding:.5rem;width: 35rem;
+    background: white;
+    border-radius:.5rem;padding:.5rem;width: 35rem;
     margin-top: .5rem;;
 
 
@@ -104,9 +105,8 @@ td {
 
 
 .message {
-    margin-left:2.5rem;
-    margin-right:15rem;
-    background-color: white;
+  
+    background-color:white;
     border-radius: .5rem;
     padding: 1rem;
     padding-top: .5rem;
@@ -139,7 +139,7 @@ input {
 input[type="text"],
 textarea {
     color: rgb(0, 0, 0);
-    background-color: #FCF3F1;
+    background-color: #ffebe6;
     font-family: 'Montserrat', sans-serif;
 
 
@@ -169,50 +169,130 @@ footer {
 
 
 @media screen and (max-width: 640px) {
+   
     body{
+        background-color: #CA0707;
+    }
+
+    .desktop{
+        display: none;
+    }
+
+  
+
+    .mobile{
         display: block;
     }
 
+    .container {
+        margin-top: 0px;
+        padding-top: 10px;
+    
+        text-align: center;
+        background-color: #16161d;
+        color: white;
+    }
+    
+    h1 {
+        padding: 50px;
+        font-size: xxx-large;
+    
+    }
+    
+    a {
+        text-decoration: none;
+        color: black;
+    }
+    
+    a:link,
+    a:visited {
+        padding: 5px;
+        color: black;
+        transition: all .3s ease-in;
+    }
+    
+    a:hover {
+        color: red;
+    }
+    
+    
     .contact {
-        display: block;
-        clear: both;
-        margin-inline: 1rem;
-
+        display: flex;
+        justify-content: space-around;
+        padding-bottom: 100px;
+        background-color: #FCF3F1;
+        margin-top: -40px;
+    
     }
-
+    
     .contact-a {
+    
+    
+        padding: 25px;
+        color: black;
+        text-decoration: none;
+        text-align: center;
+    
+    
     }
-
+    
     .contact-b {
-        clear: both;
-        margin-top: .5rem;
-        width: 100%;
-        width: auto;
+    
+        padding: 25px;
+    
+        color: black;
+        text-decoration: none;
+    
+    
     }
-    .message{
+    
+    td {
+        padding-right: 10px;
+        padding-bottom: 10px;
+    
+    }
+    
+    
+    
+    .message {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        margin-top: 50px;
         width: min-content;
-        margin: auto;
-        padding:.5rem;
-    color: black;
-    border-radius:.5rem;
-    margin-top: .5rem;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 100px;
+    
+    
     }
-    form{
-        clear: both;
+    
+    input {
+        height: 25px;
+        font-family: 'Montserrat', sans-serif;
+    
     }
-
-
-
-    h3 {
-        margin: 0px;
-        font-size: 3vw;
-        padding: 0px;
+    
+   
+    input[type="text"],
+    textarea {
+        color: rgb(0, 0, 0);
+        background-color: #ffebe6;
+        font-family: 'Montserrat', sans-serif;
+    
+    
     }
-
-    .content {
-        margin: 0px;
-        font-size: 2.5vw;
+    
+    h2 {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
     }
+    
+    
+    
+
+   
 
     #rights {
         font-size: 2.5vw;
@@ -238,6 +318,18 @@ footer {
 
     }
 
+
+
+}
+
+@media screen and (max-width: 1400px) {
+   .svg1{
+    display: block;
+   }
+
+   .svg2{
+    display: none;
+   }
 
 
 }

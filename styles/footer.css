@@ -17,14 +17,17 @@ h3 {
 }
 
 #rights {
-    text-align: center;
-    padding-top: 20px;
+    font-size:1.25vw;
     margin: 0px;
+}
+
+#mobile-rights{
+    display: none;
 }
 
 footer {
     padding-top: 10px;
-    height: max-content;
+    height: auto;
     bottom: 0px;
     padding: 15px;
     margin: 0px;
@@ -45,8 +48,14 @@ footer {
     }
 
     #rights {
-        font-size: 2.5vw;
+        display: none;
 
     }
+
+   #mobile-rights{
+    display: block;
+    font-size: 2.5vw;
+
+   }
 
 }
