@@ -247,9 +247,7 @@ figcaption {
 
 
 footer {
-
     background-color: #FCF3F1;
-
 
 }
 
@@ -373,7 +371,7 @@ footer {
     }
 
     .png{
-        display: block;
+        display: grid;
         margin-top: 1.25rem;
     }
 
