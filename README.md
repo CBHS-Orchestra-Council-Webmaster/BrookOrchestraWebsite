@@ -1,2 +1,3 @@
 # BrookOrchestraWebsite
-Trying to make a basic website for my school's orchestra.
+Official website for the Clear Brook High School Orchestra program. 
+https://www.cbhsorchestra.org/
