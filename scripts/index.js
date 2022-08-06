@@ -63,6 +63,19 @@ const cb2 = function (entries) {
 const io2 = new IntersectionObserver(cb2);
 io2.observe(appear2);
 
+const appear3 = document.querySelector('.appear3');
+const cb3 = function (entries) {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('inview');
+            entry.unobserve(entry.target);
+
+        }
+    });
+}
+const io3 = new IntersectionObserver(cb);
+io3.observe(appear3);
+
 let slideIndex = 1;
 showSlides(slideIndex);
 
@@ -91,17 +104,3 @@ function showSlides(n) {
 }
 
 
-// let slideIndex = 0;
-// showSlides();
-
-// function showSlides() {
-//     let i;
-//     let slides = document.getElementsByClassName("mySlides");
-//     for (i = 0; i < slides.length; i++) {
-//         slides[i].style.display = "none";
-//     }
-//     slideIndex++;
-//     if (slideIndex > slides.length) { slideIndex = 1 }
-//     slides[slideIndex - 1].style.display = "block";
-//     setTimeout(showSlides, 5000); // Change image every 2 seconds
-// }

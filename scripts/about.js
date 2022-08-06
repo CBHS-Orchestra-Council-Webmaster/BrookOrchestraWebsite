@@ -131,15 +131,3 @@ function c1show() {
 
 
 
-// const observer = new IntersectionObserver(entries => {
-//     entries.forEach(entry => {
-//         if (entry.isIntersecting) {
-//             document.querySelectorAll(".item")[0].classList.add("inview");
-//             document.querySelectorAll(".item")[1].classList.add("inview");
-//             document.querySelectorAll(".item")[2].classList.add("inview");
-//             document.querySelectorAll(".item")[3].classList.add("inview");
-//             document.querySelectorAll(".item")[4].classList.add("inview");
-//         }
-//     })
-// })
-// observer.observe(document.querySelector(".cont"));
