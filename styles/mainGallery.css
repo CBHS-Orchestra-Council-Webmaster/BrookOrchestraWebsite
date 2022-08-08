@@ -67,6 +67,11 @@ h1 {
   transform: scale(1.05);
   transition: all 0.3s ease-in-out;
 }
+
+#radio0:hover {
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out;
+}
 .hovertext:before {
   content: attr(data-hover);
   visibility: hidden;
@@ -120,6 +125,25 @@ a:hover {
   100% {
     opacity: 1;
   }
+}
+
+.year21 {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  border-top: 0.5rem dotted white;
+  padding: 5rem 1rem 5rem 1rem;
+}
+
+iframe {
+  display: flex;
+  width: 50vw;
+  height: 30vw;
+
+  margin-top: 5vw;
+  margin-bottom: 5vw;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .year22 {
@@ -222,6 +246,7 @@ footer {
 
   .buttons {
     top: 20vh;
+    gap: 0rem;
   }
   .dot {
     width: 1rem;
@@ -230,5 +255,10 @@ footer {
 
   .hovertext:before {
     font-size: 1rem;
+  }
+
+  iframe {
+    width: 90vw;
+    height: 50vw;
   }
 }
