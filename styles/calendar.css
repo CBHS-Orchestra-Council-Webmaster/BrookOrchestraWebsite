@@ -1,88 +1,94 @@
 body {
-    /* rgb(202, 7, 7); */
-    z-index: 0;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    font-family: 'Montserrat', sans-serif;
+  /* rgb(202, 7, 7); */
+  z-index: 0;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
 
+  background: linear-gradient(
+    to bottom,
 
-    background: linear-gradient(to bottom,
+    rgb(202, 7, 7) 0%,
+    rgb(202, 7, 7) 50%,
+    #16161d 85%,
+    #16161d 100%
+  );
 
-            rgb(202, 7, 7) 0%,
-            rgb(202, 7, 7) 50%,
-            #16161d 85%,
-            #16161d 100%);
-
-    animation: fadeInAnimation ease 1s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
+  animation: fadeInAnimation ease 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
 
 @keyframes fadeInAnimation {
-    0% {
-        opacity: 0;
-    }
+  0% {
+    opacity: 0;
+  }
 
-    100% {
-        opacity: 1;
-    }
+  100% {
+    opacity: 1;
+  }
 }
 
 .container {
-    padding-top: 1rem;
-    text-align: center;
-    background-color: #16161d;
-    color: white;
+  padding-top: 1rem;
+  text-align: center;
+  background-color: #16161d;
+  color: white;
 }
 
 h1 {
-    padding: 50px;
-    padding-top: 100px;
-    font-size: xxx-large;
-    font-family: 'Montserrat', sans-serif;
+  padding: 50px;
+  padding-top: 100px;
+  font-size: xxx-large;
+  font-family: "Montserrat", sans-serif;
 }
 
 .cal {
-    margin-bottom: 100px;
-    margin-top: 50px;
-    width: 75%;
-    display: grid;
-    margin-left: auto;
-    margin-right: auto;
-
+  margin-bottom: 100px;
+  margin-top: 50px;
+  width: 75%;
+  display: grid;
+  margin-left: auto;
+  margin-right: auto;
 }
-
-
+.cal2 {
+  display: none;
+}
 
 .png {
-    display: none;
+  display: none;
 }
 
-
-
 footer {
-
-    color: white;
-    background-color: #16161d;
-
-
+  color: white;
+  background-color: #16161d;
 }
 
 @media only screen and (max-width: 800px) {
+  .svg {
+    display: none;
+  }
 
+  .png {
+    display: block;
+  }
+}
 
+@media only screen and (max-width: 1040px) {
+  .cal2 {
+    margin-bottom: 100px;
+    margin-top: 50px;
+    display: flex;
+  }
 
-    .svg {
-        display: none;
-    }
+  .mobile {
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+  }
 
-    .png {
-        display: block;
-    }
-
-    .cal{
-        width: 90%;
-    }
-
+  .cal {
+    display: none;
+  }
 }
