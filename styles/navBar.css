@@ -135,7 +135,7 @@
   }
 
   .share {
-    width: 23px;
+    /* width: 23px; */
     padding: 4px 10px;
     margin-top: 5px;
     z-index: 500;
