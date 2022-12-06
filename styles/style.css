@@ -167,9 +167,7 @@ figcaption {
   height: auto;
   filter: brightness(100%);
 }
-.resize{
-  display: none;
-}
+
 
 
 /* manual-nav */
@@ -364,13 +362,7 @@ iframe {
  .slide img{
   width: 80vw;
  }
-  .normal{
-    display: none;
-  }
-  .resize{
-    display: block;
-  
-  }
+
   
 
   .navigation-manual {
