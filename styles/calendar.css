@@ -76,19 +76,11 @@ footer {
 }
 
 @media only screen and (max-width: 1040px) {
-  .cal2 {
-    margin-bottom: 100px;
-    margin-top: 50px;
-    display: flex;
-  }
+ 
 
-  .mobile {
+  .cal {
     margin-left: auto;
     margin-right: auto;
     width: 95%;
-  }
-
-  .cal {
-    display: none;
   }
 }
