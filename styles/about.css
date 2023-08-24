@@ -95,9 +95,9 @@ h2 {
 .director {
 
     /* border: 5px #000 solid; */
-    padding: 25px;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding: 15px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 
     display: flex;
     /* background-color: rgb(245, 211, 205); */
