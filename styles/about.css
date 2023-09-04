@@ -111,8 +111,8 @@ h2 {
 
 
 .meyer {
-    width: min-content;
-    height: min-content;
+    width: 30%;
+    height: auto;
     margin-top: auto;
     margin-bottom: auto;
     border-radius: 0.5rem;
