@@ -111,7 +111,7 @@ h2 {
 
 
 .directorimage {
-    width: 30%;
+    width: 20vw;
     height: auto;
     margin-top: auto;
     margin-bottom: auto;
@@ -466,9 +466,15 @@ footer {
     }
     
 
-    .meyer {
+    .director {
        margin: 30px auto;
 
+    }
+
+    .directorimage {
+        margin-left: auto;
+        margin-right: auto;
+        width: 40vw;
     }
 
     #name {
@@ -480,7 +486,7 @@ footer {
         padding: 10px;
     }
 
-    .meyerbio {
+    .directorbio {
         padding: 0px 10px;
 
     }
